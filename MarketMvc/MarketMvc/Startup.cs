@@ -31,7 +31,8 @@ namespace MarketMvc
                 options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
 
             // adds local Northwind DB
-            services.AddDbContext<Northwind>(options => options.UseSqlServer("Server=(localdb)\\mssqllocaldb;Database=Northwind;Trusted_Connection=True;MultipleActiveResultSets=true"));
+            services.AddDbContext<Northwind>(options => 
+                options.UseSqlServer(Configuration.GetConnectionString("NorthwindConnection")));
 
             services.AddIdentity<ApplicationUser, IdentityRole>()
                 .AddEntityFrameworkStores<ApplicationDbContext>()
