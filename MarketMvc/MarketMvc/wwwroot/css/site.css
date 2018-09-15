@@ -33,3 +33,7 @@
         display: none;
     }
 }
+
+#newspaper {
+    column-count: 3;
+}

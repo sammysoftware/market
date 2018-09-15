@@ -11,6 +11,7 @@ using Microsoft.Extensions.DependencyInjection;
 using MarketMvc.Data;
 using MarketMvc.Models;
 using MarketMvc.Services;
+using NorthwindEntitiesLib;
 
 namespace MarketMvc
 {
@@ -28,6 +29,9 @@ namespace MarketMvc
         {
             services.AddDbContext<ApplicationDbContext>(options =>
                 options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
+
+            // adds local Northwind DB
+            services.AddDbContext<Northwind>(options => options.UseSqlServer("Server=(localdb)\\mssqllocaldb;Database=Northwind;Trusted_Connection=True;MultipleActiveResultSets=true"));
 
             services.AddIdentity<ApplicationUser, IdentityRole>()
                 .AddEntityFrameworkStores<ApplicationDbContext>()
