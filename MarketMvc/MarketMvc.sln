@@ -7,6 +7,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MarketMvc", "MarketMvc\Mark
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NorthwindEntitiesLib", "NorthwindEntitiesLib\NorthwindEntitiesLib.csproj", "{CAC66FEE-20A7-4CD4-822A-E22EC09C2A6C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MarketLogging", "MarketLogging\MarketLogging.csproj", "{C8BFF377-1E2F-479F-BC1A-C0EE9D842DDC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{CAC66FEE-20A7-4CD4-822A-E22EC09C2A6C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CAC66FEE-20A7-4CD4-822A-E22EC09C2A6C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CAC66FEE-20A7-4CD4-822A-E22EC09C2A6C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C8BFF377-1E2F-479F-BC1A-C0EE9D842DDC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C8BFF377-1E2F-479F-BC1A-C0EE9D842DDC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C8BFF377-1E2F-479F-BC1A-C0EE9D842DDC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C8BFF377-1E2F-479F-BC1A-C0EE9D842DDC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
