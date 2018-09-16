@@ -56,13 +56,17 @@ namespace MarketMvc.Controllers
         }
 
         // adding product details
-        public IActionResult ProductDetail(int? id)
+        //public IActionResult ProductDetail(int? id)
+        public async Task<IActionResult> ProductDetail(int? id)
         {
             if (!id.HasValue)
             {
                 return NotFound("You must pass a product ID in the route, for example, /Home/ProductDetail/21");
             }
-            var model = db.Products.SingleOrDefault(p => p.ProductID == id);
+
+            //var model = db.Products.SingleOrDefault(p => p.ProductID == id);
+            var model = await db.Products.SingleOrDefaultAsync(p => p.ProductID == id);
+
             if (model == null)
             {
                 return NotFound($"A product with the ID of {id} was not found.");
@@ -71,14 +75,19 @@ namespace MarketMvc.Controllers
         }
 
         // used Microsoft.EntityFrameworkCore to use the Include extension method.
-        public IActionResult ProductsThatCostMoreThan(decimal? price)
+        //public IActionResult ProductsThatCostMoreThan(decimal? price)
+        public async Task<IActionResult> ProductsThatCostMoreThan(decimal? price)
         {
             if (!price.HasValue)
             {
                 return NotFound("You must pass a product price in the query string, for example, /Home/ProductsThatCostMoreThan?price=50");
             }
+
+            //var model = db.Products.Include(p => p.Category).Include(
+            //  p => p.Supplier).Where(p => p.UnitPrice > price).ToArray();
             var model = db.Products.Include(p => p.Category).Include(
-              p => p.Supplier).Where(p => p.UnitPrice > price).ToArray();
+              p => p.Supplier).Where(p => p.UnitPrice > price).OrderBy(p => p.ProductName).ToArray();
+
             if (model.Count() == 0)
             {
                 return NotFound($"No products cost more than {price:C}.");
