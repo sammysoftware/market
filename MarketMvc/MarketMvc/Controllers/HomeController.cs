@@ -5,6 +5,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Logging;
 using MarketMvc.Models;
 using NorthwindEntitiesLib;
 
@@ -14,10 +15,12 @@ namespace MarketMvc.Controllers
     {
         // add Northwind DB
         private NorthwindDbContext db;
+        readonly ILogger<HomeController> _logger;
 
-        public HomeController(NorthwindDbContext injectedContext)
+        public HomeController(NorthwindDbContext injectedContext, ILogger<HomeController> logger)
         {
             db = injectedContext;
+            _logger = logger;
         }
 
         public IActionResult Index()
@@ -59,6 +62,8 @@ namespace MarketMvc.Controllers
         //public IActionResult ProductDetail(int? id)
         public async Task<IActionResult> ProductDetail(int? id)
         {
+            _logger.LogInformation($"##Start## ProductDetail for id {id}");
+
             if (!id.HasValue)
             {
                 return NotFound("You must pass a product ID in the route, for example, /Home/ProductDetail/21");
@@ -78,6 +83,8 @@ namespace MarketMvc.Controllers
         //public IActionResult ProductsThatCostMoreThan(decimal? price)
         public async Task<IActionResult> ProductsThatCostMoreThan(decimal? price)
         {
+            _logger.LogInformation($"##Start## ProductsThatCostMoreThan for price {price}");
+
             if (!price.HasValue)
             {
                 return NotFound("You must pass a product price in the query string, for example, /Home/ProductsThatCostMoreThan?price=50");
