@@ -51,5 +51,21 @@ namespace MarketMvc.Controllers
         {
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
         }
+
+        // adding product details
+        public IActionResult ProductDetail(int? id)
+        {
+            if (!id.HasValue)
+            {
+                return NotFound("You must pass a product ID in the route, for example, /Home/ProductDetail/21");
+            }
+            var model = db.Products.SingleOrDefault(p => p.ProductID == id);
+            if (model == null)
+            {
+                return NotFound($"A product with the ID of {id} was not found.");
+            }
+            return View(model); // pass model to view 
+        }
+
     }
 }
