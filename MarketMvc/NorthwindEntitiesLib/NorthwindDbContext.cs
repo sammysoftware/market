@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace NorthwindEntitiesLib
 {
-    public class Northwind : DbContext
+    public class NorthwindDbContext : DbContext
     {
         public DbSet<Category> Categories { get; set; }
         public DbSet<Customer> Customers { get; set; }
@@ -14,7 +14,7 @@ namespace NorthwindEntitiesLib
         public DbSet<Shipper> Shippers { get; set; }
         public DbSet<Supplier> Suppliers { get; set; }
 
-        public Northwind(DbContextOptions options)
+        public NorthwindDbContext(DbContextOptions options)
             : base(options) { }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)

@@ -13,9 +13,9 @@ namespace MarketMvc.Controllers
     public class HomeController : Controller
     {
         // add Northwind DB
-        private Northwind db;
+        private NorthwindDbContext db;
 
-        public HomeController(Northwind injectedContext)
+        public HomeController(NorthwindDbContext injectedContext)
         {
             db = injectedContext;
         }
@@ -85,10 +85,11 @@ namespace MarketMvc.Controllers
 
             //var model = db.Products.Include(p => p.Category).Include(
             //  p => p.Supplier).Where(p => p.UnitPrice > price).ToArray();
-            var model = db.Products.Include(p => p.Category).Include(
-              p => p.Supplier).Where(p => p.UnitPrice > price).OrderBy(p => p.ProductName).ToArray();
+            var model = await db.Products.Include(p => p.Category).Include(
+              p => p.Supplier).Where(p => p.UnitPrice > price).OrderBy(p => p.ProductName).ToArrayAsync();
 
             if (model.Count() == 0)
+            //if (model.IsCompletedSuccessfully && model.Result.Count() == 0)
             {
                 return NotFound($"No products cost more than {price:C}.");
             }

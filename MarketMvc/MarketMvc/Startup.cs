@@ -28,10 +28,10 @@ namespace MarketMvc
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddDbContext<ApplicationDbContext>(options =>
-                options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
+                options.UseSqlServer(Configuration.GetConnectionString("AuthConnection")));
 
             // adds local Northwind DB
-            services.AddDbContext<Northwind>(options => 
+            services.AddDbContext<NorthwindDbContext>(options => 
                 options.UseSqlServer(Configuration.GetConnectionString("NorthwindConnection")));
 
             services.AddIdentity<ApplicationUser, IdentityRole>()
