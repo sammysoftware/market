@@ -103,5 +103,24 @@ namespace MarketMvc.Controllers
             ViewData["MaxPrice"] = price.Value.ToString("C");
             return View(model); // pass model to view 
         }
+
+        public async Task<IActionResult> Category(int? id)
+        {
+            _logger.LogInformation($"##Start## Category for id {id}");
+
+            if (!id.HasValue)
+            {
+                return NotFound("You must pass a category ID in the route, for example, /Home/Category/1");
+            }
+
+            var model = await db.Products.Include(p => p.Category).Include(
+              p => p.Supplier).Where(p => p.CategoryID == id).OrderBy(p => p.ProductName).ToArrayAsync();
+
+            if (model.Count() == 0)
+            {
+                return NotFound($"No products are in category {id}.");
+            }
+            return View(model); // pass model to view 
+        }
     }
 }

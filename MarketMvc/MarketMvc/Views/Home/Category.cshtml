@@ -1,0 +1,39 @@
+﻿@model IEnumerable<NorthwindEntitiesLib.Product>
+@{
+    ViewData["Title"] =
+      "Products in Category";// + Model[0].Category.CategoryName;
+}
+<h2>Products in Category</h2>
+<table class="table">
+    <tr>
+        <th>Product Name</th>
+        <th>Category Name</th>
+        <th>Supplier's Company Name</th>
+        <th>Unit Price</th>
+        <th>Units In Stock</th>
+    </tr>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.ProductName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Category.CategoryName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Supplier.CompanyName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.UnitPrice)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.UnitsInStock)
+            </td>
+        </tr>
+    }
+</table>
+
+<div>
+    <a asp-action="Index">Back to Product List</a>
+</div>
