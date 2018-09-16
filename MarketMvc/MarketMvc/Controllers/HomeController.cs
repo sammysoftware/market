@@ -71,6 +71,8 @@ namespace MarketMvc.Controllers
 
             //var model = db.Products.SingleOrDefault(p => p.ProductID == id);
             var model = await db.Products.SingleOrDefaultAsync(p => p.ProductID == id);
+            //var model = await db.Products.Include(p => p.Category).Where(p => p.ProductID == id).SingleOrDefaultAsync();
+            //var model = await db.Products.Include(p => p.Category).SingleOrDefaultAsync(p => p.ProductID == id);
 
             if (model == null)
             {
