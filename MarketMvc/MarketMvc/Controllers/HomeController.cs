@@ -4,6 +4,7 @@ using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using MarketMvc.Models;
 using NorthwindEntitiesLib;
 
@@ -67,5 +68,21 @@ namespace MarketMvc.Controllers
             return View(model); // pass model to view 
         }
 
+        // used Microsoft.EntityFrameworkCore to use the Include extension method.
+        public IActionResult ProductsThatCostMoreThan(decimal? price)
+        {
+            if (!price.HasValue)
+            {
+                return NotFound("You must pass a product price in the query string, for example, /Home/ProductsThatCostMoreThan?price=50");
+            }
+            var model = db.Products.Include(p => p.Category).Include(
+              p => p.Supplier).Where(p => p.UnitPrice > price).ToArray();
+            if (model.Count() == 0)
+            {
+                return NotFound($"No products cost more than {price:C}.");
+            }
+            ViewData["MaxPrice"] = price.Value.ToString("C");
+            return View(model); // pass model to view 
+        }
     }
 }
