@@ -26,8 +26,10 @@ namespace MarketMvc.Controllers
             var model = new HomeIndexViewModel
             {
                 VisitorCount = (new Random()).Next(101, 1001),
-                Categories = db.Categories.ToList(),
-                Products = db.Products.ToList()
+                //Categories = db.Categories.ToList(),
+                Categories = db.Categories.OrderBy(c => c.CategoryName).ToList(),
+                //Products = db.Products.ToList()
+                Products = db.Products.OrderBy(p => p.ProductName).ToList()
             };
             return View(model); // pass model to view 
 
