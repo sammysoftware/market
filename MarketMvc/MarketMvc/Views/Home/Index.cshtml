@@ -71,23 +71,24 @@
             <input name="price" placeholder="Enter a product price" />
             <input type="submit" />
         </form>
-
-        <h2>Product List</h2>
-        <div id="newspaper">
-            <ul>
-                @foreach (var item in @Model.Products)
-                {
-                    <li>
-                        <a asp-controller="Home"
-                           asp-action="ProductDetail"
-                           asp-route-id="@item.ProductID">
-                            @item.ProductName costs
-                            @item.UnitPrice.Value.ToString("C")
-                        </a>
-                    </li>
-                }
-            </ul>
-
+        @if (User.Identity.IsAuthenticated)//if user is authenticated
+        {
+            <h2>Product List</h2>
+            <div id="newspaper">
+                <ul>
+                    @foreach (var item in @Model.Products)
+                    {
+                        <li>
+                            <a asp-controller="Home"
+                               asp-action="ProductDetail"
+                               asp-route-id="@item.ProductID">
+                                @item.ProductName costs
+                                @item.UnitPrice.Value.ToString("C")
+                            </a>
+                        </li>
+                    }
+                </ul>
+            </div>
+        }
         </div>
-    </div>
 </div>

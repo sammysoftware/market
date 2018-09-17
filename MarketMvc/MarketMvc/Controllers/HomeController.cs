@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
+using Microsoft.AspNetCore.Authorization; //[Authorize]
 using MarketMvc.Models;
 using NorthwindEntitiesLib;
 
@@ -60,6 +61,7 @@ namespace MarketMvc.Controllers
 
         // adding product details
         //public IActionResult ProductDetail(int? id)
+        [Authorize]
         public async Task<IActionResult> ProductDetail(int? id)
         {
             _logger.LogInformation($"##Start## ProductDetail for id {id}");
