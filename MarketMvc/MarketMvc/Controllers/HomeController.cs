@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
-using Microsoft.AspNetCore.Authorization; //[Authorize]
+using Microsoft.Extensions.Caching.Memory;  //IMemoryCache
+using Microsoft.AspNetCore.Authorization;   //[Authorize]
 using MarketMvc.Models;
 using NorthwindEntitiesLib;
 
@@ -17,6 +18,7 @@ namespace MarketMvc.Controllers
         // add Northwind DB
         private NorthwindDbContext db;
         readonly ILogger<HomeController> _logger;
+        private IMemoryCache _cache;
 
         public HomeController(NorthwindDbContext injectedContext, ILogger<HomeController> logger)
         {
@@ -25,20 +27,40 @@ namespace MarketMvc.Controllers
         }
 
         public IActionResult Index()
+        //public async Task<IActionResult> Index()
         {
             // controller gets the model and passes it to the view
             var model = new HomeIndexViewModel
             {
                 VisitorCount = (new Random()).Next(101, 1001),
                 //Categories = db.Categories.ToList(),
-                Categories = db.Categories.OrderBy(c => c.CategoryName).ToList(),
+                //Categories = db.Categories.OrderBy(c => c.CategoryName).ToList(),
+                //Categories = await db.Categories.OrderBy(c => c.CategoryName).ToListAsync(),
+                Categories = GetCategories(),
                 //Products = db.Products.ToList()
-                Products = db.Products.OrderBy(p => p.ProductName).ToList()
+                //Products = db.Products.OrderBy(p => p.ProductName).ToList()
+                //Products = await db.Products.OrderBy(p => p.ProductName).ToListAsync()
+                Products = GetProducts()
             };
             return View(model); // pass model to view 
 
             //return View();
         }
+
+        protected IList<Category> GetCategories()
+        {
+            IList<Category> categories = db.Categories.OrderBy(c => c.CategoryName).ToList();
+
+            return categories;
+        }
+
+        protected IList<Product> GetProducts()
+        {
+            IList<Product> products = db.Products.OrderBy(p => p.ProductName).ToList();
+
+            return products;
+        }
+
 
         public IActionResult About()
         {

@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.Mvc; //CacheProfile
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using MarketMvc.Data;
@@ -27,6 +28,8 @@ namespace MarketMvc
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddMemoryCache();//maybe can store the product list so it doesn't have to hit the database.
+
             services.AddDbContext<ApplicationDbContext>(options =>
                 options.UseSqlServer(Configuration.GetConnectionString("AuthConnection")));
 
@@ -41,7 +44,17 @@ namespace MarketMvc
             // Add application services.
             services.AddTransient<IEmailSender, EmailSender>();
 
-            services.AddMvc();
+            services
+                .AddMvc(options =>
+                {
+                    options.CacheProfiles.Add("Public5Minutes", new CacheProfile { Duration = 5 * 60, Location = ResponseCacheLocation.Any, VaryByHeader = "Accept-Language" });
+                    options.CacheProfiles.Add("Public1Hour", new CacheProfile { Duration = 60 * 60, Location = ResponseCacheLocation.Any, VaryByHeader = "Accept-Language" });
+
+                    //options.ValueProviderFactories.Add(new CookieValueProviderFactory());
+
+                    //options.Filters.Add(new MiddlewareFilterAttribute(typeof(LocalizationPipeline)));
+                });
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
