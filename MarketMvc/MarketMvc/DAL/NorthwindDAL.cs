@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Caching.Memory;  //IMemoryCache
 using MarketMvc.Controllers;
@@ -23,7 +24,7 @@ namespace MarketMvc.DAL
             _logger = logger;
         }
 
-        public IList<Category> GetCategories()
+        public async Task<IList<Category>> GetCategoriesAsync()
         {
             const string CategoryKey = "_Categories";
 
@@ -34,7 +35,8 @@ namespace MarketMvc.DAL
                 _logger.LogInformation($"##Start## GetCategories from database.");
 
                 // Key not in cache, so get data.
-                categories = _db.Categories.OrderBy(c => c.CategoryName).ToList();
+                //categories = _db.Categories.OrderBy(c => c.CategoryName).ToList();
+                categories = await _db.Categories.OrderBy(c => c.CategoryName).ToListAsync();
 
                 // Set cache options.
                 var cacheEntryOptions = new MemoryCacheEntryOptions()
@@ -50,7 +52,7 @@ namespace MarketMvc.DAL
             return categories;
         }
 
-        public IList<Product> GetProducts()
+        public async Task<IList<Product>> GetProductsAsync()
         {
             const string ProductKey = "_Products";
 
@@ -61,7 +63,8 @@ namespace MarketMvc.DAL
                 _logger.LogInformation($"##Start## GetProducts from database.");
 
                 // Key not in cache, so get data.
-                products = _db.Products.OrderBy(p => p.ProductName).ToList();
+                //products = _db.Products.OrderBy(p => p.ProductName).ToList();
+                products = await _db.Products.OrderBy(p => p.ProductName).ToListAsync();
 
                 // Set cache options.
                 var cacheEntryOptions = new MemoryCacheEntryOptions()

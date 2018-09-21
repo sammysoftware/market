@@ -29,8 +29,8 @@ namespace MarketMvc.Controllers
         }
 
         //[ResponseCache(CacheProfileName = "Public5Minutes")]
-        public IActionResult Index()
-        //public async Task<IActionResult> Index()
+        //public IActionResult Index()
+        public async Task<IActionResult> Index()
         {
             // controller gets the model and passes it to the view
             var model = new HomeIndexViewModel
@@ -39,11 +39,11 @@ namespace MarketMvc.Controllers
                 //Categories = db.Categories.ToList(),
                 //Categories = _db.Categories.OrderBy(c => c.CategoryName).ToList(),
                 //Categories = await db.Categories.OrderBy(c => c.CategoryName).ToListAsync(),
-                Categories = _NorthwindDAL.GetCategories(),
+                Categories = await _NorthwindDAL.GetCategoriesAsync(),
                 //Products = db.Products.ToList()
                 //Products = _db.Products.OrderBy(p => p.ProductName).ToList()
                 //Products = await db.Products.OrderBy(p => p.ProductName).ToListAsync()
-                Products = _NorthwindDAL.GetProducts()
+                Products = await _NorthwindDAL.GetProductsAsync()
             };
             return View(model); // pass model to view 
 
