@@ -45,16 +45,7 @@ namespace MarketMvc
             services.AddTransient<IEmailSender, EmailSender>();
 
             services
-                .AddMvc(options =>
-                {
-                    options.CacheProfiles.Add("Public5Minutes", new CacheProfile { Duration = 5 * 60, Location = ResponseCacheLocation.Any, VaryByHeader = "Accept-Language" });
-                    options.CacheProfiles.Add("Public1Hour", new CacheProfile { Duration = 60 * 60, Location = ResponseCacheLocation.Any, VaryByHeader = "Accept-Language" });
-
-                    //options.ValueProviderFactories.Add(new CookieValueProviderFactory());
-
-                    //options.Filters.Add(new MiddlewareFilterAttribute(typeof(LocalizationPipeline)));
-                });
-
+                .AddMvc();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

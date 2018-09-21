@@ -5,10 +5,11 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Caching.Memory;  //IMemoryCache
+using Microsoft.Extensions.Logging;
 using Microsoft.AspNetCore.Authorization;   //[Authorize]
 using MarketMvc.Models;
+using MarketMvc.DAL;
 using NorthwindEntitiesLib;
 
 namespace MarketMvc.Controllers
@@ -18,13 +19,13 @@ namespace MarketMvc.Controllers
         // add Northwind DB
         private NorthwindDbContext _db;
         readonly ILogger<HomeController> _logger;
-        private IMemoryCache _cache;
+        NorthwindDAL _NorthwindDAL;
 
-        public HomeController(NorthwindDbContext injectedContext, ILogger<HomeController> logger, IMemoryCache memoryCache)
+        public HomeController(NorthwindDbContext injectedContext, IMemoryCache memoryCache, ILogger<HomeController> logger)
         {
             _db = injectedContext;
             _logger = logger;
-            _cache = memoryCache;
+            _NorthwindDAL = new NorthwindDAL(injectedContext, memoryCache, _logger);
         }
 
         //[ResponseCache(CacheProfileName = "Public5Minutes")]
@@ -38,63 +39,16 @@ namespace MarketMvc.Controllers
                 //Categories = db.Categories.ToList(),
                 //Categories = _db.Categories.OrderBy(c => c.CategoryName).ToList(),
                 //Categories = await db.Categories.OrderBy(c => c.CategoryName).ToListAsync(),
-                Categories = GetCategories(),
+                Categories = _NorthwindDAL.GetCategories(),
                 //Products = db.Products.ToList()
                 //Products = _db.Products.OrderBy(p => p.ProductName).ToList()
                 //Products = await db.Products.OrderBy(p => p.ProductName).ToListAsync()
-                Products = GetProducts()
+                Products = _NorthwindDAL.GetProducts()
             };
             return View(model); // pass model to view 
 
             //return View();
-        }
-        
-        protected IList<Category> GetCategories()
-        {
-            const string CategoryKey = "_Categories";
-
-            //IList<Category> categories = _db.Categories.OrderBy(c => c.CategoryName).ToList();
-            IList<Category> categories = null;
-            if (!_cache.TryGetValue(CategoryKey, out categories))
-            {
-                // Key not in cache, so get data.
-                categories = _db.Categories.OrderBy(c => c.CategoryName).ToList();
-
-                // Set cache options.
-                var cacheEntryOptions = new MemoryCacheEntryOptions()
-                    // Keep in cache for this time, reset time if accessed.
-                    .SetSlidingExpiration(TimeSpan.FromSeconds(60));
-
-                // Save data in cache.
-                _cache.Set(CategoryKey, categories, cacheEntryOptions);
-            }
-
-            return categories;
-        }
-
-        protected IList<Product> GetProducts()
-        {
-            const string ProductKey = "_Products";
-
-            //IList<Product> products = _db.Products.OrderBy(p => p.ProductName).ToList();
-            IList<Product> products = null;
-            if (!_cache.TryGetValue(ProductKey, out products))
-            {
-                // Key not in cache, so get data.
-                products = _db.Products.OrderBy(p => p.ProductName).ToList();
-
-                // Set cache options.
-                var cacheEntryOptions = new MemoryCacheEntryOptions()
-                    // Keep in cache for this time, reset time if accessed.
-                    .SetSlidingExpiration(TimeSpan.FromSeconds(60));
-
-                // Save data in cache.
-                _cache.Set(ProductKey, products, cacheEntryOptions);
-            }
-
-            return products;
-        }
-        
+        }              
 
         public IActionResult About()
         {
