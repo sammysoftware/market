@@ -16,16 +16,18 @@ namespace MarketMvc.Controllers
     public class HomeController : Controller
     {
         // add Northwind DB
-        private NorthwindDbContext db;
+        private NorthwindDbContext _db;
         readonly ILogger<HomeController> _logger;
         private IMemoryCache _cache;
 
-        public HomeController(NorthwindDbContext injectedContext, ILogger<HomeController> logger)
+        public HomeController(NorthwindDbContext injectedContext, ILogger<HomeController> logger, IMemoryCache memoryCache)
         {
-            db = injectedContext;
+            _db = injectedContext;
             _logger = logger;
+            _cache = memoryCache;
         }
 
+        //[ResponseCache(CacheProfileName = "Public5Minutes")]
         public IActionResult Index()
         //public async Task<IActionResult> Index()
         {
@@ -34,11 +36,11 @@ namespace MarketMvc.Controllers
             {
                 VisitorCount = (new Random()).Next(101, 1001),
                 //Categories = db.Categories.ToList(),
-                //Categories = db.Categories.OrderBy(c => c.CategoryName).ToList(),
+                //Categories = _db.Categories.OrderBy(c => c.CategoryName).ToList(),
                 //Categories = await db.Categories.OrderBy(c => c.CategoryName).ToListAsync(),
                 Categories = GetCategories(),
                 //Products = db.Products.ToList()
-                //Products = db.Products.OrderBy(p => p.ProductName).ToList()
+                //Products = _db.Products.OrderBy(p => p.ProductName).ToList()
                 //Products = await db.Products.OrderBy(p => p.ProductName).ToListAsync()
                 Products = GetProducts()
             };
@@ -46,21 +48,53 @@ namespace MarketMvc.Controllers
 
             //return View();
         }
-
+        
         protected IList<Category> GetCategories()
         {
-            IList<Category> categories = db.Categories.OrderBy(c => c.CategoryName).ToList();
+            const string CategoryKey = "_Categories";
+
+            //IList<Category> categories = _db.Categories.OrderBy(c => c.CategoryName).ToList();
+            IList<Category> categories = null;
+            if (!_cache.TryGetValue(CategoryKey, out categories))
+            {
+                // Key not in cache, so get data.
+                categories = _db.Categories.OrderBy(c => c.CategoryName).ToList();
+
+                // Set cache options.
+                var cacheEntryOptions = new MemoryCacheEntryOptions()
+                    // Keep in cache for this time, reset time if accessed.
+                    .SetSlidingExpiration(TimeSpan.FromSeconds(60));
+
+                // Save data in cache.
+                _cache.Set(CategoryKey, categories, cacheEntryOptions);
+            }
 
             return categories;
         }
 
         protected IList<Product> GetProducts()
         {
-            IList<Product> products = db.Products.OrderBy(p => p.ProductName).ToList();
+            const string ProductKey = "_Products";
+
+            //IList<Product> products = _db.Products.OrderBy(p => p.ProductName).ToList();
+            IList<Product> products = null;
+            if (!_cache.TryGetValue(ProductKey, out products))
+            {
+                // Key not in cache, so get data.
+                products = _db.Products.OrderBy(p => p.ProductName).ToList();
+
+                // Set cache options.
+                var cacheEntryOptions = new MemoryCacheEntryOptions()
+                    // Keep in cache for this time, reset time if accessed.
+                    .SetSlidingExpiration(TimeSpan.FromSeconds(60));
+
+                // Save data in cache.
+                _cache.Set(ProductKey, products, cacheEntryOptions);
+            }
 
             return products;
         }
-
+        
 
         public IActionResult About()
         {
@@ -97,7 +131,7 @@ namespace MarketMvc.Controllers
             //var model = await db.Products.SingleOrDefaultAsync(p => p.ProductID == id);
             //var model = await db.Products.Include(p => p.Category).Where(p => p.ProductID == id).SingleOrDefaultAsync();
             //var model = await db.Products.Include(p => p.Category).SingleOrDefaultAsync(p => p.ProductID == id);
-            var model = await db.Products.Include(p => p.Category).SingleOrDefaultAsync(p => p.ProductID == id);
+            var model = await _db.Products.Include(p => p.Category).SingleOrDefaultAsync(p => p.ProductID == id);
 
             if (model == null)
             {
@@ -119,7 +153,7 @@ namespace MarketMvc.Controllers
 
             //var model = db.Products.Include(p => p.Category).Include(
             //  p => p.Supplier).Where(p => p.UnitPrice > price).ToArray();
-            var model = await db.Products.Include(p => p.Category).Include(
+            var model = await _db.Products.Include(p => p.Category).Include(
               p => p.Supplier).Where(p => p.UnitPrice > price).OrderBy(p => p.ProductName).ToArrayAsync();
 
             if (model.Count() == 0)
@@ -140,7 +174,7 @@ namespace MarketMvc.Controllers
                 return NotFound("You must pass a category ID in the route, for example, /Home/Category/1");
             }
 
-            var model = await db.Products.Include(p => p.Category).Include(
+            var model = await _db.Products.Include(p => p.Category).Include(
               p => p.Supplier).Where(p => p.CategoryID == id).OrderBy(p => p.ProductName).ToArrayAsync();
 
             if (model.Count() == 0)
