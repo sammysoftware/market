@@ -1,7 +1,9 @@
-﻿@{
+﻿@inject Microsoft.AspNetCore.Hosting.IHostingEnvironment hostingEnv
+@{
     ViewData["Title"] = "About";
 }
 <h2>@ViewData["Title"]</h2>
 <h3>@ViewData["Message"]</h3>
 
-<p>Use this area to provide additional information.</p>
+<p>ASPNETCORE_ENVIRONMENT = @hostingEnv.EnvironmentName</p>
+
