@@ -17,6 +17,10 @@ namespace MarketMvc.DAL
         readonly ILogger<HomeController> _logger;
         const int cacheFromSeconds = 10;
 
+        const string CategoryKey = "_Categories";
+        const string ProductsKey = "_Products";
+        const string ProductIDKey = "_ProductID";
+
         public NorthwindDAL(NorthwindDbContext injectedContext, IMemoryCache memoryCache, ILogger<HomeController> logger)
         {
             _db = injectedContext;
@@ -26,8 +30,6 @@ namespace MarketMvc.DAL
 
         public async Task<IList<Category>> GetCategoriesAsync()
         {
-            const string CategoryKey = "_Categories";
-
             //IList<Category> categories = _db.Categories.OrderBy(c => c.CategoryName).ToList();
             IList<Category> categories = null;
             if (!_cache.TryGetValue(CategoryKey, out categories))
@@ -54,11 +56,9 @@ namespace MarketMvc.DAL
 
         public async Task<IList<Product>> GetProductsAsync()
         {
-            const string ProductKey = "_Products";
-
             //IList<Product> products = _db.Products.OrderBy(p => p.ProductName).ToList();
             IList<Product> products = null;
-            if (!_cache.TryGetValue(ProductKey, out products))
+            if (!_cache.TryGetValue(ProductsKey, out products))
             {
                 _logger.LogInformation($"##Start## GetProducts from database.");
 
@@ -72,10 +72,39 @@ namespace MarketMvc.DAL
                     .SetSlidingExpiration(TimeSpan.FromSeconds(cacheFromSeconds));
 
                 // Save data in cache.
-                _cache.Set(ProductKey, products, cacheEntryOptions);
+                _cache.Set(ProductsKey, products, cacheEntryOptions);
             }
             else
                 _logger.LogInformation($"##Start## GetProducts from cache.");
+
+            return products;
+        }
+
+        public async Task<Product> GetProductAsync(int? id)
+        {
+            Product product = null;
+
+            product = await _db.Products.Include(p => p.Category).SingleOrDefaultAsync(p => p.ProductID == id);
+
+            return product;
+        }
+
+        public async Task<Product[]> GetCategoryProductsAsync(int? id)
+        {
+            Product[] products = null;
+
+            products = await _db.Products.Include(p => p.Category).Include(p => p.Supplier)
+                .Where(p => p.CategoryID == id).OrderBy(p => p.ProductName).ToArrayAsync();
+
+            return products;
+        }
+
+        public async Task<Product[]> GetProductsMoreThanAsync(decimal? price)
+        {
+            Product[] products = null;
+
+            products = await _db.Products.Include(p => p.Category).Include(
+              p => p.Supplier).Where(p => p.UnitPrice > price).OrderBy(p => p.ProductName).ToArrayAsync();
 
             return products;
         }

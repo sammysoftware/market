@@ -17,15 +17,15 @@ namespace MarketMvc.Controllers
     public class HomeController : Controller
     {
         // add Northwind DB
-        private NorthwindDbContext _db;
+        //private NorthwindDbContext _db;
         readonly ILogger<HomeController> _logger;
         NorthwindDAL _NorthwindDAL;
 
-        public HomeController(NorthwindDbContext injectedContext, IMemoryCache memoryCache, ILogger<HomeController> logger)
+        public HomeController(NorthwindDbContext northwindCtx, IMemoryCache memoryCache, ILogger<HomeController> logger)
         {
-            _db = injectedContext;
+            //_db = injectedContext;
             _logger = logger;
-            _NorthwindDAL = new NorthwindDAL(injectedContext, memoryCache, _logger);
+            _NorthwindDAL = new NorthwindDAL(northwindCtx, memoryCache, _logger);
         }
 
         //[ResponseCache(CacheProfileName = "Public5Minutes")]
@@ -85,7 +85,7 @@ namespace MarketMvc.Controllers
             //var model = await db.Products.SingleOrDefaultAsync(p => p.ProductID == id);
             //var model = await db.Products.Include(p => p.Category).Where(p => p.ProductID == id).SingleOrDefaultAsync();
             //var model = await db.Products.Include(p => p.Category).SingleOrDefaultAsync(p => p.ProductID == id);
-            var model = await _db.Products.Include(p => p.Category).SingleOrDefaultAsync(p => p.ProductID == id);
+            var model = await _NorthwindDAL.GetProductAsync(id);
 
             if (model == null)
             {
@@ -107,8 +107,9 @@ namespace MarketMvc.Controllers
 
             //var model = db.Products.Include(p => p.Category).Include(
             //  p => p.Supplier).Where(p => p.UnitPrice > price).ToArray();
-            var model = await _db.Products.Include(p => p.Category).Include(
-              p => p.Supplier).Where(p => p.UnitPrice > price).OrderBy(p => p.ProductName).ToArrayAsync();
+            //var model = await _db.Products.Include(p => p.Category).Include(
+            //  p => p.Supplier).Where(p => p.UnitPrice > price).OrderBy(p => p.ProductName).ToArrayAsync();
+            var model = await _NorthwindDAL.GetProductsMoreThanAsync(price);
 
             if (model.Count() == 0)
             //if (model.IsCompletedSuccessfully && model.Result.Count() == 0)
@@ -128,8 +129,9 @@ namespace MarketMvc.Controllers
                 return NotFound("You must pass a category ID in the route, for example, /Home/Category/1");
             }
 
-            var model = await _db.Products.Include(p => p.Category).Include(
-              p => p.Supplier).Where(p => p.CategoryID == id).OrderBy(p => p.ProductName).ToArrayAsync();
+            //var model = await _db.Products.Include(p => p.Category).Include(
+            //  p => p.Supplier).Where(p => p.CategoryID == id).OrderBy(p => p.ProductName).ToArrayAsync();
+            var model = await _NorthwindDAL.GetCategoryProductsAsync(id);
 
             if (model.Count() == 0)
             {
