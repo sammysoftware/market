@@ -53,7 +53,7 @@ namespace MarketLogging
                 Message = message,
                 EventId = eventId.Id,
                 LogLevel = logLevel.ToString(),
-                CreatedTime = DateTime.UtcNow
+                CreatedTime = DateTime.Now//UtcNow
             };
 
             _helper.InsertLog(logEntry);

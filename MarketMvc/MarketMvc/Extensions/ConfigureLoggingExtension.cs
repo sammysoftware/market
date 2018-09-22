@@ -25,8 +25,8 @@ namespace MarketMvc.Extensions
                             break;
                         }
                     case "file":
-                        {
-                            string filePath = System.IO.Path.Combine(System.IO.Directory.GetCurrentDirectory(), "Logs", $"MarketMvc_{System.DateTime.Now.ToString("ddMMyyHHmm")}.log");
+                        {   //ddMMyyHHmm should be yyyyMMddHHmm
+                            string filePath = System.IO.Path.Combine(System.IO.Directory.GetCurrentDirectory(), "Logs", $"MarketMvc_{System.DateTime.Now.ToString("yyyyMMddHHmm")}.log");
                             loggingBuilder.AddFile(filePath, (LogLevel)provider.LogLevel);
                             break;
                         }
