@@ -51,6 +51,12 @@ namespace MarketMvc
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IHostingEnvironment env)
         {
+            // Order matters:
+            // 1 Exception Handling
+            // 2 Static
+            // 3 Identity
+            // 4 MVC
+
             if (env.IsDevelopment())
             {
                 app.UseBrowserLink();
