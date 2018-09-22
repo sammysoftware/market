@@ -53,7 +53,7 @@ namespace MarketLogging
                 Message = message,
                 EventId = eventId.Id,
                 LogLevel = logLevel.ToString(),
-                CreatedTime = DateTime.Now//UtcNow
+                CreatedTime = GetCurrentTime()// DateTime.Now//UtcNow
             };
 
             _helper.InsertLog(logEntry);
@@ -62,6 +62,11 @@ namespace MarketLogging
         public bool IsEnabled(LogLevel logLevel)
         {
             return (_filter == null || _filter(_categoryName, logLevel));
+        }
+
+        public static DateTime GetCurrentTime()
+        {
+            return DateTime.Now;//UtcNow;
         }
     }
 }
