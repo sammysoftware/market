@@ -108,5 +108,12 @@ namespace MarketMvc.DAL
 
             return products;
         }
+
+        public void AddOrder(Order order)
+        {
+            _db.Orders.Add(order);
+
+            return;
+        }
     }
 }

@@ -19,7 +19,7 @@ namespace MarketMvc.Controllers
         // add Northwind DB
         //private NorthwindDbContext _db;
         readonly ILogger<HomeController> _logger;
-        NorthwindDAL _NorthwindDAL;
+        private NorthwindDAL _NorthwindDAL;
 
         public HomeController(NorthwindDbContext northwindCtx, IMemoryCache memoryCache, ILogger<HomeController> logger)
         {
