@@ -6,7 +6,6 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Caching.Memory;  //IMemoryCache
 using MarketMvc.Models;
-using MarketMvc.Helpers;
 using MarketMvc.DAL;
 using NorthwindEntitiesLib;
 
@@ -20,7 +19,6 @@ namespace MarketMvc.Controllers
 
         public CartController(NorthwindDbContext northwindCtx, IMemoryCache memoryCache, ILogger<HomeController> logger)
         {
-            //_db = injectedContext;
             _logger = logger;
             _NorthwindDAL = new NorthwindDAL(northwindCtx, memoryCache, _logger);
         }
@@ -28,7 +26,7 @@ namespace MarketMvc.Controllers
         [Route("index")]
         public IActionResult Index()
         {
-            var cart = SessionHelper.GetObjectFromJson<List<CartItem>>(HttpContext.Session, "cart");
+            var cart = CartDAL.GetCart(HttpContext.Session);
             ViewBag.cart = cart;
             ViewBag.total = cart.Sum(item => item.Product.Price * item.Quantity);
             return View();
@@ -42,50 +40,51 @@ namespace MarketMvc.Controllers
                 return NotFound("You must pass a product ID in the route, for example, /cart/buy/21");
             }
 
-            //ProductModel productModel = new ProductModel();
-            Product product = await _NorthwindDAL.GetProductAsync(id);
-            CartProduct cartProduct = new CartProduct {
-                Id = product.ProductID,
-                Name = product.ProductName,
-                Price = product.UnitPrice.Value
-            };
-
-            if (SessionHelper.GetObjectFromJson<List<CartItem>>(HttpContext.Session, "cart") == null)
+            List<CartItem> cart = CartDAL.GetCart(HttpContext.Session);
+            int index = isExist(id.Value);
+            if (index != -1)
             {
-                List<CartItem> cart = new List<CartItem>();
-                cart.Add(new CartItem { Product = cartProduct, Quantity = 1 });
-                SessionHelper.SetObjectAsJson(HttpContext.Session, "cart", cart);
+                cart[index].Quantity++;
             }
             else
             {
-                List<CartItem> cart = SessionHelper.GetObjectFromJson<List<CartItem>>(HttpContext.Session, "cart");
-                int index = isExist(id.Value);
-                if (index != -1)
-                {
-                    cart[index].Quantity++;
-                }
-                else
-                {
-                    cart.Add(new CartItem { Product = cartProduct, Quantity = 1 });
-                }
-                SessionHelper.SetObjectAsJson(HttpContext.Session, "cart", cart);
+                CartProduct cartProduct = await MapNorthwindToCartAsync(id.Value);
+                cart.Add(new CartItem { Product = cartProduct, Quantity = 1 });
             }
+            CartDAL.SetCart(HttpContext.Session, cart);
+ 
             return RedirectToAction("Index");
         }
 
         [Route("remove/{id}")]
         public IActionResult Remove(int id)
         {
-            List<CartItem> cart = SessionHelper.GetObjectFromJson<List<CartItem>>(HttpContext.Session, "cart");
+            List<CartItem> cart = CartDAL.GetCart(HttpContext.Session);
             int index = isExist(id);
             cart.RemoveAt(index);
-            SessionHelper.SetObjectAsJson(HttpContext.Session, "cart", cart);
+            CartDAL.SetCart(HttpContext.Session, cart);
             return RedirectToAction("Index");
+        }
+
+        [Route("checkout")]
+        public async Task<IActionResult> CheckoutAsync()
+        {          
+            var cart = CartDAL.GetCart(HttpContext.Session);
+            for (int i = 0; i < cart.Count; i++)
+            {
+                //retrieve Northwind
+                Product product = await _NorthwindDAL.GetProductAsync(cart[i].Product.Id);
+            }
+            //create order
+            Order order = new Order();
+            //order.
+            //_NorthwindDAL.AddOrder(order);
+            return View();
         }
 
         private int isExist(int id)
         {
-            List<CartItem> cart = SessionHelper.GetObjectFromJson<List<CartItem>>(HttpContext.Session, "cart");
+            List<CartItem> cart = CartDAL.GetCart(HttpContext.Session);
             for (int i = 0; i < cart.Count; i++)
             {
                 if (cart[i].Product.Id.Equals(id))
@@ -94,6 +93,18 @@ namespace MarketMvc.Controllers
                 }
             }
             return -1;
+        }
+
+        private async Task<CartProduct> MapNorthwindToCartAsync(int id)
+        {
+            Product product = await _NorthwindDAL.GetProductAsync(id);
+            CartProduct cartProduct = new CartProduct
+            {
+                Id = product.ProductID,
+                Name = product.ProductName,
+                Price = product.UnitPrice.Value
+            };
+            return cartProduct;
         }
     }
 }
