@@ -59,7 +59,7 @@ namespace MarketMvc.Controllers
             else
             {
                 List<CartItem> cart = SessionHelper.GetObjectFromJson<List<CartItem>>(HttpContext.Session, "cart");
-                int index = isExist(id.ToString());
+                int index = isExist(id.Value);
                 if (index != -1)
                 {
                     cart[index].Quantity++;
@@ -74,7 +74,7 @@ namespace MarketMvc.Controllers
         }
 
         [Route("remove/{id}")]
-        public IActionResult Remove(string id)
+        public IActionResult Remove(int id)
         {
             List<CartItem> cart = SessionHelper.GetObjectFromJson<List<CartItem>>(HttpContext.Session, "cart");
             int index = isExist(id);
@@ -83,7 +83,7 @@ namespace MarketMvc.Controllers
             return RedirectToAction("Index");
         }
 
-        private int isExist(string id)
+        private int isExist(int id)
         {
             List<CartItem> cart = SessionHelper.GetObjectFromJson<List<CartItem>>(HttpContext.Session, "cart");
             for (int i = 0; i < cart.Count; i++)

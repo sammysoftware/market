@@ -16,6 +16,8 @@
         <dd>@Model.UnitPrice.Value.ToString("C")</dd>
         <dt>Units In Stock</dt>
         <dd>@Model.UnitsInStock</dd>
+        <dt>Shopping Cart</dt>
+        <dd><a asp-controller="cart" asp-action="buy" asp-route-id="@Model.ProductID">Add to cart</a></dd>
     </dl>
 </div>
 
