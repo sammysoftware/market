@@ -127,9 +127,9 @@ namespace MarketMvc.DAL
         {
             IList<Employee> employees = null;
 
-            //employees = await _db.Employees.Where(e => e.Country == "USA").OrderBy(e => e.EmployeeID).ToListAsync();
-            employees = await _db.Employees.Include(e => e.EmployeeID).Include(e => e.FirstName)
-                .Where(c => c.Country == "USA").OrderBy(e => e.EmployeeID).ToListAsync();
+            employees = await _db.Employees.Where(e => e.Country == "USA").OrderBy(e => e.EmployeeID).ToListAsync();
+            //employees = await _db.Employees.Include(e => e.EmployeeID).Include(e => e.FirstName)
+            //    .Where(c => c.Country == "USA").OrderBy(e => e.EmployeeID).ToListAsync();
 
             return employees;
         }
@@ -138,8 +138,9 @@ namespace MarketMvc.DAL
         {
             IList<Shipper> shippers = null;
 
-            shippers = await _db.Shippers.Include(s => s.ShipperID).Include(s => s.ShipperName)
-                .OrderBy(s => s.ShipperName).ToListAsync();
+            //shippers = await _db.Shippers.Include(s => s.ShipperID).Include(s => s.ShipperName)
+            //    .OrderBy(s => s.ShipperName).ToListAsync();
+            shippers = await _db.Shippers.OrderBy(s => s.CompanyName).ToListAsync();
 
             return shippers;
         }

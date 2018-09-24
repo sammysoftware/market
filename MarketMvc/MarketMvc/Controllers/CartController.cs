@@ -86,9 +86,9 @@ namespace MarketMvc.Controllers
 
             CartCheckoutViewModel checkoutViewModel = new CartCheckoutViewModel
             {
-                Customers = await _NorthwindDAL.GetCustomersAsync()
-//                Employees = await _NorthwindDAL.GetEmployeessAsync(),
-//                Shippers = await _NorthwindDAL.GetShippersAsync()
+                Customers = await _NorthwindDAL.GetCustomersAsync(),
+                Employees = await _NorthwindDAL.GetEmployeessAsync(),
+                Shippers = await _NorthwindDAL.GetShippersAsync()
             };
             return View(checkoutViewModel);
         }

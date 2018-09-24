@@ -10,9 +10,9 @@ namespace MarketMvc.ViewModels
     {
         public string CustomerID { get; set; }
         public IEnumerable<Customer> Customers { get; set; }
-//        public Employee Employee { get; set; }
-//        public IEnumerable<Employee> Employees { get; set; }
-//        public int ShipperID { get; set; }
-//        public IEnumerable<Shipper> Shippers { get; set; }
+        public int EmployeeID { get; set; }
+        public IEnumerable<Employee> Employees { get; set; }
+        public int ShipperID { get; set; }
+        public IEnumerable<Shipper> Shippers { get; set; }
     }
 }
