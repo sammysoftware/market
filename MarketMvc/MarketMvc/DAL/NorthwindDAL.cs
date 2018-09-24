@@ -19,7 +19,10 @@ namespace MarketMvc.DAL
 
         const string CategoryKey = "_Categories";
         const string ProductsKey = "_Products";
-        const string ProductIDKey = "_ProductID";
+        //const string CustomersKey = "_Customers";
+        //const string EmployeesKey = "_Employees";
+        //const string ShippersKey = "_Shippers";
+        //const string ProductIDKey = "_ProductID";
 
         public NorthwindDAL(NorthwindDbContext injectedContext, IMemoryCache memoryCache, ILogger<HomeController> logger)
         {
@@ -107,6 +110,38 @@ namespace MarketMvc.DAL
               p => p.Supplier).Where(p => p.UnitPrice > price).OrderBy(p => p.ProductName).ToArrayAsync();
 
             return products;
+        }
+
+        public async Task<IList<Customer>> GetCustomersAsync()
+        {
+            IList<Customer> customers = null;
+
+            customers = await _db.Customers.Where(c => c.Country == "USA").OrderBy(c => c.CompanyName).ToListAsync();
+            //customers = await _db.Customers.Include(c => c.CustomerID).Include(c => c.CompanyName)
+            //    .Where(c => c.Country == "USA").OrderBy(c => c.CompanyName).ToListAsync();
+
+            return customers;
+        }
+
+        public async Task<IList<Employee>> GetEmployeessAsync()
+        {
+            IList<Employee> employees = null;
+
+            //employees = await _db.Employees.Where(e => e.Country == "USA").OrderBy(e => e.EmployeeID).ToListAsync();
+            employees = await _db.Employees.Include(e => e.EmployeeID).Include(e => e.FirstName)
+                .Where(c => c.Country == "USA").OrderBy(e => e.EmployeeID).ToListAsync();
+
+            return employees;
+        }
+
+        public async Task<IList<Shipper>> GetShippersAsync()
+        {
+            IList<Shipper> shippers = null;
+
+            shippers = await _db.Shippers.Include(s => s.ShipperID).Include(s => s.ShipperName)
+                .OrderBy(s => s.ShipperName).ToListAsync();
+
+            return shippers;
         }
 
         public void AddOrder(Order order)

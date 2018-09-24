@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Caching.Memory;  //IMemoryCache
 using MarketMvc.Models;
+using MarketMvc.ViewModels;
 using MarketMvc.DAL;
 using NorthwindEntitiesLib;
 
@@ -67,19 +68,29 @@ namespace MarketMvc.Controllers
         }
 
         [Route("checkout")]
-        public async Task<IActionResult> CheckoutAsync()
-        {          
-            var cart = CartDAL.GetCart(HttpContext.Session);
-            for (int i = 0; i < cart.Count; i++)
-            {
-                //retrieve Northwind
-                Product product = await _NorthwindDAL.GetProductAsync(cart[i].Product.Id);
-            }
+        public async Task<IActionResult> Checkout()
+        {
+            // retrieve customer, employee, and shipper options
+            /*            
+                        var cart = CartDAL.GetCart(HttpContext.Session);
+                        for (int i = 0; i < cart.Count; i++)
+                        {
+                            //retrieve Northwind
+                            Product product = await _NorthwindDAL.GetProductAsync(cart[i].Product.Id);
+                        }
+            */
             //create order
-            Order order = new Order();
+            //Order order = new Order();
             //order.
             //_NorthwindDAL.AddOrder(order);
-            return View();
+
+            CartCheckoutViewModel checkoutViewModel = new CartCheckoutViewModel
+            {
+                Customers = await _NorthwindDAL.GetCustomersAsync()
+//                Employees = await _NorthwindDAL.GetEmployeessAsync(),
+//                Shippers = await _NorthwindDAL.GetShippersAsync()
+            };
+            return View(checkoutViewModel);
         }
 
         private int isExist(int id)
