@@ -145,9 +145,20 @@ namespace MarketMvc.DAL
             return shippers;
         }
 
-        public void AddOrder(Order order)
+        public int? AddOrder(Order order)
         {
+            int? orderID = null;
+
             _db.Orders.Add(order);
+            _db.SaveChanges();
+            orderID = order.OrderID;
+
+            return orderID;
+        }
+
+        public void AddOrderDetail(OrderDetail orderDetail)
+        {
+            _db.OrderDetails.Add(orderDetail);
 
             return;
         }

@@ -1,0 +1,17 @@
+﻿@model MarketMvc.ViewModels.CartReceiptViewModel
+@{
+    ViewData["Title"] = "Receipt";
+}
+
+<h2>Receipt</h2>
+<div>
+    <p>
+        Order received at @Model.OrderDate.
+    </p>
+    <p>
+        Your Order ID is @Model.OrderID.
+    </p>
+</div>
+<div>
+    <a asp-controller="home" asp-action="index">Continue Shopping</a>
+</div>

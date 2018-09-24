@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authorization;   //[Authorize]
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Caching.Memory;  //IMemoryCache
@@ -67,23 +68,10 @@ namespace MarketMvc.Controllers
             return RedirectToAction("Index");
         }
 
+        [Authorize]
         [Route("checkout")]
         public async Task<IActionResult> Checkout()
         {
-            // retrieve customer, employee, and shipper options
-            /*            
-                        var cart = CartDAL.GetCart(HttpContext.Session);
-                        for (int i = 0; i < cart.Count; i++)
-                        {
-                            //retrieve Northwind
-                            Product product = await _NorthwindDAL.GetProductAsync(cart[i].Product.Id);
-                        }
-            */
-            //create order
-            //Order order = new Order();
-            //order.
-            //_NorthwindDAL.AddOrder(order);
-
             CartCheckoutViewModel checkoutViewModel = new CartCheckoutViewModel
             {
                 Customers = await _NorthwindDAL.GetCustomersAsync(),
@@ -91,6 +79,52 @@ namespace MarketMvc.Controllers
                 Shippers = await _NorthwindDAL.GetShippersAsync()
             };
             return View(checkoutViewModel);
+        }
+
+        [Authorize]
+        [Route("receipt")]
+        public IActionResult Receipt(CartCheckoutViewModel cartCheckout)
+        {
+            //int employeeID = cartCheckout.EmployeeID;
+            //int shipperID = cartCheckout.ShipperID;
+            //string customerID = cartCheckout.CustomerID;
+
+            //create order
+            DateTime orderDate = DateTime.Now;
+            Order order = new Order();
+            var cart = CartDAL.GetCart(HttpContext.Session);
+
+            order.CustomerID = cartCheckout.CustomerID;
+            order.EmployeeID = cartCheckout.EmployeeID;
+            order.Freight = 10 + (cart.Count * 1);
+            order.OrderDate = orderDate;
+            order.RequiredDate = DateTime.Now.AddDays(7);
+            order.ShippedDate = DateTime.Now.AddDays(5);
+            order.ShipVia = cartCheckout.ShipperID;
+            
+            int orderID = _NorthwindDAL.AddOrder(order).Value;
+       
+            for (int i = 0; i < cart.Count; i++)
+            {
+                OrderDetail orderDetail = new OrderDetail();
+                orderDetail.Discount = 0;
+                orderDetail.OrderID = orderID;
+                orderDetail.ProductID = cart[i].Product.Id;
+                orderDetail.Quantity = cart[i].Quantity;
+                orderDetail.UnitPrice = cart[i].Product.Price;
+                _NorthwindDAL.AddOrderDetail(orderDetail);
+            }
+
+            CartReceiptViewModel receipt = new CartReceiptViewModel
+            {
+                OrderID = orderID,
+                OrderDate = orderDate
+            };
+
+            //clear cart
+            CartDAL.SetCart(HttpContext.Session, null);
+
+            return View(receipt);
         }
 
         private int isExist(int id)

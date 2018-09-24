@@ -8,6 +8,6 @@ namespace MarketMvc.Models
     public class CartItem
     {
         public CartProduct Product { get; set; }
-        public int Quantity { get; set; }
+        public short Quantity { get; set; }
     }
 }
