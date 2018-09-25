@@ -159,6 +159,7 @@ namespace MarketMvc.DAL
         public void AddOrderDetail(OrderDetail orderDetail)
         {
             _db.OrderDetails.Add(orderDetail);
+            _db.SaveChanges();
 
             return;
         }

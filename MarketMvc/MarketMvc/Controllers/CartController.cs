@@ -101,7 +101,14 @@ namespace MarketMvc.Controllers
             order.RequiredDate = DateTime.Now.AddDays(7);
             order.ShippedDate = DateTime.Now.AddDays(5);
             order.ShipVia = cartCheckout.ShipperID;
-            
+
+            order.ShipName = cartCheckout.Name;
+            order.ShipAddress = cartCheckout.Address;
+            order.ShipCity = cartCheckout.City;
+            order.ShipRegion = cartCheckout.State;
+            order.ShipPostalCode = cartCheckout.PostalCode;
+            order.ShipCountry = "USA";
+
             int orderID = _NorthwindDAL.AddOrder(order).Value;
        
             for (int i = 0; i < cart.Count; i++)
