@@ -1,8 +1,37 @@
-﻿@{
+﻿@model MarketMvc.Models.AdminIndexViewModel
+@{
     ViewData["Title"] = "Admin";
 }
 
-<h2>Admin</h2>
+<h1>Admin</h1>
+<h2>Orders not shipped</h2>
+<table class="table">
+    <tr>
+        <th>Order ID</th>
+        <th>Order Date</th>
+        <th>Required Date</th>
+        <th>Name</th>
+        <th>Address</th>
+        <th>City</th>
+        <th>State</th>
+        <th>Freight</th>
+        <th>Action</th>
+    </tr>
+    @foreach (var order in Model.NewOrders)
+    {
+    <tr>
+        <td>@order.OrderID</td>
+        <td>@order.OrderDate</td>
+        <td>@order.RequiredDate</td>
+        <td>@order.ShipName</td>
+        <td>@order.ShipAddress</td>
+        <td>@order.ShipCity</td>
+        <td>@order.ShipRegion</td>
+        <td>$@order.Freight</td>
+        <td><a asp-controller="Admin" asp-action="details" asp-route-id="@order.OrderID">Details</a></td>
+    </tr>
+    }
+</table>
 
 <div>
     <a asp-controller="cart" asp-action="checkout">Checkout</a>

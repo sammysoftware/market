@@ -99,7 +99,7 @@ namespace MarketMvc.Controllers
             order.Freight = 10 + (cart.Count * 1);
             order.OrderDate = orderDate;
             order.RequiredDate = DateTime.Now.AddDays(7);
-            order.ShippedDate = DateTime.Now.AddDays(5);
+            //order.ShippedDate = DateTime.Now.AddDays(5);// filled out in Admin section
             order.ShipVia = cartCheckout.ShipperID;
 
             order.ShipName = cartCheckout.Name;

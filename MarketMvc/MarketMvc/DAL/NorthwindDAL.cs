@@ -163,5 +163,15 @@ namespace MarketMvc.DAL
 
             return;
         }
+
+        public async Task<Order[]> GetNewOrders()
+        {
+            Order[] orders = null;
+
+            orders = await _db.Orders.Where(o => o.ShippedDate == null && (o.ShipCountry == "USA"))
+                .OrderBy(o => o.OrderDate).ToArrayAsync();
+
+            return orders;
+        }
     }
 }

@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Caching.Memory;  //IMemoryCache
 using MarketMvc.DAL;
+using MarketMvc.Models;
 using NorthwindEntitiesLib;
 
 namespace MarketMvc.Controllers
@@ -23,9 +24,13 @@ namespace MarketMvc.Controllers
         }
 
         [Authorize]
-        public IActionResult Index()
+        public async Task<IActionResult> Index()
         {
-            return View();
+            var model = new AdminIndexViewModel
+            {
+                NewOrders = await _NorthwindDAL.GetNewOrders()
+            };
+            return View(model);
         }
     }
 }
