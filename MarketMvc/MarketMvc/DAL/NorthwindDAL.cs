@@ -123,6 +123,15 @@ namespace MarketMvc.DAL
             return customers;
         }
 
+        public Customer GetCustomer(string id)
+        {
+            Customer customer = null;
+
+            customer = _db.Customers.SingleOrDefault(c => c.CustomerID == id);
+
+            return customer;
+        }
+
         public async Task<IList<Employee>> GetEmployeessAsync()
         {
             IList<Employee> employees = null;
