@@ -115,7 +115,7 @@ namespace MarketMvc.Controllers
             for (int i = 0; i < cart.Count; i++)
             {
                 OrderDetail orderDetail = new OrderDetail();
-                orderDetail.Discount = 0;
+//                orderDetail.Discount = 0;
                 orderDetail.OrderID = orderID;
                 orderDetail.ProductID = cart[i].Product.Id;
                 orderDetail.Quantity = cart[i].Quantity;

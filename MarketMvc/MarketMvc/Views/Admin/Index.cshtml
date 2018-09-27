@@ -28,7 +28,7 @@
         <td>@order.ShipCity</td>
         <td>@order.ShipRegion</td>
         <td>$@order.Freight</td>
-        <td><a asp-controller="Admin" asp-action="details" asp-route-id="@order.OrderID">Details</a></td>
+        <td><a asp-controller="admin" asp-action="order" asp-route-id="@order.OrderID">Details</a></td>
     </tr>
     }
 </table>

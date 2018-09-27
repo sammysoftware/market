@@ -1,0 +1,50 @@
+﻿@model MarketMvc.ViewModels.AdminOrderViewModel
+@{
+    ViewData["Title"] = "Order";
+}
+
+<h2>Order @Model.Order.OrderID</h2>
+<h3>Shipping Address</h3>
+<div>
+    <p>
+        Name: @Model.Order.ShipName
+    </p>
+    <p>
+        Address: @Model.Order.ShipAddress
+    </p>
+    <p>
+        City: @Model.Order.ShipCity
+    </p>
+    <p>
+        State: @Model.Order.ShipRegion
+    </p>
+    <p>
+        Postal Code: @Model.Order.ShipPostalCode
+    </p>
+</div>
+<h3>Shipping Manifest</h3>
+<table class="table">
+    <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Price</th>
+        <th>Quantity</th>
+        <th>Sub Total</th>
+    </tr>
+    @foreach (var item in Model.OrderDetails)
+    {
+        <tr>
+            <td>@item.ProductID</td>
+            <td>@item.Quantity</td>
+            <td>$@item.UnitPrice</td>
+            <td>@item.Quantity</td>
+            <td>$@(item.UnitPrice * item.Quantity)</td>
+        </tr>
+    }
+</table>
+<div>
+    <a asp-controller="admin" asp-action="ship" asp-route-id="@Model.Order.OrderID">Ship</a>
+</div>
+<div>
+    <a asp-controller="admin" asp-action="index">New Orders</a>
+</div>

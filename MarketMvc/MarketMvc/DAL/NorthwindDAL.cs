@@ -182,5 +182,33 @@ namespace MarketMvc.DAL
 
             return orders;
         }
+
+        public Order GetOrder(int orderID)
+        {
+            Order order = null;
+
+            order = _db.Orders.SingleOrDefault(o => o.OrderID == orderID);
+
+            return order;
+        }
+
+        public OrderDetail[] GetOrderDetails(int orderID)
+        {
+            OrderDetail[] orderDetails = null;
+
+            orderDetails = _db.OrderDetails.Where(od => od.OrderID == orderID)
+                .OrderBy(od => od.ProductID).ToArray();
+
+            return orderDetails;
+        }
+
+        public void SetOrderShipDate(int orderID, DateTime shipdt)
+        {
+            Order order = GetOrder(orderID);
+            order.ShippedDate = shipdt;
+            _db.Orders.Update(order);
+            _db.SaveChanges();
+            return;
+        }
     }
 }

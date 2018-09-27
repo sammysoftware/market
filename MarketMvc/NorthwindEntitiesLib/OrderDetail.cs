@@ -12,6 +12,6 @@ namespace NorthwindEntitiesLib
 //        public Product Product { get; set; }
         public decimal UnitPrice { get; set; } = 0;
         public short Quantity { get; set; } = 1;
-        public double Discount { get; set; } = 0;
+//        public double Discount { get; set; } = 0;
     }
 }
