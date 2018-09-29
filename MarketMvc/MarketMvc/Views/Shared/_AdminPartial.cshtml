@@ -6,5 +6,9 @@
 @if (User.Identity.IsAuthenticated)//if user is authenticated
 {
     <li><a asp-area="" asp-controller="cart" asp-action="Index">Shopping Cart</a></li>
-    <li><a asp-area="" asp-controller="Admin" asp-action="Index">Admin</a></li>
+
+    @if (User.IsInRole("Admin"))
+    {
+        <li><a asp-area="" asp-controller="Admin" asp-action="Index">Admin</a></li>
+    }
 }

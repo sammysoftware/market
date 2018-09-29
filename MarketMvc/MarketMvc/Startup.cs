@@ -41,6 +41,27 @@ namespace MarketMvc
                 .AddEntityFrameworkStores<ApplicationDbContext>()
                 .AddDefaultTokenProviders();
 
+            //Password Strength Setting
+/*
+            services.Configure<IdentityOptions>(options =>
+            {
+                // Password settings
+                options.Password.RequireDigit = true;
+                options.Password.RequiredLength = 8;
+                options.Password.RequireNonAlphanumeric = false;
+                options.Password.RequireUppercase = true;
+                options.Password.RequireLowercase = false;
+                options.Password.RequiredUniqueChars = 6;
+
+                // Lockout settings
+                options.Lockout.DefaultLockoutTimeSpan = TimeSpan.FromMinutes(30);
+                options.Lockout.MaxFailedAccessAttempts = 10;
+                options.Lockout.AllowedForNewUsers = true;
+
+                // User settings
+                options.User.RequireUniqueEmail = true;
+            });
+*/
             // Add application services.
             services.AddTransient<IEmailSender, EmailSender>();
 
@@ -49,7 +70,7 @@ namespace MarketMvc
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, IHostingEnvironment env)
+        public void Configure(IApplicationBuilder app, IHostingEnvironment env, IServiceProvider services)
         {
             // Order matters:
             // 1 Exception Handling
@@ -79,6 +100,30 @@ namespace MarketMvc
                     name: "default",
                     template: "{controller=Home}/{action=Index}/{id?}");
             });
+
+            CreateUserRoles(services).Wait();
         }
+
+
+        private async Task CreateUserRoles(IServiceProvider serviceProvider)
+        {
+            var RoleManager = serviceProvider.GetRequiredService<RoleManager<IdentityRole>>();
+            var UserManager = serviceProvider.GetRequiredService<UserManager<ApplicationUser>>();
+
+            IdentityResult roleResult;
+            //Adding Admin Role
+            var roleCheck = await RoleManager.RoleExistsAsync("Admin");
+            if (!roleCheck)
+            {
+                //create the roles and seed them to the database (AspNetRoles)
+                roleResult = await RoleManager.CreateAsync(new IdentityRole("Admin"));
+
+                //Assign Admin role to me (AspNetUserRoles) 
+                ApplicationUser user = await UserManager.FindByEmailAsync("rching@sammysoftware.com");
+                var User = new ApplicationUser();
+                await UserManager.AddToRoleAsync(user, "Admin");
+            }
+        }
+
     }
 }

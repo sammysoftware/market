@@ -25,7 +25,7 @@ namespace MarketMvc.Controllers
             _NorthwindDAL = new NorthwindDAL(northwindCtx, memoryCache, _logger);
         }
 
-        [Authorize]
+        [Authorize(Roles="Admin")]
         [Route("index")]
         public async Task<IActionResult> Index()
         {
@@ -36,7 +36,7 @@ namespace MarketMvc.Controllers
             return View(model);
         }
 
-        [Authorize]
+        [Authorize(Roles = "Admin")]
         [Route("order/{id}")]
         public IActionResult Order(int id)
         {
@@ -48,7 +48,7 @@ namespace MarketMvc.Controllers
             return View(model);
         }
 
-        [Authorize]
+        [Authorize(Roles = "Admin")]
         [Route("ship/{id}")]
         public IActionResult Ship(int id)
         {
