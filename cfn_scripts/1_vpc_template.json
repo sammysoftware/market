@@ -42,7 +42,18 @@
         "VpcId" : { "Ref" : "VPC" },
         "CidrBlock" : "10.20.10.0/24",
         "Tags" : [
-          {"Key" : "Application", "Value" : { "Ref" : "AWS::StackName"} },
+          {
+            "Key": "Name",
+            "Value": {
+              "Fn::Join": [
+                "-",
+                [
+                  { "Ref": "AWS::StackName" },
+                  "Public Subnet"
+                ]
+              ]
+            } 
+          },
           {"Key" : "Network", "Value" : "Public" }
         ]
       }
@@ -171,9 +182,23 @@
         "AvailabilityZone" : "us-west-2a",
         "VpcId" : { "Ref" : "VPC" },
         "CidrBlock" : "10.20.30.0/24",
-        "Tags" : [
-          {"Key" : "Application", "Value" : { "Ref" : "AWS::StackName"} },
-          {"Key" : "Network", "Value" : "Private" }
+        "Tags": [
+          {
+            "Key": "Name",
+            "Value": {
+              "Fn::Join": [
+                "-",
+                [
+                  { "Ref": "AWS::StackName" },
+                  "Private Subnet"
+                ]
+              ]
+            }
+          },
+          {
+            "Key": "Network",
+            "Value": "Private"
+          }
         ]
       }
     },

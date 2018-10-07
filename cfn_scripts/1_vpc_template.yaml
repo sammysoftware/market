@@ -28,8 +28,11 @@ Resources:
       VpcId: !Ref VPC
       CidrBlock: 10.20.10.0/24
       Tags:
-        - Key: Application
-          Value: !Ref 'AWS::StackName'
+        - Key: Name
+          Value: !Join 
+            - '-'
+            - - !Ref 'AWS::StackName'
+              - Public Subnet
         - Key: Network
           Value: Public
   InternetGateway:
@@ -134,8 +137,11 @@ Resources:
       VpcId: !Ref VPC
       CidrBlock: 10.20.30.0/24
       Tags:
-        - Key: Application
-          Value: !Ref 'AWS::StackName'
+        - Key: Name
+          Value: !Join 
+            - '-'
+            - - !Ref 'AWS::StackName'
+              - Private Subnet
         - Key: Network
           Value: Private
   PrivateRouteTable:
