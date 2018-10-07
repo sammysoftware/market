@@ -240,11 +240,18 @@
         "SubnetId" : { "Ref" : "PrivateSubnet" },
         "NetworkAclId" : { "Ref" : "PrivateNetworkAcl" }
       }
-    },
+    }
 
+  },
+ 
   "Outputs" : {
-    "VPC-ID" : {
-      "Value" : { "Ref" : "VPC" }
+    "VPCID" : {
+      "Description" : "VPC ID",
+      "Value" : { "Ref" : "VPC" },
+      "Export" : {
+        "Name" : "VPCID"
+      }
     }
   }
+
 }
