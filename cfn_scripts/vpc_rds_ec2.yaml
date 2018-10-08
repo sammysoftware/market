@@ -7,7 +7,7 @@ Resources:
       TimeoutInMinutes: '60'
 Outputs:
   VpcStackRef:
-    Value: !Ref VPCstack
+    Value: !Ref VpcStack
   VpcStackVpcId:
     Value: !GetAtt VpcStack.Outputs.VPCID
   VpcStackPublicSubnet:
