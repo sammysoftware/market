@@ -28,7 +28,7 @@ Resources:
       VpcId: !Ref VPC
       CidrBlock: 10.20.10.0/24
       Tags:
-        - Key: Name
+        - Key: Application
           Value: !Join 
             - '-'
             - - !Ref 'AWS::StackName'
@@ -137,7 +137,7 @@ Resources:
       VpcId: !Ref VPC
       CidrBlock: 10.20.30.0/24
       Tags:
-        - Key: Name
+        - Key: Application
           Value: !Join 
             - '-'
             - - !Ref 'AWS::StackName'
@@ -200,5 +200,9 @@ Outputs:
   VPCID:
     Description: VPC ID
     Value: !Ref VPC
-    Export:
-      Name: VPCID
+  PublicSubnetID:
+    Description: Public Subnet
+    Value: !Ref PublicSubnet
+  PrivateSubnetID:
+    Description: Private Subnet
+    Value: !Ref PrivateSubnet
