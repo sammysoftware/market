@@ -82,8 +82,7 @@ Resources:
   SQLDatabase:
     Type: 'AWS::RDS::DBInstance'
     Properties:
-      VPCSecurityGroups:
-        Ref: VPCSecurityGroup
+      VPCSecurityGroups: { "Fn::Split" : [ ",", { "Ref":"VPCSecurityGroup" } ] }
       DBInstanceIdentifier:
         Ref: SqlServerInstanceName
       LicenseModel: license-included
