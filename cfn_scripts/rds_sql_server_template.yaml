@@ -85,7 +85,7 @@ Resources:
         Ref: SqlServerInstanceName
       LicenseModel: license-included
       Engine: sqlserver-ex
-      EngineVersion: 2017 14.00.3035.2.v1
+      EngineVersion: 14.00.1000.169
       MultiAZ: false
       DBInstanceClass: db.t2.micro
       AllocatedStorage: '20'
