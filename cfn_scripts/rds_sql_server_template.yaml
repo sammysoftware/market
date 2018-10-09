@@ -24,6 +24,16 @@ Parameters:
     MinLength: '8'
     NoEcho: 'true'
     Type: String
+  VPCSecurityGroup:
+    Description: The VPC Security Group.
+    MaxLength: '256'
+    MinLength: '9'
+    Type: String
+  DBSubnetGroup:
+    Description: DB Subnet Group in RDS.
+    MaxLength: '256'
+    MinLength: '9'
+    Type: String
 Metadata:
   'AWS::CloudFormation::Interface':
     ParameterGroups:
@@ -33,6 +43,8 @@ Metadata:
           - SqlServerInstanceName
           - DatabaseUsername
           - DatabasePassword
+          - VPCSecurityGroup
+          - DBSubnetGroup
         ParameterLabels:
           SqlServerInstanceName:
             default: Instance name
@@ -40,6 +52,10 @@ Metadata:
             default: Master user name
           DatabasePassword:
             default: Password
+          VPCSecurityGroup:
+            default: VPC Security Group
+          DBSubnetGroup:
+            default: DB Subnet Group
   'AWS::CloudFormation::Designer':
     cd86009b-a0f4-4640-b60d-37cf9b3d234b:
       size:
@@ -62,25 +78,13 @@ Metadata:
       dependson:
         - cd86009b-a0f4-4640-b60d-37cf9b3d234b
 Resources:
-  SQLServerSecurityGroup:
-    Type: 'AWS::EC2::SecurityGroup'
-    Properties:
-      GroupDescription: SQL Server Security Group
-      SecurityGroupIngress:
-        - IpProtocol: tcp
-          FromPort: '1433'
-          ToPort: '1433'
-          CidrIp: 0.0.0.0/0
-    Metadata:
-      'AWS::CloudFormation::Designer':
-        id: cd86009b-a0f4-4640-b60d-37cf9b3d234b
   SQLDatabase:
     Type: 'AWS::RDS::DBInstance'
     Properties:
-      VPCSecurityGroups:
-        - 'Fn::GetAtt':
-            - SQLServerSecurityGroup
-            - GroupId
+      DBSubnetGroupName: 
+        - Ref: DBSubnetGroup
+      VPCSecurityGroups: 
+        - Ref: VPCSecurityGroup
       DBInstanceIdentifier:
         Ref: SqlServerInstanceName
       LicenseModel: license-included
@@ -100,7 +104,6 @@ Resources:
         - Key: project
           Value: development unittest
       BackupRetentionPeriod: '1'
-    DependsOn: SQLServerSecurityGroup
     Metadata:
       'AWS::CloudFormation::Designer':
         id: 4829fee3-0052-4699-9ea2-4e73eaaa79db
