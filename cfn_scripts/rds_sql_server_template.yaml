@@ -24,6 +24,11 @@ Parameters:
     MinLength: '8'
     NoEcho: 'true'
     Type: String
+  VPCSecurityGroup:
+    Description: The VPC Security Group.
+    MaxLength: '256'
+    MinLength: '9'
+    Type: String
 Metadata:
   'AWS::CloudFormation::Interface':
     ParameterGroups:
@@ -78,9 +83,7 @@ Resources:
     Type: 'AWS::RDS::DBInstance'
     Properties:
       VPCSecurityGroups:
-        - 'Fn::GetAtt':
-            - SQLServerSecurityGroup
-            - GroupId
+        Ref: VPCSecurityGroup
       DBInstanceIdentifier:
         Ref: SqlServerInstanceName
       LicenseModel: license-included
