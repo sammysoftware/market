@@ -3,7 +3,7 @@ Resources:
   VpcStack:
     Type: AWS::CloudFormation::Stack
     Properties:
-      TemplateURL: https://s3-us-west-2.amazonaws.com/sammysoftware/1_vpc_template.yaml
+      TemplateURL: https://s3-us-west-2.amazonaws.com/sammysoftware/vpc_template.yaml
       TimeoutInMinutes: '60'
 Outputs:
   VpcStackRef:
@@ -11,6 +11,6 @@ Outputs:
   VpcStackVpcId:
     Value: !GetAtt VpcStack.Outputs.VPCID
   VpcStackPublicSubnet:
-    Value: !GetAtt VpcStack.Outputs.PublicSubnetID
-  VpcStackPrivateSubnet:
-    Value: !GetAtt VpcStack.Outputs.PrivateSubnetID
+    Value: !GetAtt VpcStack.Outputs.PublicSubnet1ID
+  VpcStackDBSubnetGroup:
+    Value: !GetAtt VpcStack.Outputs.DBSubnetGroupID
