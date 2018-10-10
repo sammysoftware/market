@@ -210,15 +210,15 @@ Resources:
     Properties:
       SubnetId: !Ref PrivateSubnet1
       NetworkAclId: !Ref PrivateNetworkAcl
-  DBSubnetGroup:
-    Type: 'AWS::RDS::DBSubnetGroup'
-    Properties:
-      DBSubnetGroupDescription: DB Subnet Group
-      SubnetIds:
-        - !Ref PrivateSubnet1
-      Tags:
-        - Key: Name
-          Value: !Ref 'AWS::StackName'
+#  DBSubnetGroup:
+#    Type: 'AWS::RDS::DBSubnetGroup'
+#    Properties:
+#      DBSubnetGroupDescription: DB Subnet Group
+#      SubnetIds:
+#        - !Ref PrivateSubnet1
+#      Tags:
+#        - Key: Name
+#          Value: !Ref 'AWS::StackName'
 Outputs:
   VPCID:
     Description: VPC ID
@@ -229,6 +229,6 @@ Outputs:
   PrivateSubnetID:
     Description: Private Subnet 1
     Value: !Ref PrivateSubnet1
-  DBSubnetGroupID:
-    Description: DB Subnet Group
-    Value: !Ref DBSubnetGroup
+#  DBSubnetGroupID:
+#    Description: DB Subnet Group
+#    Value: !Ref DBSubnetGroup
