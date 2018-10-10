@@ -28,6 +28,12 @@ Resources:
           ToPort: '80'
           CidrIp: 0.0.0.0/0
       VpcId: !Ref VPC
+      Tags:
+        - Key: Name
+          Value: !Join 
+            - '-'
+            - - !Ref 'AWS::StackName'
+              - WS Security Group
   DBSecurityGroup:
     Type: 'AWS::EC2::SecurityGroup'
     Properties:
@@ -38,6 +44,12 @@ Resources:
           ToPort: '1433'
           CidrIp: 0.0.0.0/0
       VpcId: !Ref VPC
+      Tags:
+        - Key: Name
+          Value: !Join 
+            - '-'
+            - - !Ref 'AWS::StackName'
+              - DB Security Group
   PublicSubnet1:
     Type: 'AWS::EC2::Subnet'
     Properties:
