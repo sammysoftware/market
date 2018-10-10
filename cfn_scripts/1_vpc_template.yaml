@@ -11,17 +11,31 @@ Resources:
           Value: !Ref 'AWS::StackName'
         - Key: Network
           Value: Public
-  VPCSecurityGroup:
+  WSSecurityGroup:
     Type: 'AWS::EC2::SecurityGroup'
     Properties:
-      GroupDescription: Enable SSH access via port 22
+      GroupDescription: Web Server Security Group.
       SecurityGroupIngress:
         - IpProtocol: tcp
           FromPort: '22'
           ToPort: '22'
           CidrIp: 0.0.0.0/0
+        - IpProtocol: tcp
+          FromPort: '80'
+          ToPort: '80'
+          CidrIp: 0.0.0.0/0
       VpcId: !Ref VPC
-  PublicSubnet:
+  DBSecurityGroup:
+    Type: 'AWS::EC2::SecurityGroup'
+    Properties:
+      GroupDescription: SQL Server Security Group.
+      SecurityGroupIngress:
+        - IpProtocol: tcp
+          FromPort: '1433'
+          ToPort: '1433'
+          CidrIp: 0.0.0.0/0
+      VpcId: !Ref VPC
+  PublicSubnet1:
     Type: 'AWS::EC2::Subnet'
     Properties:
       AvailabilityZone: us-west-2a
@@ -66,7 +80,7 @@ Resources:
   PublicSubnetRouteTableAssociation:
     Type: 'AWS::EC2::SubnetRouteTableAssociation'
     Properties:
-      SubnetId: !Ref PublicSubnet
+      SubnetId: !Ref PublicSubnet1
       RouteTableId: !Ref PublicRouteTable
   PublicNetworkAcl:
     Type: 'AWS::EC2::NetworkAcl'
@@ -128,9 +142,9 @@ Resources:
   PublicSubnetNetworkAclAssociation:
     Type: 'AWS::EC2::SubnetNetworkAclAssociation'
     Properties:
-      SubnetId: !Ref PublicSubnet
+      SubnetId: !Ref PublicSubnet1
       NetworkAclId: !Ref PublicNetworkAcl
-  PrivateSubnet:
+  PrivateSubnet1:
     Type: 'AWS::EC2::Subnet'
     Properties:
       AvailabilityZone: us-west-2a
@@ -156,7 +170,7 @@ Resources:
   PrivateSubnetRouteTableAssociation:
     Type: 'AWS::EC2::SubnetRouteTableAssociation'
     Properties:
-      SubnetId: !Ref PrivateSubnet
+      SubnetId: !Ref PrivateSubnet1
       RouteTableId: !Ref PrivateRouteTable
   PrivateNetworkAcl:
     Type: 'AWS::EC2::NetworkAcl'
@@ -194,14 +208,14 @@ Resources:
   PrivateSubnetNetworkAclAssociation:
     Type: 'AWS::EC2::SubnetNetworkAclAssociation'
     Properties:
-      SubnetId: !Ref PrivateSubnet
+      SubnetId: !Ref PrivateSubnet1
       NetworkAclId: !Ref PrivateNetworkAcl
   DBSubnetGroup:
     Type: 'AWS::RDS::DBSubnetGroup'
     Properties:
       DBSubnetGroupDescription: DB Subnet Group
       SubnetIds:
-        - !Ref PrivateSubnet
+        - !Ref PrivateSubnet1
       Tags:
         - Key: Name
           Value: !Ref 'AWS::StackName'
@@ -209,12 +223,12 @@ Outputs:
   VPCID:
     Description: VPC ID
     Value: !Ref VPC
-  PublicSubnetID:
-    Description: Public Subnet
-    Value: !Ref PublicSubnet
+  PublicSubnet1ID:
+    Description: Public Subnet 1
+    Value: !Ref PublicSubnet1
   PrivateSubnetID:
-    Description: Private Subnet
-    Value: !Ref PrivateSubnet
+    Description: Private Subnet 1
+    Value: !Ref PrivateSubnet1
   DBSubnetGroupID:
     Description: DB Subnet Group
     Value: !Ref DBSubnetGroup
