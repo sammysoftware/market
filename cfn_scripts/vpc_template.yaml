@@ -8,7 +8,10 @@ Resources:
       CidrBlock: 10.20.0.0/16
       Tags:
         - Key: Name
-          Value: !Ref 'AWS::StackName'
+          Value: !Join 
+            - '-'
+            - - !Ref 'AWS::StackName'
+              - VPC
         - Key: Network
           Value: Public
   WSSecurityGroup:
@@ -46,7 +49,7 @@ Resources:
           Value: !Join 
             - '-'
             - - !Ref 'AWS::StackName'
-              - Public Subnet
+              - Public Subnet 1
         - Key: Network
           Value: Public
   InternetGateway:
@@ -54,7 +57,10 @@ Resources:
     Properties:
       Tags:
         - Key: Name
-          Value: !Ref 'AWS::StackName'
+          Value: !Join 
+            - '-'
+            - - !Ref 'AWS::StackName'
+              - Internet Gateway
         - Key: Network
           Value: Public
   AttachGateway:
@@ -68,7 +74,10 @@ Resources:
       VpcId: !Ref VPC
       Tags:
         - Key: Name
-          Value: !Ref 'AWS::StackName'
+          Value: !Join 
+            - '-'
+            - - !Ref 'AWS::StackName'
+              - Public Route Table
         - Key: Network
           Value: Public
   PublicRoute:
@@ -88,7 +97,10 @@ Resources:
       VpcId: !Ref VPC
       Tags:
         - Key: Name
-          Value: !Ref 'AWS::StackName'
+          Value: !Join 
+            - '-'
+            - - !Ref 'AWS::StackName'
+              - Public Network ACL
         - Key: Network
           Value: Public
   InboundHTTPPublicNetworkAclEntry:
@@ -155,7 +167,21 @@ Resources:
           Value: !Join 
             - '-'
             - - !Ref 'AWS::StackName'
-              - Private Subnet
+              - Private Subnet 1
+        - Key: Network
+          Value: Private
+  PrivateSubnet2:
+    Type: 'AWS::EC2::Subnet'
+    Properties:
+      AvailabilityZone: us-west-2b
+      VpcId: !Ref VPC
+      CidrBlock: 10.20.31.0/24
+      Tags:
+        - Key: Name
+          Value: !Join 
+            - '-'
+            - - !Ref 'AWS::StackName'
+              - Private Subnet 2
         - Key: Network
           Value: Private
   PrivateRouteTable:
@@ -164,13 +190,21 @@ Resources:
       VpcId: !Ref VPC
       Tags:
         - Key: Name
-          Value: !Ref 'AWS::StackName'
+          Value: !Join 
+            - '-'
+            - - !Ref 'AWS::StackName'
+              - Private Route Table
         - Key: Network
           Value: Private
-  PrivateSubnetRouteTableAssociation:
+  PrivateSubnet1RouteTableAssociation:
     Type: 'AWS::EC2::SubnetRouteTableAssociation'
     Properties:
       SubnetId: !Ref PrivateSubnet1
+      RouteTableId: !Ref PrivateRouteTable
+  PrivateSubnet2RouteTableAssociation:
+    Type: 'AWS::EC2::SubnetRouteTableAssociation'
+    Properties:
+      SubnetId: !Ref PrivateSubnet2
       RouteTableId: !Ref PrivateRouteTable
   PrivateNetworkAcl:
     Type: 'AWS::EC2::NetworkAcl'
@@ -178,7 +212,10 @@ Resources:
       VpcId: !Ref VPC
       Tags:
         - Key: Name
-          Value: !Ref 'AWS::StackName'
+          Value: !Join 
+            - '-'
+            - - !Ref 'AWS::StackName'
+              - Private Network ACL
         - Key: Network
           Value: Private
   InboundPrivateNetworkAclEntry:
@@ -205,20 +242,29 @@ Resources:
       PortRange:
         From: '0'
         To: '65535'
-  PrivateSubnetNetworkAclAssociation:
+  PrivateSubnet1NetworkAclAssociation:
     Type: 'AWS::EC2::SubnetNetworkAclAssociation'
     Properties:
       SubnetId: !Ref PrivateSubnet1
       NetworkAclId: !Ref PrivateNetworkAcl
-#  DBSubnetGroup:
-#    Type: 'AWS::RDS::DBSubnetGroup'
-#    Properties:
-#      DBSubnetGroupDescription: DB Subnet Group
-#      SubnetIds:
-#        - !Ref PrivateSubnet1
-#      Tags:
-#        - Key: Name
-#          Value: !Ref 'AWS::StackName'
+  PrivateSubnet2NetworkAclAssociation:
+    Type: 'AWS::EC2::SubnetNetworkAclAssociation'
+    Properties:
+      SubnetId: !Ref PrivateSubnet2
+      NetworkAclId: !Ref PrivateNetworkAcl
+  DBSubnetGroup:
+    Type: 'AWS::RDS::DBSubnetGroup'
+    Properties:
+      DBSubnetGroupDescription: DB Subnet Group
+      SubnetIds:
+        - !Ref PrivateSubnet1
+        - !Ref PrivateSubnet2
+      Tags:
+        - Key: Name
+          Value: !Join 
+            - '-'
+            - - !Ref 'AWS::StackName'
+              - DB Subnet Group
 Outputs:
   VPCID:
     Description: VPC ID
@@ -226,9 +272,9 @@ Outputs:
   PublicSubnet1ID:
     Description: Public Subnet 1
     Value: !Ref PublicSubnet1
-  PrivateSubnetID:
-    Description: Private Subnet 1
-    Value: !Ref PrivateSubnet1
-#  DBSubnetGroupID:
-#    Description: DB Subnet Group
-#    Value: !Ref DBSubnetGroup
+#  PrivateSubnet1ID:
+#    Description: Private Subnet 1
+#    Value: !Ref PrivateSubnet1
+  DBSubnetGroupID:
+    Description: DB Subnet Group
+    Value: !Ref DBSubnetGroup
