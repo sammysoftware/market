@@ -284,9 +284,9 @@ Outputs:
   PublicSubnet1ID:
     Description: Public Subnet 1
     Value: !Ref PublicSubnet1
-#  PrivateSubnet1ID:
-#    Description: Private Subnet 1
-#    Value: !Ref PrivateSubnet1
+  WSSecurityGroupID:
+    Description: WS Security Group
+    Value: !Ref WSSecurityGroup
   DBSubnetGroupID:
     Description: DB Subnet Group
     Value: !Ref DBSubnetGroup
