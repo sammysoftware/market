@@ -82,7 +82,7 @@ Resources:
     Type: 'AWS::RDS::DBInstance'
     Properties:
       DBSubnetGroupName: 
-        - Ref: DBSubnetGroup
+        Ref: DBSubnetGroup
       VPCSecurityGroups: 
         - Ref: VPCSecurityGroup
       DBInstanceIdentifier:
@@ -97,7 +97,7 @@ Resources:
         Ref: DatabaseUsername
       MasterUserPassword:
         Ref: DatabasePassword
-      PubliclyAccessible: 'true'
+      PubliclyAccessible: 'false'
       Tags:
         - Key: Name
           Value: sqlmaster
