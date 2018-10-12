@@ -25,27 +25,7 @@ Resources:
         - !Ref SecurityGroupId
       SubnetId: !Ref SubnetId
       KeyName: !Ref KeyName
-      UserData: !Base64 
-        'Fn::Join':
-          - ''
-          - - |
-              #!/bin/bash -v
-            - >
-              curl http://chef-brentozar.s3.amazonaws.com/bootstrap.sh -o
-              /tmp/bootstrap.sh
-            - |
-              bash /tmp/bootstrap.sh
-            - |
-              # If all went well, signal success
-            - |
-              cfn-signal -e $? -r 'Chef Server configuration'
 Outputs:
   InstanceId:
     Value: !Ref Ec2Instance
-    Description: Instance Id of newly created instance
-  Subnet:
-    Value: !Ref SubnetId
-    Description: Subnet of instance
-  SecurityGroupId:
-    Value: !Ref SecurityGroupId
-    Description: Security Group of instance
+    Description: Instance ID of newly created instance
