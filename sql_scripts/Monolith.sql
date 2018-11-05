@@ -1,4 +1,4 @@
-ï»¿/*
+/*
 ** Combine AspNetIdentity and subset of Northwind
 */
 
@@ -345,91 +345,91 @@ VALUES(1,'Beverages','Soft drinks, coffees, teas, beers, and ales',null),
 (8,'Seafood','Seaweed and fish',null);
 
 INSERT INTO "Customers" VALUES('ALFKI','Alfreds Futterkiste','Maria Anders','Sales Representative','Obere Str. 57','Berlin',NULL,'12209','Germany','030-0074321','030-0076545');
-INSERT INTO "Customers" VALUES('ANATR','Ana Trujillo Emparedados y helados','Ana Trujillo','Owner','Avda. de la ConstituciÃ³n 2222','MÃ©xico D.F.',NULL,'05021','Mexico','(5) 555-4729','(5) 555-3745');
-INSERT INTO "Customers" VALUES('ANTON','Antonio Moreno TaquerÃ­a','Antonio Moreno','Owner','Mataderos  2312','MÃ©xico D.F.',NULL,'05023','Mexico','(5) 555-3932',NULL);
+INSERT INTO "Customers" VALUES('ANATR','Ana Trujillo Emparedados y helados','Ana Trujillo','Owner','Avda. de la Constitución 2222','México D.F.',NULL,'05021','Mexico','(5) 555-4729','(5) 555-3745');
+INSERT INTO "Customers" VALUES('ANTON','Antonio Moreno Taquería','Antonio Moreno','Owner','Mataderos  2312','México D.F.',NULL,'05023','Mexico','(5) 555-3932',NULL);
 INSERT INTO "Customers" VALUES('AROUT','Around the Horn','Thomas Hardy','Sales Representative','120 Hanover Sq.','London',NULL,'WA1 1DP','UK','(171) 555-7788','(171) 555-6750');
-INSERT INTO "Customers" VALUES('BERGS','Berglunds snabbkÃ¶p','Christina Berglund','Order Administrator','BerguvsvÃ¤gen  8','LuleÃ¥',NULL,'S-958 22','Sweden','0921-12 34 65','0921-12 34 67');
+INSERT INTO "Customers" VALUES('BERGS','Berglunds snabbköp','Christina Berglund','Order Administrator','Berguvsvägen  8','Luleå',NULL,'S-958 22','Sweden','0921-12 34 65','0921-12 34 67');
 INSERT INTO "Customers" VALUES('BLAUS','Blauer See Delikatessen','Hanna Moos','Sales Representative','Forsterstr. 57','Mannheim',NULL,'68306','Germany','0621-08460','0621-08924');
-INSERT INTO "Customers" VALUES('BLONP','Blondesddsl pÃ¨re et fils','FrÃ©dÃ©rique Citeaux','Marketing Manager','24, place KlÃ©ber','Strasbourg',NULL,'67000','France','88.60.15.31','88.60.15.32');
-INSERT INTO "Customers" VALUES('BOLID','BÃ³lido Comidas preparadas','MartÃ­n Sommer','Owner','C/ Araquil, 67','Madrid',NULL,'28023','Spain','(91) 555 22 82','(91) 555 91 99');
+INSERT INTO "Customers" VALUES('BLONP','Blondesddsl père et fils','Frédérique Citeaux','Marketing Manager','24, place Kléber','Strasbourg',NULL,'67000','France','88.60.15.31','88.60.15.32');
+INSERT INTO "Customers" VALUES('BOLID','Bólido Comidas preparadas','Martín Sommer','Owner','C/ Araquil, 67','Madrid',NULL,'28023','Spain','(91) 555 22 82','(91) 555 91 99');
 INSERT INTO "Customers" VALUES('BONAP','Bon app''','Laurence Lebihan','Owner','12, rue des Bouchers','Marseille',NULL,'13008','France','91.24.45.40','91.24.45.41');
 INSERT INTO "Customers" VALUES('BOTTM','Bottom-Dollar Markets','Elizabeth Lincoln','Accounting Manager','23 Tsawassen Blvd.','Tsawassen','BC','T2F 8M4','Canada','(604) 555-4729','(604) 555-3745');
 INSERT INTO "Customers" VALUES('BSBEV','B''s Beverages','Victoria Ashworth','Sales Representative','Fauntleroy Circus','London',NULL,'EC2 5NT','UK','(171) 555-1212',NULL);
 INSERT INTO "Customers" VALUES('CACTU','Cactus Comidas para llevar','Patricio Simpson','Sales Agent','Cerrito 333','Buenos Aires',NULL,'1010','Argentina','(1) 135-5555','(1) 135-4892');
-INSERT INTO "Customers" VALUES('CENTC','Centro comercial Moctezuma','Francisco Chang','Marketing Manager','Sierras de Granada 9993','MÃ©xico D.F.',NULL,'05022','Mexico','(5) 555-3392','(5) 555-7293');
+INSERT INTO "Customers" VALUES('CENTC','Centro comercial Moctezuma','Francisco Chang','Marketing Manager','Sierras de Granada 9993','México D.F.',NULL,'05022','Mexico','(5) 555-3392','(5) 555-7293');
 INSERT INTO "Customers" VALUES('CHOPS','Chop-suey Chinese','Yang Wang','Owner','Hauptstr. 29','Bern',NULL,'3012','Switzerland','0452-076545',NULL);
-INSERT INTO "Customers" VALUES('COMMI','ComÃ©rcio Mineiro','Pedro Afonso','Sales Associate','Av. dos LusÃ­adas, 23','Sao Paulo','SP','05432-043','Brazil','(11) 555-7647',NULL);
+INSERT INTO "Customers" VALUES('COMMI','Comércio Mineiro','Pedro Afonso','Sales Associate','Av. dos Lusíadas, 23','Sao Paulo','SP','05432-043','Brazil','(11) 555-7647',NULL);
 INSERT INTO "Customers" VALUES('CONSH','Consolidated Holdings','Elizabeth Brown','Sales Representative','Berkeley Gardens 12  Brewery','London',NULL,'WX1 6LT','UK','(171) 555-2282','(171) 555-9199');
 INSERT INTO "Customers" VALUES('DRACD','Drachenblut Delikatessen','Sven Ottlieb','Order Administrator','Walserweg 21','Aachen',NULL,'52066','Germany','0241-039123','0241-059428');
 INSERT INTO "Customers" VALUES('DUMON','Du monde entier','Janine Labrune','Owner','67, rue des Cinquante Otages','Nantes',NULL,'44000','France','40.67.88.88','40.67.89.89');
 INSERT INTO "Customers" VALUES('EASTC','Eastern Connection','Ann Devon','Sales Agent','35 King George','London',NULL,'WX3 6FW','UK','(171) 555-0297','(171) 555-3373');
 INSERT INTO "Customers" VALUES('ERNSH','Ernst Handel','Roland Mendel','Sales Manager','Kirchgasse 6','Graz',NULL,'8010','Austria','7675-3425','7675-3426');
-INSERT INTO "Customers" VALUES('FAMIA','Familia Arquibaldo','Aria Cruz','Marketing Assistant','Rua OrÃ³s, 92','Sao Paulo','SP','05442-030','Brazil','(11) 555-9857',NULL);
+INSERT INTO "Customers" VALUES('FAMIA','Familia Arquibaldo','Aria Cruz','Marketing Assistant','Rua Orós, 92','Sao Paulo','SP','05442-030','Brazil','(11) 555-9857',NULL);
 INSERT INTO "Customers" VALUES('FISSA','FISSA Fabrica Inter. Salchichas S.A.','Diego Roel','Accounting Manager','C/ Moralzarzal, 86','Madrid',NULL,'28034','Spain','(91) 555 94 44','(91) 555 55 93');
-INSERT INTO "Customers" VALUES('FOLIG','Folies gourmandes','Martine RancÃ©','Assistant Sales Agent','184, chaussÃ©e de Tournai','Lille',NULL,'59000','France','20.16.10.16','20.16.10.17');
-INSERT INTO "Customers" VALUES('FOLKO','Folk och fÃ¤ HB','Maria Larsson','Owner','Ã…kergatan 24','BrÃ¤cke',NULL,'S-844 67','Sweden','0695-34 67 21',NULL);
-INSERT INTO "Customers" VALUES('FRANK','Frankenversand','Peter Franken','Marketing Manager','Berliner Platz 43','MÃ¼nchen',NULL,'80805','Germany','089-0877310','089-0877451');
+INSERT INTO "Customers" VALUES('FOLIG','Folies gourmandes','Martine Rancé','Assistant Sales Agent','184, chaussée de Tournai','Lille',NULL,'59000','France','20.16.10.16','20.16.10.17');
+INSERT INTO "Customers" VALUES('FOLKO','Folk och fä HB','Maria Larsson','Owner','Åkergatan 24','Bräcke',NULL,'S-844 67','Sweden','0695-34 67 21',NULL);
+INSERT INTO "Customers" VALUES('FRANK','Frankenversand','Peter Franken','Marketing Manager','Berliner Platz 43','München',NULL,'80805','Germany','089-0877310','089-0877451');
 INSERT INTO "Customers" VALUES('FRANR','France restauration','Carine Schmitt','Marketing Manager','54, rue Royale','Nantes',NULL,'44000','France','40.32.21.21','40.32.21.20');
 INSERT INTO "Customers" VALUES('FRANS','Franchi S.p.A.','Paolo Accorti','Sales Representative','Via Monte Bianco 34','Torino',NULL,'10100','Italy','011-4988260','011-4988261');
 INSERT INTO "Customers" VALUES('FURIB','Furia Bacalhau e Frutos do Mar','Lino Rodriguez','Sales Manager','Jardim das rosas n. 32','Lisboa',NULL,'1675','Portugal','(1) 354-2534','(1) 354-2535');
-INSERT INTO "Customers" VALUES('GALED','GalerÃ­a del gastrÃ³nomo','Eduardo Saavedra','Marketing Manager','Rambla de CataluÃ±a, 23','Barcelona',NULL,'08022','Spain','(93) 203 4560','(93) 203 4561');
-INSERT INTO "Customers" VALUES('GODOS','Godos Cocina TÃ­pica','JosÃ© Pedro Freyre','Sales Manager','C/ Romero, 33','Sevilla',NULL,'41101','Spain','(95) 555 82 82',NULL);
-INSERT INTO "Customers" VALUES('GOURL','Gourmet Lanchonetes','AndrÃ© Fonseca','Sales Associate','Av. Brasil, 442','Campinas','SP','04876-786','Brazil','(11) 555-9482',NULL);
+INSERT INTO "Customers" VALUES('GALED','Galería del gastrónomo','Eduardo Saavedra','Marketing Manager','Rambla de Cataluña, 23','Barcelona',NULL,'08022','Spain','(93) 203 4560','(93) 203 4561');
+INSERT INTO "Customers" VALUES('GODOS','Godos Cocina Típica','José Pedro Freyre','Sales Manager','C/ Romero, 33','Sevilla',NULL,'41101','Spain','(95) 555 82 82',NULL);
+INSERT INTO "Customers" VALUES('GOURL','Gourmet Lanchonetes','André Fonseca','Sales Associate','Av. Brasil, 442','Campinas','SP','04876-786','Brazil','(11) 555-9482',NULL);
 INSERT INTO "Customers" VALUES('GREAL','Great Lakes Food Market','Howard Snyder','Marketing Manager','2732 Baker Blvd.','Eugene','OR','97403','USA','(503) 555-7555',NULL);
-INSERT INTO "Customers" VALUES('GROSR','GROSELLA-Restaurante','Manuel Pereira','Owner','5Âª Ave. Los Palos Grandes','Caracas','DF','1081','Venezuela','(2) 283-2951','(2) 283-3397');
-INSERT INTO "Customers" VALUES('HANAR','Hanari Carnes','Mario Pontes','Accounting Manager','Rua do PaÃ§o, 67','Rio de Janeiro','RJ','05454-876','Brazil','(21) 555-0091','(21) 555-8765');
-INSERT INTO "Customers" VALUES('HILAA','HILARION-Abastos','Carlos HernÃ¡ndez','Sales Representative','Carrera 22 con Ave. Carlos Soublette #8-35','San CristÃ³bal','TÃ¡chira','5022','Venezuela','(5) 555-1340','(5) 555-1948');
+INSERT INTO "Customers" VALUES('GROSR','GROSELLA-Restaurante','Manuel Pereira','Owner','5ª Ave. Los Palos Grandes','Caracas','DF','1081','Venezuela','(2) 283-2951','(2) 283-3397');
+INSERT INTO "Customers" VALUES('HANAR','Hanari Carnes','Mario Pontes','Accounting Manager','Rua do Paço, 67','Rio de Janeiro','RJ','05454-876','Brazil','(21) 555-0091','(21) 555-8765');
+INSERT INTO "Customers" VALUES('HILAA','HILARION-Abastos','Carlos Hernández','Sales Representative','Carrera 22 con Ave. Carlos Soublette #8-35','San Cristóbal','Táchira','5022','Venezuela','(5) 555-1340','(5) 555-1948');
 INSERT INTO "Customers" VALUES('HUNGC','Hungry Coyote Import Store','Yoshi Latimer','Sales Representative','City Center Plaza 516 Main St.','Elgin','OR','97827','USA','(503) 555-6874','(503) 555-2376');
 INSERT INTO "Customers" VALUES('HUNGO','Hungry Owl All-Night Grocers','Patricia McKenna','Sales Associate','8 Johnstown Road','Cork','Co. Cork',NULL,'Ireland','2967 542','2967 3333');
 INSERT INTO "Customers" VALUES('ISLAT','Island Trading','Helen Bennett','Marketing Manager','Garden House Crowther Way','Cowes','Isle of Wight','PO31 7PJ','UK','(198) 555-8888',NULL);
-INSERT INTO "Customers" VALUES('KOENE','KÃ¶niglich Essen','Philip Cramer','Sales Associate','Maubelstr. 90','Brandenburg',NULL,'14776','Germany','0555-09876',NULL);
+INSERT INTO "Customers" VALUES('KOENE','Königlich Essen','Philip Cramer','Sales Associate','Maubelstr. 90','Brandenburg',NULL,'14776','Germany','0555-09876',NULL);
 INSERT INTO "Customers" VALUES('LACOR','La corne d''abondance','Daniel Tonini','Sales Representative','67, avenue de l''Europe','Versailles',NULL,'78000','France','30.59.84.10','30.59.85.11');
 INSERT INTO "Customers" VALUES('LAMAI','La maison d''Asie','Annette Roulet','Sales Manager','1 rue Alsace-Lorraine','Toulouse',NULL,'31000','France','61.77.61.10','61.77.61.11');
 INSERT INTO "Customers" VALUES('LAUGB','Laughing Bacchus Wine Cellars','Yoshi Tannamuri','Marketing Assistant','1900 Oak St.','Vancouver','BC','V3F 2K1','Canada','(604) 555-3392','(604) 555-7293');
 INSERT INTO "Customers" VALUES('LAZYK','Lazy K Kountry Store','John Steel','Marketing Manager','12 Orchestra Terrace','Walla Walla','WA','99362','USA','(509) 555-7969','(509) 555-6221');
 INSERT INTO "Customers" VALUES('LEHMS','Lehmanns Marktstand','Renate Messner','Sales Representative','Magazinweg 7','Frankfurt a.M.',NULL,'60528','Germany','069-0245984','069-0245874');
 INSERT INTO "Customers" VALUES('LETSS','Let''s Stop N Shop','Jaime Yorres','Owner','87 Polk St. Suite 5','San Francisco','CA','94117','USA','(415) 555-5938',NULL);
-INSERT INTO "Customers" VALUES('LILAS','LILA-Supermercado','Carlos GonzÃ¡lez','Accounting Manager','Carrera 52 con Ave. BolÃ­var #65-98 Llano Largo','Barquisimeto','Lara','3508','Venezuela','(9) 331-6954','(9) 331-7256');
+INSERT INTO "Customers" VALUES('LILAS','LILA-Supermercado','Carlos González','Accounting Manager','Carrera 52 con Ave. Bolívar #65-98 Llano Largo','Barquisimeto','Lara','3508','Venezuela','(9) 331-6954','(9) 331-7256');
 INSERT INTO "Customers" VALUES('LINOD','LINO-Delicateses','Felipe Izquierdo','Owner','Ave. 5 de Mayo Porlamar','I. de Margarita','Nueva Esparta','4980','Venezuela','(8) 34-56-12','(8) 34-93-93');
 INSERT INTO "Customers" VALUES('LONEP','Lonesome Pine Restaurant','Fran Wilson','Sales Manager','89 Chiaroscuro Rd.','Portland','OR','97219','USA','(503) 555-9573','(503) 555-9646');
 INSERT INTO "Customers" VALUES('MAGAA','Magazzini Alimentari Riuniti','Giovanni Rovelli','Marketing Manager','Via Ludovico il Moro 22','Bergamo',NULL,'24100','Italy','035-640230','035-640231');
 INSERT INTO "Customers" VALUES('MAISD','Maison Dewey','Catherine Dewey','Sales Agent','Rue Joseph-Bens 532','Bruxelles',NULL,'B-1180','Belgium','(02) 201 24 67','(02) 201 24 68');
-INSERT INTO "Customers" VALUES('MEREP','MÃ¨re Paillarde','Jean FresniÃ¨re','Marketing Assistant','43 rue St. Laurent','MontrÃ©al','QuÃ©bec','H1J 1C3','Canada','(514) 555-8054','(514) 555-8055');
+INSERT INTO "Customers" VALUES('MEREP','Mère Paillarde','Jean Fresnière','Marketing Assistant','43 rue St. Laurent','Montréal','Québec','H1J 1C3','Canada','(514) 555-8054','(514) 555-8055');
 INSERT INTO "Customers" VALUES('MORGK','Morgenstern Gesundkost','Alexander Feuer','Marketing Assistant','Heerstr. 22','Leipzig',NULL,'04179','Germany','0342-023176',NULL);
 INSERT INTO "Customers" VALUES('NORTS','North/South','Simon Crowther','Sales Associate','South House 300 Queensbridge','London',NULL,'SW7 1RZ','UK','(171) 555-7733','(171) 555-2530');
-INSERT INTO "Customers" VALUES('OCEAN','OcÃ©ano AtlÃ¡ntico Ltda.','Yvonne Moncada','Sales Agent','Ing. Gustavo Moncada 8585 Piso 20-A','Buenos Aires',NULL,'1010','Argentina','(1) 135-5333','(1) 135-5535');
+INSERT INTO "Customers" VALUES('OCEAN','Océano Atlántico Ltda.','Yvonne Moncada','Sales Agent','Ing. Gustavo Moncada 8585 Piso 20-A','Buenos Aires',NULL,'1010','Argentina','(1) 135-5333','(1) 135-5535');
 INSERT INTO "Customers" VALUES('OLDWO','Old World Delicatessen','Rene Phillips','Sales Representative','2743 Bering St.','Anchorage','AK','99508','USA','(907) 555-7584','(907) 555-2880');
-INSERT INTO "Customers" VALUES('OTTIK','Ottilies KÃ¤seladen','Henriette Pfalzheim','Owner','Mehrheimerstr. 369','KÃ¶ln',NULL,'50739','Germany','0221-0644327','0221-0765721');
-INSERT INTO "Customers" VALUES('PARIS','Paris spÃ©cialitÃ©s','Marie Bertrand','Owner','265, boulevard Charonne','Paris',NULL,'75012','France','(1) 42.34.22.66','(1) 42.34.22.77');
-INSERT INTO "Customers" VALUES('PERIC','Pericles Comidas clÃ¡sicas','Guillermo FernÃ¡ndez','Sales Representative','Calle Dr. Jorge Cash 321','MÃ©xico D.F.',NULL,'05033','Mexico','(5) 552-3745','(5) 545-3745');
+INSERT INTO "Customers" VALUES('OTTIK','Ottilies Käseladen','Henriette Pfalzheim','Owner','Mehrheimerstr. 369','Köln',NULL,'50739','Germany','0221-0644327','0221-0765721');
+INSERT INTO "Customers" VALUES('PARIS','Paris spécialités','Marie Bertrand','Owner','265, boulevard Charonne','Paris',NULL,'75012','France','(1) 42.34.22.66','(1) 42.34.22.77');
+INSERT INTO "Customers" VALUES('PERIC','Pericles Comidas clásicas','Guillermo Fernández','Sales Representative','Calle Dr. Jorge Cash 321','México D.F.',NULL,'05033','Mexico','(5) 552-3745','(5) 545-3745');
 INSERT INTO "Customers" VALUES('PICCO','Piccolo und mehr','Georg Pipps','Sales Manager','Geislweg 14','Salzburg',NULL,'5020','Austria','6562-9722','6562-9723');
-INSERT INTO "Customers" VALUES('PRINI','Princesa Isabel Vinhos','Isabel de Castro','Sales Representative','Estrada da saÃºde n. 58','Lisboa',NULL,'1756','Portugal','(1) 356-5634',NULL);
-INSERT INTO "Customers" VALUES('QUEDE','Que DelÃ­cia','Bernardo Batista','Accounting Manager','Rua da Panificadora, 12','Rio de Janeiro','RJ','02389-673','Brazil','(21) 555-4252','(21) 555-4545');
-INSERT INTO "Customers" VALUES('QUEEN','Queen Cozinha','LÃºcia Carvalho','Marketing Assistant','Alameda dos CanÃ rios, 891','Sao Paulo','SP','05487-020','Brazil','(11) 555-1189',NULL);
-INSERT INTO "Customers" VALUES('QUICK','QUICK-Stop','Horst Kloss','Accounting Manager','TaucherstraÃŸe 10','Cunewalde',NULL,'01307','Germany','0372-035188',NULL);
-INSERT INTO "Customers" VALUES('RANCH','Rancho grande','Sergio GutiÃ©rrez','Sales Representative','Av. del Libertador 900','Buenos Aires',NULL,'1010','Argentina','(1) 123-5555','(1) 123-5556');
+INSERT INTO "Customers" VALUES('PRINI','Princesa Isabel Vinhos','Isabel de Castro','Sales Representative','Estrada da saúde n. 58','Lisboa',NULL,'1756','Portugal','(1) 356-5634',NULL);
+INSERT INTO "Customers" VALUES('QUEDE','Que Delícia','Bernardo Batista','Accounting Manager','Rua da Panificadora, 12','Rio de Janeiro','RJ','02389-673','Brazil','(21) 555-4252','(21) 555-4545');
+INSERT INTO "Customers" VALUES('QUEEN','Queen Cozinha','Lúcia Carvalho','Marketing Assistant','Alameda dos Canàrios, 891','Sao Paulo','SP','05487-020','Brazil','(11) 555-1189',NULL);
+INSERT INTO "Customers" VALUES('QUICK','QUICK-Stop','Horst Kloss','Accounting Manager','Taucherstraße 10','Cunewalde',NULL,'01307','Germany','0372-035188',NULL);
+INSERT INTO "Customers" VALUES('RANCH','Rancho grande','Sergio Gutiérrez','Sales Representative','Av. del Libertador 900','Buenos Aires',NULL,'1010','Argentina','(1) 123-5555','(1) 123-5556');
 INSERT INTO "Customers" VALUES('RATTC','Rattlesnake Canyon Grocery','Paula Wilson','Assistant Sales Representative','2817 Milton Dr.','Albuquerque','NM','87110','USA','(505) 555-5939','(505) 555-3620');
 INSERT INTO "Customers" VALUES('REGGC','Reggiani Caseifici','Maurizio Moroni','Sales Associate','Strada Provinciale 124','Reggio Emilia',NULL,'42100','Italy','0522-556721','0522-556722');
 INSERT INTO "Customers" VALUES('RICAR','Ricardo Adocicados','Janete Limeira','Assistant Sales Agent','Av. Copacabana, 267','Rio de Janeiro','RJ','02389-890','Brazil','(21) 555-3412',NULL);
-INSERT INTO "Customers" VALUES('RICSU','Richter Supermarkt','Michael Holz','Sales Manager','Grenzacherweg 237','GenÃ¨ve',NULL,'1203','Switzerland','0897-034214',NULL);
-INSERT INTO "Customers" VALUES('ROMEY','Romero y tomillo','Alejandra Camino','Accounting Manager','Gran VÃ­a, 1','Madrid',NULL,'28001','Spain','(91) 745 6200','(91) 745 6210');
-INSERT INTO "Customers" VALUES('SANTG','SantÃ© Gourmet','Jonas Bergulfsen','Owner','Erling Skakkes gate 78','Stavern',NULL,'4110','Norway','07-98 92 35','07-98 92 47');
+INSERT INTO "Customers" VALUES('RICSU','Richter Supermarkt','Michael Holz','Sales Manager','Grenzacherweg 237','Genève',NULL,'1203','Switzerland','0897-034214',NULL);
+INSERT INTO "Customers" VALUES('ROMEY','Romero y tomillo','Alejandra Camino','Accounting Manager','Gran Vía, 1','Madrid',NULL,'28001','Spain','(91) 745 6200','(91) 745 6210');
+INSERT INTO "Customers" VALUES('SANTG','Santé Gourmet','Jonas Bergulfsen','Owner','Erling Skakkes gate 78','Stavern',NULL,'4110','Norway','07-98 92 35','07-98 92 47');
 INSERT INTO "Customers" VALUES('SAVEA','Save-a-lot Markets','Jose Pavarotti','Sales Representative','187 Suffolk Ln.','Boise','ID','83720','USA','(208) 555-8097',NULL);
 INSERT INTO "Customers" VALUES('SEVES','Seven Seas Imports','Hari Kumar','Sales Manager','90 Wadhurst Rd.','London',NULL,'OX15 4NB','UK','(171) 555-1717','(171) 555-5646');
-INSERT INTO "Customers" VALUES('SIMOB','Simons bistro','Jytte Petersen','Owner','VinbÃ¦ltet 34','Kobenhavn',NULL,'1734','Denmark','31 12 34 56','31 13 35 57');
-INSERT INTO "Customers" VALUES('SPECD','SpÃ©cialitÃ©s du monde','Dominique Perrier','Marketing Manager','25, rue Lauriston','Paris',NULL,'75016','France','(1) 47.55.60.10','(1) 47.55.60.20');
+INSERT INTO "Customers" VALUES('SIMOB','Simons bistro','Jytte Petersen','Owner','Vinbæltet 34','Kobenhavn',NULL,'1734','Denmark','31 12 34 56','31 13 35 57');
+INSERT INTO "Customers" VALUES('SPECD','Spécialités du monde','Dominique Perrier','Marketing Manager','25, rue Lauriston','Paris',NULL,'75016','France','(1) 47.55.60.10','(1) 47.55.60.20');
 INSERT INTO "Customers" VALUES('SPLIR','Split Rail Beer & Ale','Art Braunschweiger','Sales Manager','P.O. Box 555','Lander','WY','82520','USA','(307) 555-4680','(307) 555-6525');
-INSERT INTO "Customers" VALUES('SUPRD','SuprÃªmes dÃ©lices','Pascale Cartrain','Accounting Manager','Boulevard Tirou, 255','Charleroi',NULL,'B-6000','Belgium','(071) 23 67 22 20','(071) 23 67 22 21');
+INSERT INTO "Customers" VALUES('SUPRD','Suprêmes délices','Pascale Cartrain','Accounting Manager','Boulevard Tirou, 255','Charleroi',NULL,'B-6000','Belgium','(071) 23 67 22 20','(071) 23 67 22 21');
 INSERT INTO "Customers" VALUES('THEBI','The Big Cheese','Liz Nixon','Marketing Manager','89 Jefferson Way Suite 2','Portland','OR','97201','USA','(503) 555-3612',NULL);
 INSERT INTO "Customers" VALUES('THECR','The Cracker Box','Liu Wong','Marketing Assistant','55 Grizzly Peak Rd.','Butte','MT','59801','USA','(406) 555-5834','(406) 555-8083');
-INSERT INTO "Customers" VALUES('TOMSP','Toms SpezialitÃ¤ten','Karin Josephs','Marketing Manager','Luisenstr. 48','MÃ¼nster',NULL,'44087','Germany','0251-031259','0251-035695');
-INSERT INTO "Customers" VALUES('TORTU','Tortuga Restaurante','Miguel Angel Paolino','Owner','Avda. Azteca 123','MÃ©xico D.F.',NULL,'05033','Mexico','(5) 555-2933',NULL);
-INSERT INTO "Customers" VALUES('TRADH','TradiÃ§Ã£o Hipermercados','Anabela Domingues','Sales Representative','Av. InÃªs de Castro, 414','Sao Paulo','SP','05634-030','Brazil','(11) 555-2167','(11) 555-2168');
+INSERT INTO "Customers" VALUES('TOMSP','Toms Spezialitäten','Karin Josephs','Marketing Manager','Luisenstr. 48','Münster',NULL,'44087','Germany','0251-031259','0251-035695');
+INSERT INTO "Customers" VALUES('TORTU','Tortuga Restaurante','Miguel Angel Paolino','Owner','Avda. Azteca 123','México D.F.',NULL,'05033','Mexico','(5) 555-2933',NULL);
+INSERT INTO "Customers" VALUES('TRADH','Tradição Hipermercados','Anabela Domingues','Sales Representative','Av. Inês de Castro, 414','Sao Paulo','SP','05634-030','Brazil','(11) 555-2167','(11) 555-2168');
 INSERT INTO "Customers" VALUES('TRAIH','Trail''s Head Gourmet Provisioners','Helvetius Nagy','Sales Associate','722 DaVinci Blvd.','Kirkland','WA','98034','USA','(206) 555-8257','(206) 555-2174');
-INSERT INTO "Customers" VALUES('VAFFE','Vaffeljernet','Palle Ibsen','Sales Manager','Smagsloget 45','Ã…rhus',NULL,'8200','Denmark','86 21 32 43','86 22 33 44');
+INSERT INTO "Customers" VALUES('VAFFE','Vaffeljernet','Palle Ibsen','Sales Manager','Smagsloget 45','Århus',NULL,'8200','Denmark','86 21 32 43','86 22 33 44');
 INSERT INTO "Customers" VALUES('VICTE','Victuailles en stock','Mary Saveley','Sales Agent','2, rue du Commerce','Lyon',NULL,'69004','France','78.32.54.86','78.32.54.87');
 INSERT INTO "Customers" VALUES('VINET','Vins et alcools Chevalier','Paul Henriot','Accounting Manager','59 rue de l''Abbaye','Reims',NULL,'51100','France','26.47.15.10','26.47.15.11');
-INSERT INTO "Customers" VALUES('WANDK','Die Wandernde Kuh','Rita MÃ¼ller','Sales Representative','Adenauerallee 900','Stuttgart',NULL,'70563','Germany','0711-020361','0711-035428');
+INSERT INTO "Customers" VALUES('WANDK','Die Wandernde Kuh','Rita Müller','Sales Representative','Adenauerallee 900','Stuttgart',NULL,'70563','Germany','0711-020361','0711-035428');
 INSERT INTO "Customers" VALUES('WARTH','Wartian Herkku','Pirkko Koskitalo','Accounting Manager','Torikatu 38','Oulu',NULL,'90110','Finland','981-443655','981-443655');
 INSERT INTO "Customers" VALUES('WELLI','Wellington Importadora','Paula Parente','Sales Manager','Rua do Mercado, 12','Resende','SP','08737-363','Brazil','(14) 555-8122',NULL);
 INSERT INTO "Customers" VALUES('WHITC','White Clover Markets','Karl Jablonski','Owner','305 - 14th Ave. S. Suite 3B','Seattle','WA','98128','USA','(206) 555-4112','(206) 555-4115');
@@ -463,27 +463,27 @@ INSERT INTO "Suppliers"("SupplierID","CompanyName","ContactName","ContactTitle",
 INSERT INTO "Suppliers"("SupplierID","CompanyName","ContactName","ContactTitle","Address","City","Region","PostalCode","Country","Phone","Fax","HomePage") VALUES(6,'Mayumi''s','Mayumi Ohno','Marketing Representative','92 Setsuko Chuo-ku','Osaka',NULL,'545','Japan','(06) 431-7877',NULL,'Mayumi''s (on the World Wide Web)#http://www.microsoft.com/accessdev/sampleapps/mayumi.htm#');
 INSERT INTO "Suppliers"("SupplierID","CompanyName","ContactName","ContactTitle","Address","City","Region","PostalCode","Country","Phone","Fax","HomePage") VALUES(7,'Pavlova, Ltd.','Ian Devling','Marketing Manager','74 Rose St. Moonie Ponds','Melbourne','Victoria','3058','Australia','(03) 444-2343','(03) 444-6588',NULL);
 INSERT INTO "Suppliers"("SupplierID","CompanyName","ContactName","ContactTitle","Address","City","Region","PostalCode","Country","Phone","Fax","HomePage") VALUES(8,'Specialty Biscuits, Ltd.','Peter Wilson','Sales Representative','29 King''s Way','Manchester',NULL,'M14 GSD','UK','(161) 555-4448',NULL,NULL);
-INSERT INTO "Suppliers"("SupplierID","CompanyName","ContactName","ContactTitle","Address","City","Region","PostalCode","Country","Phone","Fax","HomePage") VALUES(9,'PB KnÃ¤ckebrÃ¶d AB','Lars Peterson','Sales Agent','Kaloadagatan 13','GÃ¶teborg',NULL,'S-345 67','Sweden','031-987 65 43','031-987 65 91',NULL);
+INSERT INTO "Suppliers"("SupplierID","CompanyName","ContactName","ContactTitle","Address","City","Region","PostalCode","Country","Phone","Fax","HomePage") VALUES(9,'PB Knäckebröd AB','Lars Peterson','Sales Agent','Kaloadagatan 13','Göteborg',NULL,'S-345 67','Sweden','031-987 65 43','031-987 65 91',NULL);
 INSERT INTO "Suppliers"("SupplierID","CompanyName","ContactName","ContactTitle","Address","City","Region","PostalCode","Country","Phone","Fax","HomePage") VALUES(10,'Refrescos Americanas LTDA','Carlos Diaz','Marketing Manager','Av. das Americanas 12.890','Sao Paulo',NULL,'5442','Brazil','(11) 555 4640',NULL,NULL);
-INSERT INTO "Suppliers"("SupplierID","CompanyName","ContactName","ContactTitle","Address","City","Region","PostalCode","Country","Phone","Fax","HomePage") VALUES(11,'Heli SÃ¼ÃŸwaren GmbH & Co. KG','Petra Winkler','Sales Manager','TiergartenstraÃŸe 5','Berlin',NULL,'10785','Germany','(010) 9984510',NULL,NULL);
-INSERT INTO "Suppliers"("SupplierID","CompanyName","ContactName","ContactTitle","Address","City","Region","PostalCode","Country","Phone","Fax","HomePage") VALUES(12,'Plutzer LebensmittelgroÃŸmÃ¤rkte AG','Martin Bein','International Marketing Mgr.','Bogenallee 51','Frankfurt',NULL,'60439','Germany','(069) 992755',NULL,'Plutzer (on the World Wide Web)#http://www.microsoft.com/accessdev/sampleapps/plutzer.htm#');
+INSERT INTO "Suppliers"("SupplierID","CompanyName","ContactName","ContactTitle","Address","City","Region","PostalCode","Country","Phone","Fax","HomePage") VALUES(11,'Heli Süßwaren GmbH & Co. KG','Petra Winkler','Sales Manager','Tiergartenstraße 5','Berlin',NULL,'10785','Germany','(010) 9984510',NULL,NULL);
+INSERT INTO "Suppliers"("SupplierID","CompanyName","ContactName","ContactTitle","Address","City","Region","PostalCode","Country","Phone","Fax","HomePage") VALUES(12,'Plutzer Lebensmittelgroßmärkte AG','Martin Bein','International Marketing Mgr.','Bogenallee 51','Frankfurt',NULL,'60439','Germany','(069) 992755',NULL,'Plutzer (on the World Wide Web)#http://www.microsoft.com/accessdev/sampleapps/plutzer.htm#');
 INSERT INTO "Suppliers"("SupplierID","CompanyName","ContactName","ContactTitle","Address","City","Region","PostalCode","Country","Phone","Fax","HomePage") VALUES(13,'Nord-Ost-Fisch Handelsgesellschaft mbH','Sven Petersen','Coordinator Foreign Markets','Frahmredder 112a','Cuxhaven',NULL,'27478','Germany','(04721) 8713','(04721) 8714',NULL);
 INSERT INTO "Suppliers"("SupplierID","CompanyName","ContactName","ContactTitle","Address","City","Region","PostalCode","Country","Phone","Fax","HomePage") VALUES(14,'Formaggi Fortini s.r.l.','Elio Rossi','Sales Representative','Viale Dante, 75','Ravenna',NULL,'48100','Italy','(0544) 60323','(0544) 60603','#FORMAGGI.HTM#');
 INSERT INTO "Suppliers"("SupplierID","CompanyName","ContactName","ContactTitle","Address","City","Region","PostalCode","Country","Phone","Fax","HomePage") VALUES(15,'Norske Meierier','Beate Vileid','Marketing Manager','Hatlevegen 5','Sandvika',NULL,'1320','Norway','(0)2-953010',NULL,NULL);
 INSERT INTO "Suppliers"("SupplierID","CompanyName","ContactName","ContactTitle","Address","City","Region","PostalCode","Country","Phone","Fax","HomePage") VALUES(16,'Bigfoot Breweries','Cheryl Saylor','Regional Account Rep.','3400 - 8th Avenue Suite 210','Bend','OR','97101','USA','(503) 555-9931',NULL,NULL);
-INSERT INTO "Suppliers"("SupplierID","CompanyName","ContactName","ContactTitle","Address","City","Region","PostalCode","Country","Phone","Fax","HomePage") VALUES(17,'Svensk SjÃ¶fÃ¶da AB','Michael BjÃ¶rn','Sales Representative','BrovallavÃ¤gen 231','Stockholm',NULL,'S-123 45','Sweden','08-123 45 67',NULL,NULL);
-INSERT INTO "Suppliers"("SupplierID","CompanyName","ContactName","ContactTitle","Address","City","Region","PostalCode","Country","Phone","Fax","HomePage") VALUES(18,'Aux joyeux ecclÃ©siastiques','GuylÃ¨ne Nodier','Sales Manager','203, Rue des Francs-Bourgeois','Paris',NULL,'75004','France','(1) 03.83.00.68','(1) 03.83.00.62',NULL);
+INSERT INTO "Suppliers"("SupplierID","CompanyName","ContactName","ContactTitle","Address","City","Region","PostalCode","Country","Phone","Fax","HomePage") VALUES(17,'Svensk Sjöföda AB','Michael Björn','Sales Representative','Brovallavägen 231','Stockholm',NULL,'S-123 45','Sweden','08-123 45 67',NULL,NULL);
+INSERT INTO "Suppliers"("SupplierID","CompanyName","ContactName","ContactTitle","Address","City","Region","PostalCode","Country","Phone","Fax","HomePage") VALUES(18,'Aux joyeux ecclésiastiques','Guylène Nodier','Sales Manager','203, Rue des Francs-Bourgeois','Paris',NULL,'75004','France','(1) 03.83.00.68','(1) 03.83.00.62',NULL);
 INSERT INTO "Suppliers"("SupplierID","CompanyName","ContactName","ContactTitle","Address","City","Region","PostalCode","Country","Phone","Fax","HomePage") VALUES(19,'New England Seafood Cannery','Robb Merchant','Wholesale Account Agent','Order Processing Dept. 2100 Paul Revere Blvd.','Boston','MA','02134','USA','(617) 555-3267','(617) 555-3389',NULL);
 INSERT INTO "Suppliers"("SupplierID","CompanyName","ContactName","ContactTitle","Address","City","Region","PostalCode","Country","Phone","Fax","HomePage") VALUES(20,'Leka Trading','Chandra Leka','Owner','471 Serangoon Loop, Suite #402','Singapore',NULL,'0512','Singapore','555-8787',NULL,NULL);
 INSERT INTO "Suppliers"("SupplierID","CompanyName","ContactName","ContactTitle","Address","City","Region","PostalCode","Country","Phone","Fax","HomePage") VALUES(21,'Lyngbysild','Niels Petersen','Sales Manager','Lyngbysild Fiskebakken 10','Lyngby',NULL,'2800','Denmark','43844108','43844115',NULL);
 INSERT INTO "Suppliers"("SupplierID","CompanyName","ContactName","ContactTitle","Address","City","Region","PostalCode","Country","Phone","Fax","HomePage") VALUES(22,'Zaanse Snoepfabriek','Dirk Luchte','Accounting Manager','Verkoop Rijnweg 22','Zaandam',NULL,'9999 ZZ','Netherlands','(12345) 1212','(12345) 1210',NULL);
 INSERT INTO "Suppliers"("SupplierID","CompanyName","ContactName","ContactTitle","Address","City","Region","PostalCode","Country","Phone","Fax","HomePage") VALUES(23,'Karkki Oy','Anne Heikkonen','Product Manager','Valtakatu 12','Lappeenranta',NULL,'53120','Finland','(953) 10956',NULL,NULL);
 INSERT INTO "Suppliers"("SupplierID","CompanyName","ContactName","ContactTitle","Address","City","Region","PostalCode","Country","Phone","Fax","HomePage") VALUES(24,'G''day, Mate','Wendy Mackenzie','Sales Representative','170 Prince Edward Parade Hunter''s Hill','Sydney','NSW','2042','Australia','(02) 555-5914','(02) 555-4873','G''day Mate (on the World Wide Web)#http://www.microsoft.com/accessdev/sampleapps/gdaymate.htm#');
-INSERT INTO "Suppliers"("SupplierID","CompanyName","ContactName","ContactTitle","Address","City","Region","PostalCode","Country","Phone","Fax","HomePage") VALUES(25,'Ma Maison','Jean-Guy Lauzon','Marketing Manager','2960 Rue St. Laurent','MontrÃ©al','QuÃ©bec','H1J 1C3','Canada','(514) 555-9022',NULL,NULL);
+INSERT INTO "Suppliers"("SupplierID","CompanyName","ContactName","ContactTitle","Address","City","Region","PostalCode","Country","Phone","Fax","HomePage") VALUES(25,'Ma Maison','Jean-Guy Lauzon','Marketing Manager','2960 Rue St. Laurent','Montréal','Québec','H1J 1C3','Canada','(514) 555-9022',NULL,NULL);
 INSERT INTO "Suppliers"("SupplierID","CompanyName","ContactName","ContactTitle","Address","City","Region","PostalCode","Country","Phone","Fax","HomePage") VALUES(26,'Pasta Buttini s.r.l.','Giovanni Giudici','Order Administrator','Via dei Gelsomini, 153','Salerno',NULL,'84100','Italy','(089) 6547665','(089) 6547667',NULL);
 INSERT INTO "Suppliers"("SupplierID","CompanyName","ContactName","ContactTitle","Address","City","Region","PostalCode","Country","Phone","Fax","HomePage") VALUES(27,'Escargots Nouveaux','Marie Delamare','Sales Manager','22, rue H. Voiron','Montceau',NULL,'71300','France','85.57.00.07',NULL,NULL);
-INSERT INTO "Suppliers"("SupplierID","CompanyName","ContactName","ContactTitle","Address","City","Region","PostalCode","Country","Phone","Fax","HomePage") VALUES(28,'Gai pÃ¢turage','Eliane Noz','Sales Representative','Bat. B 3, rue des Alpes','Annecy',NULL,'74000','France','38.76.98.06','38.76.98.58',NULL);
-INSERT INTO "Suppliers"("SupplierID","CompanyName","ContactName","ContactTitle","Address","City","Region","PostalCode","Country","Phone","Fax","HomePage") VALUES(29,'ForÃªts d''Ã©rables','Chantal Goulet','Accounting Manager','148 rue Chasseur','Ste-Hyacinthe','QuÃ©bec','J2S 7S8','Canada','(514) 555-2955','(514) 555-2921',NULL);
+INSERT INTO "Suppliers"("SupplierID","CompanyName","ContactName","ContactTitle","Address","City","Region","PostalCode","Country","Phone","Fax","HomePage") VALUES(28,'Gai pâturage','Eliane Noz','Sales Representative','Bat. B 3, rue des Alpes','Annecy',NULL,'74000','France','38.76.98.06','38.76.98.58',NULL);
+INSERT INTO "Suppliers"("SupplierID","CompanyName","ContactName","ContactTitle","Address","City","Region","PostalCode","Country","Phone","Fax","HomePage") VALUES(29,'Forêts d''érables','Chantal Goulet','Accounting Manager','148 rue Chasseur','Ste-Hyacinthe','Québec','J2S 7S8','Canada','(514) 555-2955','(514) 555-2921',NULL);
 
 INSERT INTO "Products"("ProductID","ProductName","SupplierID","CategoryID","QuantityPerUnit","UnitPrice","UnitsInStock","UnitsOnOrder","ReorderLevel","Discontinued") VALUES(1,'Chai',1,1,'10 boxes x 20 bags',18,39,0,10,0);
 INSERT INTO "Products"("ProductID","ProductName","SupplierID","CategoryID","QuantityPerUnit","UnitPrice","UnitsInStock","UnitsOnOrder","ReorderLevel","Discontinued") VALUES(2,'Chang',1,1,'24 - 12 oz bottles',19,17,40,25,0);
@@ -506,14 +506,14 @@ INSERT INTO "Products"("ProductID","ProductName","SupplierID","CategoryID","Quan
 INSERT INTO "Products"("ProductID","ProductName","SupplierID","CategoryID","QuantityPerUnit","UnitPrice","UnitsInStock","UnitsOnOrder","ReorderLevel","Discontinued") VALUES(19,'Teatime Chocolate Biscuits',8,3,'10 boxes x 12 pieces',9.2,25,0,5,0);
 INSERT INTO "Products"("ProductID","ProductName","SupplierID","CategoryID","QuantityPerUnit","UnitPrice","UnitsInStock","UnitsOnOrder","ReorderLevel","Discontinued") VALUES(20,'Sir Rodney''s Marmalade',8,3,'30 gift boxes',81,40,0,0,0);
 INSERT INTO "Products"("ProductID","ProductName","SupplierID","CategoryID","QuantityPerUnit","UnitPrice","UnitsInStock","UnitsOnOrder","ReorderLevel","Discontinued") VALUES(21,'Sir Rodney''s Scones',8,3,'24 pkgs. x 4 pieces',10,3,40,5,0);
-INSERT INTO "Products"("ProductID","ProductName","SupplierID","CategoryID","QuantityPerUnit","UnitPrice","UnitsInStock","UnitsOnOrder","ReorderLevel","Discontinued") VALUES(22,'Gustaf''s KnÃ¤ckebrÃ¶d',9,5,'24 - 500 g pkgs.',21,104,0,25,0);
-INSERT INTO "Products"("ProductID","ProductName","SupplierID","CategoryID","QuantityPerUnit","UnitPrice","UnitsInStock","UnitsOnOrder","ReorderLevel","Discontinued") VALUES(23,'TunnbrÃ¶d',9,5,'12 - 250 g pkgs.',9,61,0,25,0);
-INSERT INTO "Products"("ProductID","ProductName","SupplierID","CategoryID","QuantityPerUnit","UnitPrice","UnitsInStock","UnitsOnOrder","ReorderLevel","Discontinued") VALUES(24,'GuaranÃ¡ FantÃ¡stica',10,1,'12 - 355 ml cans',4.5,20,0,0,1);
-INSERT INTO "Products"("ProductID","ProductName","SupplierID","CategoryID","QuantityPerUnit","UnitPrice","UnitsInStock","UnitsOnOrder","ReorderLevel","Discontinued") VALUES(25,'NuNuCa NuÃŸ-Nougat-Creme',11,3,'20 - 450 g glasses',14,76,0,30,0);
-INSERT INTO "Products"("ProductID","ProductName","SupplierID","CategoryID","QuantityPerUnit","UnitPrice","UnitsInStock","UnitsOnOrder","ReorderLevel","Discontinued") VALUES(26,'GumbÃ¤r GummibÃ¤rchen',11,3,'100 - 250 g bags',31.23,15,0,0,0);
+INSERT INTO "Products"("ProductID","ProductName","SupplierID","CategoryID","QuantityPerUnit","UnitPrice","UnitsInStock","UnitsOnOrder","ReorderLevel","Discontinued") VALUES(22,'Gustaf''s Knäckebröd',9,5,'24 - 500 g pkgs.',21,104,0,25,0);
+INSERT INTO "Products"("ProductID","ProductName","SupplierID","CategoryID","QuantityPerUnit","UnitPrice","UnitsInStock","UnitsOnOrder","ReorderLevel","Discontinued") VALUES(23,'Tunnbröd',9,5,'12 - 250 g pkgs.',9,61,0,25,0);
+INSERT INTO "Products"("ProductID","ProductName","SupplierID","CategoryID","QuantityPerUnit","UnitPrice","UnitsInStock","UnitsOnOrder","ReorderLevel","Discontinued") VALUES(24,'Guaraná Fantástica',10,1,'12 - 355 ml cans',4.5,20,0,0,1);
+INSERT INTO "Products"("ProductID","ProductName","SupplierID","CategoryID","QuantityPerUnit","UnitPrice","UnitsInStock","UnitsOnOrder","ReorderLevel","Discontinued") VALUES(25,'NuNuCa Nuß-Nougat-Creme',11,3,'20 - 450 g glasses',14,76,0,30,0);
+INSERT INTO "Products"("ProductID","ProductName","SupplierID","CategoryID","QuantityPerUnit","UnitPrice","UnitsInStock","UnitsOnOrder","ReorderLevel","Discontinued") VALUES(26,'Gumbär Gummibärchen',11,3,'100 - 250 g bags',31.23,15,0,0,0);
 INSERT INTO "Products"("ProductID","ProductName","SupplierID","CategoryID","QuantityPerUnit","UnitPrice","UnitsInStock","UnitsOnOrder","ReorderLevel","Discontinued") VALUES(27,'Schoggi Schokolade',11,3,'100 - 100 g pieces',43.9,49,0,30,0);
-INSERT INTO "Products"("ProductID","ProductName","SupplierID","CategoryID","QuantityPerUnit","UnitPrice","UnitsInStock","UnitsOnOrder","ReorderLevel","Discontinued") VALUES(28,'RÃ¶ssle Sauerkraut',12,7,'25 - 825 g cans',45.6,26,0,0,1);
-INSERT INTO "Products"("ProductID","ProductName","SupplierID","CategoryID","QuantityPerUnit","UnitPrice","UnitsInStock","UnitsOnOrder","ReorderLevel","Discontinued") VALUES(29,'ThÃ¼ringer Rostbratwurst',12,6,'50 bags x 30 sausgs.',123.79,0,0,0,1);
+INSERT INTO "Products"("ProductID","ProductName","SupplierID","CategoryID","QuantityPerUnit","UnitPrice","UnitsInStock","UnitsOnOrder","ReorderLevel","Discontinued") VALUES(28,'Rössle Sauerkraut',12,7,'25 - 825 g cans',45.6,26,0,0,1);
+INSERT INTO "Products"("ProductID","ProductName","SupplierID","CategoryID","QuantityPerUnit","UnitPrice","UnitsInStock","UnitsOnOrder","ReorderLevel","Discontinued") VALUES(29,'Thüringer Rostbratwurst',12,6,'50 bags x 30 sausgs.',123.79,0,0,0,1);
 INSERT INTO "Products"("ProductID","ProductName","SupplierID","CategoryID","QuantityPerUnit","UnitPrice","UnitsInStock","UnitsOnOrder","ReorderLevel","Discontinued") VALUES(30,'Nord-Ost Matjeshering',13,8,'10 - 200 g glasses',25.89,10,0,15,0);
 INSERT INTO "Products"("ProductID","ProductName","SupplierID","CategoryID","QuantityPerUnit","UnitPrice","UnitsInStock","UnitsOnOrder","ReorderLevel","Discontinued") VALUES(31,'Gorgonzola Telino',14,4,'12 - 100 g pkgs',12.5,0,70,20,0);
 INSERT INTO "Products"("ProductID","ProductName","SupplierID","CategoryID","QuantityPerUnit","UnitPrice","UnitsInStock","UnitsOnOrder","ReorderLevel","Discontinued") VALUES(32,'Mascarpone Fabioli',14,4,'24 - 200 g pkgs.',32,9,40,25,0);
@@ -522,7 +522,7 @@ INSERT INTO "Products"("ProductID","ProductName","SupplierID","CategoryID","Quan
 INSERT INTO "Products"("ProductID","ProductName","SupplierID","CategoryID","QuantityPerUnit","UnitPrice","UnitsInStock","UnitsOnOrder","ReorderLevel","Discontinued") VALUES(35,'Steeleye Stout',16,1,'24 - 12 oz bottles',18,20,0,15,0);
 INSERT INTO "Products"("ProductID","ProductName","SupplierID","CategoryID","QuantityPerUnit","UnitPrice","UnitsInStock","UnitsOnOrder","ReorderLevel","Discontinued") VALUES(36,'Inlagd Sill',17,8,'24 - 250 g  jars',19,112,0,20,0);
 INSERT INTO "Products"("ProductID","ProductName","SupplierID","CategoryID","QuantityPerUnit","UnitPrice","UnitsInStock","UnitsOnOrder","ReorderLevel","Discontinued") VALUES(37,'Gravad lax',17,8,'12 - 500 g pkgs.',26,11,50,25,0);
-INSERT INTO "Products"("ProductID","ProductName","SupplierID","CategoryID","QuantityPerUnit","UnitPrice","UnitsInStock","UnitsOnOrder","ReorderLevel","Discontinued") VALUES(38,'CÃ´te de Blaye',18,1,'12 - 75 cl bottles',263.5,17,0,15,0);
+INSERT INTO "Products"("ProductID","ProductName","SupplierID","CategoryID","QuantityPerUnit","UnitPrice","UnitsInStock","UnitsOnOrder","ReorderLevel","Discontinued") VALUES(38,'Côte de Blaye',18,1,'12 - 75 cl bottles',263.5,17,0,15,0);
 INSERT INTO "Products"("ProductID","ProductName","SupplierID","CategoryID","QuantityPerUnit","UnitPrice","UnitsInStock","UnitsOnOrder","ReorderLevel","Discontinued") VALUES(39,'Chartreuse verte',18,1,'750 cc per bottle',18,69,0,5,0);
 INSERT INTO "Products"("ProductID","ProductName","SupplierID","CategoryID","QuantityPerUnit","UnitPrice","UnitsInStock","UnitsOnOrder","ReorderLevel","Discontinued") VALUES(40,'Boston Crab Meat',19,8,'24 - 4 oz tins',18.4,123,0,30,0);
 INSERT INTO "Products"("ProductID","ProductName","SupplierID","CategoryID","QuantityPerUnit","UnitPrice","UnitsInStock","UnitsOnOrder","ReorderLevel","Discontinued") VALUES(41,'Jack''s New England Clam Chowder',19,8,'12 - 12 oz cans',9.65,85,0,10,0);
@@ -538,17 +538,17 @@ INSERT INTO "Products"("ProductID","ProductName","SupplierID","CategoryID","Quan
 INSERT INTO "Products"("ProductID","ProductName","SupplierID","CategoryID","QuantityPerUnit","UnitPrice","UnitsInStock","UnitsOnOrder","ReorderLevel","Discontinued") VALUES(51,'Manjimup Dried Apples',24,7,'50 - 300 g pkgs.',53,20,0,10,0);
 INSERT INTO "Products"("ProductID","ProductName","SupplierID","CategoryID","QuantityPerUnit","UnitPrice","UnitsInStock","UnitsOnOrder","ReorderLevel","Discontinued") VALUES(52,'Filo Mix',24,5,'16 - 2 kg boxes',7,38,0,25,0);
 INSERT INTO "Products"("ProductID","ProductName","SupplierID","CategoryID","QuantityPerUnit","UnitPrice","UnitsInStock","UnitsOnOrder","ReorderLevel","Discontinued") VALUES(53,'Perth Pasties',24,6,'48 pieces',32.8,0,0,0,1);
-INSERT INTO "Products"("ProductID","ProductName","SupplierID","CategoryID","QuantityPerUnit","UnitPrice","UnitsInStock","UnitsOnOrder","ReorderLevel","Discontinued") VALUES(54,'TourtiÃ¨re',25,6,'16 pies',7.45,21,0,10,0);
-INSERT INTO "Products"("ProductID","ProductName","SupplierID","CategoryID","QuantityPerUnit","UnitPrice","UnitsInStock","UnitsOnOrder","ReorderLevel","Discontinued") VALUES(55,'PÃ¢tÃ© chinois',25,6,'24 boxes x 2 pies',24,115,0,20,0);
+INSERT INTO "Products"("ProductID","ProductName","SupplierID","CategoryID","QuantityPerUnit","UnitPrice","UnitsInStock","UnitsOnOrder","ReorderLevel","Discontinued") VALUES(54,'Tourtière',25,6,'16 pies',7.45,21,0,10,0);
+INSERT INTO "Products"("ProductID","ProductName","SupplierID","CategoryID","QuantityPerUnit","UnitPrice","UnitsInStock","UnitsOnOrder","ReorderLevel","Discontinued") VALUES(55,'Pâté chinois',25,6,'24 boxes x 2 pies',24,115,0,20,0);
 INSERT INTO "Products"("ProductID","ProductName","SupplierID","CategoryID","QuantityPerUnit","UnitPrice","UnitsInStock","UnitsOnOrder","ReorderLevel","Discontinued") VALUES(56,'Gnocchi di nonna Alice',26,5,'24 - 250 g pkgs.',38,21,10,30,0);
 INSERT INTO "Products"("ProductID","ProductName","SupplierID","CategoryID","QuantityPerUnit","UnitPrice","UnitsInStock","UnitsOnOrder","ReorderLevel","Discontinued") VALUES(57,'Ravioli Angelo',26,5,'24 - 250 g pkgs.',19.5,36,0,20,0);
 INSERT INTO "Products"("ProductID","ProductName","SupplierID","CategoryID","QuantityPerUnit","UnitPrice","UnitsInStock","UnitsOnOrder","ReorderLevel","Discontinued") VALUES(58,'Escargots de Bourgogne',27,8,'24 pieces',13.25,62,0,20,0);
 INSERT INTO "Products"("ProductID","ProductName","SupplierID","CategoryID","QuantityPerUnit","UnitPrice","UnitsInStock","UnitsOnOrder","ReorderLevel","Discontinued") VALUES(59,'Raclette Courdavault',28,4,'5 kg pkg.',55,79,0,0,0);
 INSERT INTO "Products"("ProductID","ProductName","SupplierID","CategoryID","QuantityPerUnit","UnitPrice","UnitsInStock","UnitsOnOrder","ReorderLevel","Discontinued") VALUES(60,'Camembert Pierrot',28,4,'15 - 300 g rounds',34,19,0,0,0);
-INSERT INTO "Products"("ProductID","ProductName","SupplierID","CategoryID","QuantityPerUnit","UnitPrice","UnitsInStock","UnitsOnOrder","ReorderLevel","Discontinued") VALUES(61,'Sirop d''Ã©rable',29,2,'24 - 500 ml bottles',28.5,113,0,25,0);
+INSERT INTO "Products"("ProductID","ProductName","SupplierID","CategoryID","QuantityPerUnit","UnitPrice","UnitsInStock","UnitsOnOrder","ReorderLevel","Discontinued") VALUES(61,'Sirop d''érable',29,2,'24 - 500 ml bottles',28.5,113,0,25,0);
 INSERT INTO "Products"("ProductID","ProductName","SupplierID","CategoryID","QuantityPerUnit","UnitPrice","UnitsInStock","UnitsOnOrder","ReorderLevel","Discontinued") VALUES(62,'Tarte au sucre',29,3,'48 pies',49.3,17,0,0,0);
 INSERT INTO "Products"("ProductID","ProductName","SupplierID","CategoryID","QuantityPerUnit","UnitPrice","UnitsInStock","UnitsOnOrder","ReorderLevel","Discontinued") VALUES(63,'Vegie-spread',7,2,'15 - 625 g jars',43.9,24,0,5,0);
-INSERT INTO "Products"("ProductID","ProductName","SupplierID","CategoryID","QuantityPerUnit","UnitPrice","UnitsInStock","UnitsOnOrder","ReorderLevel","Discontinued") VALUES(64,'Wimmers gute SemmelknÃ¶del',12,5,'20 bags x 4 pieces',33.25,22,80,30,0);
+INSERT INTO "Products"("ProductID","ProductName","SupplierID","CategoryID","QuantityPerUnit","UnitPrice","UnitsInStock","UnitsOnOrder","ReorderLevel","Discontinued") VALUES(64,'Wimmers gute Semmelknödel',12,5,'20 bags x 4 pieces',33.25,22,80,30,0);
 INSERT INTO "Products"("ProductID","ProductName","SupplierID","CategoryID","QuantityPerUnit","UnitPrice","UnitsInStock","UnitsOnOrder","ReorderLevel","Discontinued") VALUES(65,'Louisiana Fiery Hot Pepper Sauce',2,2,'32 - 8 oz bottles',21.05,76,0,0,0);
 INSERT INTO "Products"("ProductID","ProductName","SupplierID","CategoryID","QuantityPerUnit","UnitPrice","UnitsInStock","UnitsOnOrder","ReorderLevel","Discontinued") VALUES(66,'Louisiana Hot Spiced Okra',2,2,'24 - 8 oz jars',17,4,100,20,0);
 INSERT INTO "Products"("ProductID","ProductName","SupplierID","CategoryID","QuantityPerUnit","UnitPrice","UnitsInStock","UnitsOnOrder","ReorderLevel","Discontinued") VALUES(67,'Laughing Lumberjack Lager',16,1,'24 - 12 oz bottles',14,52,0,10,0);
@@ -557,11 +557,11 @@ INSERT INTO "Products"("ProductID","ProductName","SupplierID","CategoryID","Quan
 INSERT INTO "Products"("ProductID","ProductName","SupplierID","CategoryID","QuantityPerUnit","UnitPrice","UnitsInStock","UnitsOnOrder","ReorderLevel","Discontinued") VALUES(70,'Outback Lager',7,1,'24 - 355 ml bottles',15,15,10,30,0);
 INSERT INTO "Products"("ProductID","ProductName","SupplierID","CategoryID","QuantityPerUnit","UnitPrice","UnitsInStock","UnitsOnOrder","ReorderLevel","Discontinued") VALUES(71,'Flotemysost',15,4,'10 - 500 g pkgs.',21.5,26,0,0,0);
 INSERT INTO "Products"("ProductID","ProductName","SupplierID","CategoryID","QuantityPerUnit","UnitPrice","UnitsInStock","UnitsOnOrder","ReorderLevel","Discontinued") VALUES(72,'Mozzarella di Giovanni',14,4,'24 - 200 g pkgs.',34.8,14,0,0,0);
-INSERT INTO "Products"("ProductID","ProductName","SupplierID","CategoryID","QuantityPerUnit","UnitPrice","UnitsInStock","UnitsOnOrder","ReorderLevel","Discontinued") VALUES(73,'RÃ¶d Kaviar',17,8,'24 - 150 g jars',15,101,0,5,0);
+INSERT INTO "Products"("ProductID","ProductName","SupplierID","CategoryID","QuantityPerUnit","UnitPrice","UnitsInStock","UnitsOnOrder","ReorderLevel","Discontinued") VALUES(73,'Röd Kaviar',17,8,'24 - 150 g jars',15,101,0,5,0);
 INSERT INTO "Products"("ProductID","ProductName","SupplierID","CategoryID","QuantityPerUnit","UnitPrice","UnitsInStock","UnitsOnOrder","ReorderLevel","Discontinued") VALUES(74,'Longlife Tofu',4,7,'5 kg pkg.',10,4,20,5,0);
-INSERT INTO "Products"("ProductID","ProductName","SupplierID","CategoryID","QuantityPerUnit","UnitPrice","UnitsInStock","UnitsOnOrder","ReorderLevel","Discontinued") VALUES(75,'RhÃ¶nbrÃ¤u Klosterbier',12,1,'24 - 0.5 l bottles',7.75,125,0,25,0);
-INSERT INTO "Products"("ProductID","ProductName","SupplierID","CategoryID","QuantityPerUnit","UnitPrice","UnitsInStock","UnitsOnOrder","ReorderLevel","Discontinued") VALUES(76,'LakkalikÃ¶Ã¶ri',23,1,'500 ml',18,57,0,20,0);
-INSERT INTO "Products"("ProductID","ProductName","SupplierID","CategoryID","QuantityPerUnit","UnitPrice","UnitsInStock","UnitsOnOrder","ReorderLevel","Discontinued") VALUES(77,'Original Frankfurter grÃ¼ne SoÃŸe',12,2,'12 boxes',13,32,0,15,0);
+INSERT INTO "Products"("ProductID","ProductName","SupplierID","CategoryID","QuantityPerUnit","UnitPrice","UnitsInStock","UnitsOnOrder","ReorderLevel","Discontinued") VALUES(75,'Rhönbräu Klosterbier',12,1,'24 - 0.5 l bottles',7.75,125,0,25,0);
+INSERT INTO "Products"("ProductID","ProductName","SupplierID","CategoryID","QuantityPerUnit","UnitPrice","UnitsInStock","UnitsOnOrder","ReorderLevel","Discontinued") VALUES(76,'Lakkalikööri',23,1,'500 ml',18,57,0,20,0);
+INSERT INTO "Products"("ProductID","ProductName","SupplierID","CategoryID","QuantityPerUnit","UnitPrice","UnitsInStock","UnitsOnOrder","ReorderLevel","Discontinued") VALUES(77,'Original Frankfurter grüne Soße',12,2,'12 boxes',13,32,0,15,0);
 
 
 INSERT INTO "Orders"
@@ -576,14 +576,14 @@ INSERT INTO "Orders"
 	"ShippedDate","ShipVia","Freight","ShipName","ShipAddress",
 	"ShipCity","ShipRegion","ShipPostalCode","ShipCountry")
 VALUES (10249,'TOMSP',6,'7/5/1996','8/16/1996','7/10/1996',1,11.61,
-	'Toms SpezialitÃ¤ten','Luisenstr. 48','MÃ¼nster',
+	'Toms Spezialitäten','Luisenstr. 48','Münster',
 	NULL,'44087','Germany');
 INSERT INTO "Orders"
 ("OrderID","CustomerID","EmployeeID","OrderDate","RequiredDate",
 	"ShippedDate","ShipVia","Freight","ShipName","ShipAddress",
 	"ShipCity","ShipRegion","ShipPostalCode","ShipCountry")
 VALUES (10250,'HANAR',4,'7/8/1996','8/5/1996','7/12/1996',2,65.83,
-	'Hanari Carnes','Rua do PaÃ§o, 67','Rio de Janeiro',
+	'Hanari Carnes','Rua do Paço, 67','Rio de Janeiro',
 	'RJ','05454-876','Brazil');
 INSERT INTO "Orders"
 ("OrderID","CustomerID","EmployeeID","OrderDate","RequiredDate",
@@ -597,14 +597,14 @@ INSERT INTO "Orders"
 	"ShippedDate","ShipVia","Freight","ShipName","ShipAddress",
 	"ShipCity","ShipRegion","ShipPostalCode","ShipCountry")
 VALUES (10252,'SUPRD',4,'7/9/1996','8/6/1996','7/11/1996',2,51.30,
-	'SuprÃªmes dÃ©lices','Boulevard Tirou, 255','Charleroi',
+	'Suprêmes délices','Boulevard Tirou, 255','Charleroi',
 	NULL,'B-6000','Belgium');
 INSERT INTO "Orders"
 ("OrderID","CustomerID","EmployeeID","OrderDate","RequiredDate",
 	"ShippedDate","ShipVia","Freight","ShipName","ShipAddress",
 	"ShipCity","ShipRegion","ShipPostalCode","ShipCountry")
 VALUES (10253,'HANAR',3,'7/10/1996','7/24/1996','7/16/1996',2,58.17,
-	'Hanari Carnes','Rua do PaÃ§o, 67','Rio de Janeiro',
+	'Hanari Carnes','Rua do Paço, 67','Rio de Janeiro',
 	'RJ','05454-876','Brazil');
 INSERT INTO "Orders"
 ("OrderID","CustomerID","EmployeeID","OrderDate","RequiredDate",
@@ -618,7 +618,7 @@ INSERT INTO "Orders"
 	"ShippedDate","ShipVia","Freight","ShipName","ShipAddress",
 	"ShipCity","ShipRegion","ShipPostalCode","ShipCountry")
 VALUES (10255,'RICSU',9,'7/12/1996','8/9/1996','7/15/1996',3,148.33,
-	'Richter Supermarkt','Starenweg 5','GenÃ¨ve',
+	'Richter Supermarkt','Starenweg 5','Genève',
 	NULL,'1204','Switzerland');
 INSERT INTO "Orders"
 ("OrderID","CustomerID","EmployeeID","OrderDate","RequiredDate",
@@ -632,8 +632,8 @@ INSERT INTO "Orders"
 	"ShippedDate","ShipVia","Freight","ShipName","ShipAddress",
 	"ShipCity","ShipRegion","ShipPostalCode","ShipCountry")
 VALUES (10257,'HILAA',4,'7/16/1996','8/13/1996','7/22/1996',3,81.91,
-	'HILARION-Abastos','Carrera 22 con Ave. Carlos Soublette #8-35','San CristÃ³bal',
-	'TÃ¡chira','5022','Venezuela');
+	'HILARION-Abastos','Carrera 22 con Ave. Carlos Soublette #8-35','San Cristóbal',
+	'Táchira','5022','Venezuela');
 INSERT INTO "Orders"
 ("OrderID","CustomerID","EmployeeID","OrderDate","RequiredDate",
 	"ShippedDate","ShipVia","Freight","ShipName","ShipAddress",
@@ -646,21 +646,21 @@ INSERT INTO "Orders"
 	"ShippedDate","ShipVia","Freight","ShipName","ShipAddress",
 	"ShipCity","ShipRegion","ShipPostalCode","ShipCountry")
 VALUES (10259,'CENTC',4,'7/18/1996','8/15/1996','7/25/1996',3,3.25,
-	'Centro comercial Moctezuma','Sierras de Granada 9993','MÃ©xico D.F.',
+	'Centro comercial Moctezuma','Sierras de Granada 9993','México D.F.',
 	NULL,'05022','Mexico');
 INSERT INTO "Orders"
 ("OrderID","CustomerID","EmployeeID","OrderDate","RequiredDate",
 	"ShippedDate","ShipVia","Freight","ShipName","ShipAddress",
 	"ShipCity","ShipRegion","ShipPostalCode","ShipCountry")
 VALUES (10260,'OTTIK',4,'7/19/1996','8/16/1996','7/29/1996',1,55.09,
-	'Ottilies KÃ¤seladen','Mehrheimerstr. 369','KÃ¶ln',
+	'Ottilies Käseladen','Mehrheimerstr. 369','Köln',
 	NULL,'50739','Germany');
 INSERT INTO "Orders"
 ("OrderID","CustomerID","EmployeeID","OrderDate","RequiredDate",
 	"ShippedDate","ShipVia","Freight","ShipName","ShipAddress",
 	"ShipCity","ShipRegion","ShipPostalCode","ShipCountry")
 VALUES (10261,'QUEDE',4,'7/19/1996','8/16/1996','7/30/1996',2,3.05,
-	'Que DelÃ­cia','Rua da Panificadora, 12','Rio de Janeiro',
+	'Que Delícia','Rua da Panificadora, 12','Rio de Janeiro',
 	'RJ','02389-673','Brazil');
 INSERT INTO "Orders"
 ("OrderID","CustomerID","EmployeeID","OrderDate","RequiredDate",
@@ -681,14 +681,14 @@ INSERT INTO "Orders"
 	"ShippedDate","ShipVia","Freight","ShipName","ShipAddress",
 	"ShipCity","ShipRegion","ShipPostalCode","ShipCountry")
 VALUES (10264,'FOLKO',6,'7/24/1996','8/21/1996','8/23/1996',3,3.67,
-	'Folk och fÃ¤ HB','Ã…kergatan 24','BrÃ¤cke',
+	'Folk och fä HB','Åkergatan 24','Bräcke',
 	NULL,'S-844 67','Sweden');
 INSERT INTO "Orders"
 ("OrderID","CustomerID","EmployeeID","OrderDate","RequiredDate",
 	"ShippedDate","ShipVia","Freight","ShipName","ShipAddress",
 	"ShipCity","ShipRegion","ShipPostalCode","ShipCountry")
 VALUES (10265,'BLONP',2,'7/25/1996','8/22/1996','8/12/1996',1,55.28,
-	'Blondel pÃ¨re et fils','24, place KlÃ©ber','Strasbourg',
+	'Blondel père et fils','24, place Kléber','Strasbourg',
 	NULL,'67000','France');
 INSERT INTO "Orders"
 ("OrderID","CustomerID","EmployeeID","OrderDate","RequiredDate",
@@ -702,14 +702,14 @@ INSERT INTO "Orders"
 	"ShippedDate","ShipVia","Freight","ShipName","ShipAddress",
 	"ShipCity","ShipRegion","ShipPostalCode","ShipCountry")
 VALUES (10267,'FRANK',4,'7/29/1996','8/26/1996','8/6/1996',1,208.58,
-	'Frankenversand','Berliner Platz 43','MÃ¼nchen',
+	'Frankenversand','Berliner Platz 43','München',
 	NULL,'80805','Germany');
 INSERT INTO "Orders"
 ("OrderID","CustomerID","EmployeeID","OrderDate","RequiredDate",
 	"ShippedDate","ShipVia","Freight","ShipName","ShipAddress",
 	"ShipCity","ShipRegion","ShipPostalCode","ShipCountry")
 VALUES (10268,'GROSR',8,'7/30/1996','8/27/1996','8/2/1996',3,66.29,
-	'GROSELLA-Restaurante','5Âª Ave. Los Palos Grandes','Caracas',
+	'GROSELLA-Restaurante','5ª Ave. Los Palos Grandes','Caracas',
 	'DF','1081','Venezuela');
 INSERT INTO "Orders"
 ("OrderID","CustomerID","EmployeeID","OrderDate","RequiredDate",
@@ -744,7 +744,7 @@ INSERT INTO "Orders"
 	"ShippedDate","ShipVia","Freight","ShipName","ShipAddress",
 	"ShipCity","ShipRegion","ShipPostalCode","ShipCountry")
 VALUES (10273,'QUICK',3,'8/5/1996','9/2/1996','8/12/1996',3,76.07,
-	'QUICK-Stop','TaucherstraÃŸe 10','Cunewalde',
+	'QUICK-Stop','Taucherstraße 10','Cunewalde',
 	NULL,'01307','Germany');
 INSERT INTO "Orders"
 ("OrderID","CustomerID","EmployeeID","OrderDate","RequiredDate",
@@ -765,7 +765,7 @@ INSERT INTO "Orders"
 	"ShippedDate","ShipVia","Freight","ShipName","ShipAddress",
 	"ShipCity","ShipRegion","ShipPostalCode","ShipCountry")
 VALUES (10276,'TORTU',8,'8/8/1996','8/22/1996','8/14/1996',3,13.84,
-	'Tortuga Restaurante','Avda. Azteca 123','MÃ©xico D.F.',
+	'Tortuga Restaurante','Avda. Azteca 123','México D.F.',
 	NULL,'05033','Mexico');
 INSERT INTO "Orders"
 ("OrderID","CustomerID","EmployeeID","OrderDate","RequiredDate",
@@ -779,7 +779,7 @@ INSERT INTO "Orders"
 	"ShippedDate","ShipVia","Freight","ShipName","ShipAddress",
 	"ShipCity","ShipRegion","ShipPostalCode","ShipCountry")
 VALUES (10278,'BERGS',8,'8/12/1996','9/9/1996','8/16/1996',2,92.69,
-	'Berglunds snabbkÃ¶p','BerguvsvÃ¤gen  8','LuleÃ¥',
+	'Berglunds snabbköp','Berguvsvägen  8','Luleå',
 	NULL,'S-958 22','Sweden');
 INSERT INTO "Orders"
 ("OrderID","CustomerID","EmployeeID","OrderDate","RequiredDate",
@@ -793,28 +793,28 @@ INSERT INTO "Orders"
 	"ShippedDate","ShipVia","Freight","ShipName","ShipAddress",
 	"ShipCity","ShipRegion","ShipPostalCode","ShipCountry")
 VALUES (10280,'BERGS',2,'8/14/1996','9/11/1996','9/12/1996',1,8.98,
-	'Berglunds snabbkÃ¶p','BerguvsvÃ¤gen  8','LuleÃ¥',
+	'Berglunds snabbköp','Berguvsvägen  8','Luleå',
 	NULL,'S-958 22','Sweden');
 INSERT INTO "Orders"
 ("OrderID","CustomerID","EmployeeID","OrderDate","RequiredDate",
 	"ShippedDate","ShipVia","Freight","ShipName","ShipAddress",
 	"ShipCity","ShipRegion","ShipPostalCode","ShipCountry")
 VALUES (10281,'ROMEY',4,'8/14/1996','8/28/1996','8/21/1996',1,2.94,
-	'Romero y tomillo','Gran VÃ­a, 1','Madrid',
+	'Romero y tomillo','Gran Vía, 1','Madrid',
 	NULL,'28001','Spain');
 INSERT INTO "Orders"
 ("OrderID","CustomerID","EmployeeID","OrderDate","RequiredDate",
 	"ShippedDate","ShipVia","Freight","ShipName","ShipAddress",
 	"ShipCity","ShipRegion","ShipPostalCode","ShipCountry")
 VALUES (10282,'ROMEY',4,'8/15/1996','9/12/1996','8/21/1996',1,12.69,
-	'Romero y tomillo','Gran VÃ­a, 1','Madrid',
+	'Romero y tomillo','Gran Vía, 1','Madrid',
 	NULL,'28001','Spain');
 INSERT INTO "Orders"
 ("OrderID","CustomerID","EmployeeID","OrderDate","RequiredDate",
 	"ShippedDate","ShipVia","Freight","ShipName","ShipAddress",
 	"ShipCity","ShipRegion","ShipPostalCode","ShipCountry")
 VALUES (10283,'LILAS',3,'8/16/1996','9/13/1996','8/23/1996',3,84.81,
-	'LILA-Supermercado','Carrera 52 con Ave. BolÃ­var #65-98 Llano Largo','Barquisimeto',
+	'LILA-Supermercado','Carrera 52 con Ave. Bolívar #65-98 Llano Largo','Barquisimeto',
 	'Lara','3508','Venezuela');
 INSERT INTO "Orders"
 ("OrderID","CustomerID","EmployeeID","OrderDate","RequiredDate",
@@ -828,14 +828,14 @@ INSERT INTO "Orders"
 	"ShippedDate","ShipVia","Freight","ShipName","ShipAddress",
 	"ShipCity","ShipRegion","ShipPostalCode","ShipCountry")
 VALUES (10285,'QUICK',1,'8/20/1996','9/17/1996','8/26/1996',2,76.83,
-	'QUICK-Stop','TaucherstraÃŸe 10','Cunewalde',
+	'QUICK-Stop','Taucherstraße 10','Cunewalde',
 	NULL,'01307','Germany');
 INSERT INTO "Orders"
 ("OrderID","CustomerID","EmployeeID","OrderDate","RequiredDate",
 	"ShippedDate","ShipVia","Freight","ShipName","ShipAddress",
 	"ShipCity","ShipRegion","ShipPostalCode","ShipCountry")
 VALUES (10286,'QUICK',8,'8/21/1996','9/18/1996','8/30/1996',3,229.24,
-	'QUICK-Stop','TaucherstraÃŸe 10','Cunewalde',
+	'QUICK-Stop','Taucherstraße 10','Cunewalde',
 	NULL,'01307','Germany');
 INSERT INTO "Orders"
 ("OrderID","CustomerID","EmployeeID","OrderDate","RequiredDate",
@@ -863,28 +863,28 @@ INSERT INTO "Orders"
 	"ShippedDate","ShipVia","Freight","ShipName","ShipAddress",
 	"ShipCity","ShipRegion","ShipPostalCode","ShipCountry")
 VALUES (10290,'COMMI',8,'8/27/1996','9/24/1996','9/3/1996',1,79.70,
-	'ComÃ©rcio Mineiro','Av. dos LusÃ­adas, 23','Sao Paulo',
+	'Comércio Mineiro','Av. dos Lusíadas, 23','Sao Paulo',
 	'SP','05432-043','Brazil');
 INSERT INTO "Orders"
 ("OrderID","CustomerID","EmployeeID","OrderDate","RequiredDate",
 	"ShippedDate","ShipVia","Freight","ShipName","ShipAddress",
 	"ShipCity","ShipRegion","ShipPostalCode","ShipCountry")
 VALUES (10291,'QUEDE',6,'8/27/1996','9/24/1996','9/4/1996',2,6.40,
-	'Que DelÃ­cia','Rua da Panificadora, 12','Rio de Janeiro',
+	'Que Delícia','Rua da Panificadora, 12','Rio de Janeiro',
 	'RJ','02389-673','Brazil');
 INSERT INTO "Orders"
 ("OrderID","CustomerID","EmployeeID","OrderDate","RequiredDate",
 	"ShippedDate","ShipVia","Freight","ShipName","ShipAddress",
 	"ShipCity","ShipRegion","ShipPostalCode","ShipCountry")
 VALUES (10292,'TRADH',1,'8/28/1996','9/25/1996','9/2/1996',2,1.35,
-	'TradiÃ§ao Hipermercados','Av. InÃªs de Castro, 414','Sao Paulo',
+	'Tradiçao Hipermercados','Av. Inês de Castro, 414','Sao Paulo',
 	'SP','05634-030','Brazil');
 INSERT INTO "Orders"
 ("OrderID","CustomerID","EmployeeID","OrderDate","RequiredDate",
 	"ShippedDate","ShipVia","Freight","ShipName","ShipAddress",
 	"ShipCity","ShipRegion","ShipPostalCode","ShipCountry")
 VALUES (10293,'TORTU',1,'8/29/1996','9/26/1996','9/11/1996',3,21.18,
-	'Tortuga Restaurante','Avda. Azteca 123','MÃ©xico D.F.',
+	'Tortuga Restaurante','Avda. Azteca 123','México D.F.',
 	NULL,'05033','Mexico');
 INSERT INTO "Orders"
 ("OrderID","CustomerID","EmployeeID","OrderDate","RequiredDate",
@@ -905,14 +905,14 @@ INSERT INTO "Orders"
 	"ShippedDate","ShipVia","Freight","ShipName","ShipAddress",
 	"ShipCity","ShipRegion","ShipPostalCode","ShipCountry")
 VALUES (10296,'LILAS',6,'9/3/1996','10/1/1996','9/11/1996',1,0.12,
-	'LILA-Supermercado','Carrera 52 con Ave. BolÃ­var #65-98 Llano Largo','Barquisimeto',
+	'LILA-Supermercado','Carrera 52 con Ave. Bolívar #65-98 Llano Largo','Barquisimeto',
 	'Lara','3508','Venezuela');
 INSERT INTO "Orders"
 ("OrderID","CustomerID","EmployeeID","OrderDate","RequiredDate",
 	"ShippedDate","ShipVia","Freight","ShipName","ShipAddress",
 	"ShipCity","ShipRegion","ShipPostalCode","ShipCountry")
 VALUES (10297,'BLONP',5,'9/4/1996','10/16/1996','9/10/1996',2,5.74,
-	'Blondel pÃ¨re et fils','24, place KlÃ©ber','Strasbourg',
+	'Blondel père et fils','24, place Kléber','Strasbourg',
 	NULL,'67000','France');
 INSERT INTO "Orders"
 ("OrderID","CustomerID","EmployeeID","OrderDate","RequiredDate",
@@ -947,21 +947,21 @@ INSERT INTO "Orders"
 	"ShippedDate","ShipVia","Freight","ShipName","ShipAddress",
 	"ShipCity","ShipRegion","ShipPostalCode","ShipCountry")
 VALUES (10302,'SUPRD',4,'9/10/1996','10/8/1996','10/9/1996',2,6.27,
-	'SuprÃªmes dÃ©lices','Boulevard Tirou, 255','Charleroi',
+	'Suprêmes délices','Boulevard Tirou, 255','Charleroi',
 	NULL,'B-6000','Belgium');
 INSERT INTO "Orders"
 ("OrderID","CustomerID","EmployeeID","OrderDate","RequiredDate",
 	"ShippedDate","ShipVia","Freight","ShipName","ShipAddress",
 	"ShipCity","ShipRegion","ShipPostalCode","ShipCountry")
 VALUES (10303,'GODOS',7,'9/11/1996','10/9/1996','9/18/1996',2,107.83,
-	'Godos Cocina TÃ­pica','C/ Romero, 33','Sevilla',
+	'Godos Cocina Típica','C/ Romero, 33','Sevilla',
 	NULL,'41101','Spain');
 INSERT INTO "Orders"
 ("OrderID","CustomerID","EmployeeID","OrderDate","RequiredDate",
 	"ShippedDate","ShipVia","Freight","ShipName","ShipAddress",
 	"ShipCity","ShipRegion","ShipPostalCode","ShipCountry")
 VALUES (10304,'TORTU',1,'9/12/1996','10/10/1996','9/17/1996',2,63.79,
-	'Tortuga Restaurante','Avda. Azteca 123','MÃ©xico D.F.',
+	'Tortuga Restaurante','Avda. Azteca 123','México D.F.',
 	NULL,'05033','Mexico');
 INSERT INTO "Orders"
 ("OrderID","CustomerID","EmployeeID","OrderDate","RequiredDate",
@@ -975,7 +975,7 @@ INSERT INTO "Orders"
 	"ShippedDate","ShipVia","Freight","ShipName","ShipAddress",
 	"ShipCity","ShipRegion","ShipPostalCode","ShipCountry")
 VALUES (10306,'ROMEY',1,'9/16/1996','10/14/1996','9/23/1996',3,7.56,
-	'Romero y tomillo','Gran VÃ­a, 1','Madrid',
+	'Romero y tomillo','Gran Vía, 1','Madrid',
 	NULL,'28001','Spain');
 INSERT INTO "Orders"
 ("OrderID","CustomerID","EmployeeID","OrderDate","RequiredDate",
@@ -989,7 +989,7 @@ INSERT INTO "Orders"
 	"ShippedDate","ShipVia","Freight","ShipName","ShipAddress",
 	"ShipCity","ShipRegion","ShipPostalCode","ShipCountry")
 VALUES (10308,'ANATR',7,'9/18/1996','10/16/1996','9/24/1996',3,1.61,
-	'Ana Trujillo Emparedados y helados','Avda. de la ConstituciÃ³n 2222','MÃ©xico D.F.',
+	'Ana Trujillo Emparedados y helados','Avda. de la Constitución 2222','México D.F.',
 	NULL,'05021','Mexico');
 INSERT INTO "Orders"
 ("OrderID","CustomerID","EmployeeID","OrderDate","RequiredDate",
@@ -1024,7 +1024,7 @@ INSERT INTO "Orders"
 	"ShippedDate","ShipVia","Freight","ShipName","ShipAddress",
 	"ShipCity","ShipRegion","ShipPostalCode","ShipCountry")
 VALUES (10313,'QUICK',2,'9/24/1996','10/22/1996','10/4/1996',2,1.96,
-	'QUICK-Stop','TaucherstraÃŸe 10','Cunewalde',
+	'QUICK-Stop','Taucherstraße 10','Cunewalde',
 	NULL,'01307','Germany');
 INSERT INTO "Orders"
 ("OrderID","CustomerID","EmployeeID","OrderDate","RequiredDate",
@@ -1066,7 +1066,7 @@ INSERT INTO "Orders"
 	"ShippedDate","ShipVia","Freight","ShipName","ShipAddress",
 	"ShipCity","ShipRegion","ShipPostalCode","ShipCountry")
 VALUES (10319,'TORTU',7,'10/2/1996','10/30/1996','10/11/1996',3,64.50,
-	'Tortuga Restaurante','Avda. Azteca 123','MÃ©xico D.F.',
+	'Tortuga Restaurante','Avda. Azteca 123','México D.F.',
 	NULL,'05033','Mexico');
 INSERT INTO "Orders"
 ("OrderID","CustomerID","EmployeeID","OrderDate","RequiredDate",
@@ -1087,14 +1087,14 @@ INSERT INTO "Orders"
 	"ShippedDate","ShipVia","Freight","ShipName","ShipAddress",
 	"ShipCity","ShipRegion","ShipPostalCode","ShipCountry")
 VALUES (10322,'PERIC',7,'10/4/1996','11/1/1996','10/23/1996',3,0.40,
-	'Pericles Comidas clÃ¡sicas','Calle Dr. Jorge Cash 321','MÃ©xico D.F.',
+	'Pericles Comidas clásicas','Calle Dr. Jorge Cash 321','México D.F.',
 	NULL,'05033','Mexico');
 INSERT INTO "Orders"
 ("OrderID","CustomerID","EmployeeID","OrderDate","RequiredDate",
 	"ShippedDate","ShipVia","Freight","ShipName","ShipAddress",
 	"ShipCity","ShipRegion","ShipPostalCode","ShipCountry")
 VALUES (10323,'KOENE',4,'10/7/1996','11/4/1996','10/14/1996',1,4.88,
-	'KÃ¶niglich Essen','Maubelstr. 90','Brandenburg',
+	'Königlich Essen','Maubelstr. 90','Brandenburg',
 	NULL,'14776','Germany');
 INSERT INTO "Orders"
 ("OrderID","CustomerID","EmployeeID","OrderDate","RequiredDate",
@@ -1108,21 +1108,21 @@ INSERT INTO "Orders"
 	"ShippedDate","ShipVia","Freight","ShipName","ShipAddress",
 	"ShipCity","ShipRegion","ShipPostalCode","ShipCountry")
 VALUES (10325,'KOENE',1,'10/9/1996','10/23/1996','10/14/1996',3,64.86,
-	'KÃ¶niglich Essen','Maubelstr. 90','Brandenburg',
+	'Königlich Essen','Maubelstr. 90','Brandenburg',
 	NULL,'14776','Germany');
 INSERT INTO "Orders"
 ("OrderID","CustomerID","EmployeeID","OrderDate","RequiredDate",
 	"ShippedDate","ShipVia","Freight","ShipName","ShipAddress",
 	"ShipCity","ShipRegion","ShipPostalCode","ShipCountry")
 VALUES (10326,'BOLID',4,'10/10/1996','11/7/1996','10/14/1996',2,77.92,
-	'BÃ³lido Comidas preparadas','C/ Araquil, 67','Madrid',
+	'Bólido Comidas preparadas','C/ Araquil, 67','Madrid',
 	NULL,'28023','Spain');
 INSERT INTO "Orders"
 ("OrderID","CustomerID","EmployeeID","OrderDate","RequiredDate",
 	"ShippedDate","ShipVia","Freight","ShipName","ShipAddress",
 	"ShipCity","ShipRegion","ShipPostalCode","ShipCountry")
 VALUES (10327,'FOLKO',2,'10/11/1996','11/8/1996','10/14/1996',1,63.36,
-	'Folk och fÃ¤ HB','Ã…kergatan 24','BrÃ¤cke',
+	'Folk och fä HB','Åkergatan 24','Bräcke',
 	NULL,'S-844 67','Sweden');
 INSERT INTO "Orders"
 ("OrderID","CustomerID","EmployeeID","OrderDate","RequiredDate",
@@ -1143,7 +1143,7 @@ INSERT INTO "Orders"
 	"ShippedDate","ShipVia","Freight","ShipName","ShipAddress",
 	"ShipCity","ShipRegion","ShipPostalCode","ShipCountry")
 VALUES (10330,'LILAS',3,'10/16/1996','11/13/1996','10/28/1996',1,12.75,
-	'LILA-Supermercado','Carrera 52 con Ave. BolÃ­var #65-98 Llano Largo','Barquisimeto',
+	'LILA-Supermercado','Carrera 52 con Ave. Bolívar #65-98 Llano Largo','Barquisimeto',
 	'Lara','3508','Venezuela');
 INSERT INTO "Orders"
 ("OrderID","CustomerID","EmployeeID","OrderDate","RequiredDate",
@@ -1157,8 +1157,8 @@ INSERT INTO "Orders"
 	"ShippedDate","ShipVia","Freight","ShipName","ShipAddress",
 	"ShipCity","ShipRegion","ShipPostalCode","ShipCountry")
 VALUES (10332,'MEREP',3,'10/17/1996','11/28/1996','10/21/1996',2,52.84,
-	'MÃ¨re Paillarde','43 rue St. Laurent','MontrÃ©al',
-	'QuÃ©bec','H1J 1C3','Canada');
+	'Mère Paillarde','43 rue St. Laurent','Montréal',
+	'Québec','H1J 1C3','Canada');
 INSERT INTO "Orders"
 ("OrderID","CustomerID","EmployeeID","OrderDate","RequiredDate",
 	"ShippedDate","ShipVia","Freight","ShipName","ShipAddress",
@@ -1185,14 +1185,14 @@ INSERT INTO "Orders"
 	"ShippedDate","ShipVia","Freight","ShipName","ShipAddress",
 	"ShipCity","ShipRegion","ShipPostalCode","ShipCountry")
 VALUES (10336,'PRINI',7,'10/23/1996','11/20/1996','10/25/1996',2,15.51,
-	'Princesa Isabel Vinhos','Estrada da saÃºde n. 58','Lisboa',
+	'Princesa Isabel Vinhos','Estrada da saúde n. 58','Lisboa',
 	NULL,'1756','Portugal');
 INSERT INTO "Orders"
 ("OrderID","CustomerID","EmployeeID","OrderDate","RequiredDate",
 	"ShippedDate","ShipVia","Freight","ShipName","ShipAddress",
 	"ShipCity","ShipRegion","ShipPostalCode","ShipCountry")
 VALUES (10337,'FRANK',4,'10/24/1996','11/21/1996','10/29/1996',3,108.26,
-	'Frankenversand','Berliner Platz 43','MÃ¼nchen',
+	'Frankenversand','Berliner Platz 43','München',
 	NULL,'80805','Germany');
 INSERT INTO "Orders"
 ("OrderID","CustomerID","EmployeeID","OrderDate","RequiredDate",
@@ -1206,8 +1206,8 @@ INSERT INTO "Orders"
 	"ShippedDate","ShipVia","Freight","ShipName","ShipAddress",
 	"ShipCity","ShipRegion","ShipPostalCode","ShipCountry")
 VALUES (10339,'MEREP',2,'10/28/1996','11/25/1996','11/4/1996',2,15.66,
-	'MÃ¨re Paillarde','43 rue St. Laurent','MontrÃ©al',
-	'QuÃ©bec','H1J 1C3','Canada');
+	'Mère Paillarde','43 rue St. Laurent','Montréal',
+	'Québec','H1J 1C3','Canada');
 INSERT INTO "Orders"
 ("OrderID","CustomerID","EmployeeID","OrderDate","RequiredDate",
 	"ShippedDate","ShipVia","Freight","ShipName","ShipAddress",
@@ -1220,14 +1220,14 @@ INSERT INTO "Orders"
 	"ShippedDate","ShipVia","Freight","ShipName","ShipAddress",
 	"ShipCity","ShipRegion","ShipPostalCode","ShipCountry")
 VALUES (10341,'SIMOB',7,'10/29/1996','11/26/1996','11/5/1996',3,26.78,
-	'Simons bistro','VinbÃ¦ltet 34','Kobenhavn',
+	'Simons bistro','Vinbæltet 34','Kobenhavn',
 	NULL,'1734','Denmark');
 INSERT INTO "Orders"
 ("OrderID","CustomerID","EmployeeID","OrderDate","RequiredDate",
 	"ShippedDate","ShipVia","Freight","ShipName","ShipAddress",
 	"ShipCity","ShipRegion","ShipPostalCode","ShipCountry")
 VALUES (10342,'FRANK',4,'10/30/1996','11/13/1996','11/4/1996',2,54.83,
-	'Frankenversand','Berliner Platz 43','MÃ¼nchen',
+	'Frankenversand','Berliner Platz 43','München',
 	NULL,'80805','Germany');
 INSERT INTO "Orders"
 ("OrderID","CustomerID","EmployeeID","OrderDate","RequiredDate",
@@ -1248,7 +1248,7 @@ INSERT INTO "Orders"
 	"ShippedDate","ShipVia","Freight","ShipName","ShipAddress",
 	"ShipCity","ShipRegion","ShipPostalCode","ShipCountry")
 VALUES (10345,'QUICK',2,'11/4/1996','12/2/1996','11/11/1996',2,249.06,
-	'QUICK-Stop','TaucherstraÃŸe 10','Cunewalde',
+	'QUICK-Stop','Taucherstraße 10','Cunewalde',
 	NULL,'01307','Germany');
 INSERT INTO "Orders"
 ("OrderID","CustomerID","EmployeeID","OrderDate","RequiredDate",
@@ -1262,7 +1262,7 @@ INSERT INTO "Orders"
 	"ShippedDate","ShipVia","Freight","ShipName","ShipAddress",
 	"ShipCity","ShipRegion","ShipPostalCode","ShipCountry")
 VALUES (10347,'FAMIA',4,'11/6/1996','12/4/1996','11/8/1996',3,3.10,
-	'Familia Arquibaldo','Rua OrÃ³s, 92','Sao Paulo',
+	'Familia Arquibaldo','Rua Orós, 92','Sao Paulo',
 	'SP','05442-030','Brazil');
 INSERT INTO "Orders"
 ("OrderID","CustomerID","EmployeeID","OrderDate","RequiredDate",
@@ -1311,7 +1311,7 @@ INSERT INTO "Orders"
 	"ShippedDate","ShipVia","Freight","ShipName","ShipAddress",
 	"ShipCity","ShipRegion","ShipPostalCode","ShipCountry")
 VALUES (10354,'PERIC',8,'11/14/1996','12/12/1996','11/20/1996',3,53.80,
-	'Pericles Comidas clÃ¡sicas','Calle Dr. Jorge Cash 321','MÃ©xico D.F.',
+	'Pericles Comidas clásicas','Calle Dr. Jorge Cash 321','México D.F.',
 	NULL,'05033','Mexico');
 INSERT INTO "Orders"
 ("OrderID","CustomerID","EmployeeID","OrderDate","RequiredDate",
@@ -1332,7 +1332,7 @@ INSERT INTO "Orders"
 	"ShippedDate","ShipVia","Freight","ShipName","ShipAddress",
 	"ShipCity","ShipRegion","ShipPostalCode","ShipCountry")
 VALUES (10357,'LILAS',1,'11/19/1996','12/17/1996','12/2/1996',3,34.88,
-	'LILA-Supermercado','Carrera 52 con Ave. BolÃ­var #65-98 Llano Largo','Barquisimeto',
+	'LILA-Supermercado','Carrera 52 con Ave. Bolívar #65-98 Llano Largo','Barquisimeto',
 	'Lara','3508','Venezuela');
 INSERT INTO "Orders"
 ("OrderID","CustomerID","EmployeeID","OrderDate","RequiredDate",
@@ -1353,14 +1353,14 @@ INSERT INTO "Orders"
 	"ShippedDate","ShipVia","Freight","ShipName","ShipAddress",
 	"ShipCity","ShipRegion","ShipPostalCode","ShipCountry")
 VALUES (10360,'BLONP',4,'11/22/1996','12/20/1996','12/2/1996',3,131.70,
-	'Blondel pÃ¨re et fils','24, place KlÃ©ber','Strasbourg',
+	'Blondel père et fils','24, place Kléber','Strasbourg',
 	NULL,'67000','France');
 INSERT INTO "Orders"
 ("OrderID","CustomerID","EmployeeID","OrderDate","RequiredDate",
 	"ShippedDate","ShipVia","Freight","ShipName","ShipAddress",
 	"ShipCity","ShipRegion","ShipPostalCode","ShipCountry")
 VALUES (10361,'QUICK',1,'11/22/1996','12/20/1996','12/3/1996',2,183.17,
-	'QUICK-Stop','TaucherstraÃŸe 10','Cunewalde',
+	'QUICK-Stop','Taucherstraße 10','Cunewalde',
 	NULL,'01307','Germany');
 INSERT INTO "Orders"
 ("OrderID","CustomerID","EmployeeID","OrderDate","RequiredDate",
@@ -1388,21 +1388,21 @@ INSERT INTO "Orders"
 	"ShippedDate","ShipVia","Freight","ShipName","ShipAddress",
 	"ShipCity","ShipRegion","ShipPostalCode","ShipCountry")
 VALUES (10365,'ANTON',3,'11/27/1996','12/25/1996','12/2/1996',2,22.00,
-	'Antonio Moreno TaquerÃ­a','Mataderos  2312','MÃ©xico D.F.',
+	'Antonio Moreno Taquería','Mataderos  2312','México D.F.',
 	NULL,'05023','Mexico');
 INSERT INTO "Orders"
 ("OrderID","CustomerID","EmployeeID","OrderDate","RequiredDate",
 	"ShippedDate","ShipVia","Freight","ShipName","ShipAddress",
 	"ShipCity","ShipRegion","ShipPostalCode","ShipCountry")
 VALUES (10366,'GALED',8,'11/28/1996','1/9/1997','12/30/1996',2,10.14,
-	'GalerÃ­a del gastronÃ³mo','Rambla de CataluÃ±a, 23','Barcelona',
+	'Galería del gastronómo','Rambla de Cataluña, 23','Barcelona',
 	NULL,'8022','Spain');
 INSERT INTO "Orders"
 ("OrderID","CustomerID","EmployeeID","OrderDate","RequiredDate",
 	"ShippedDate","ShipVia","Freight","ShipName","ShipAddress",
 	"ShipCity","ShipRegion","ShipPostalCode","ShipCountry")
 VALUES (10367,'VAFFE',7,'11/28/1996','12/26/1996','12/2/1996',3,13.55,
-	'Vaffeljernet','Smagsloget 45','Ã…rhus',
+	'Vaffeljernet','Smagsloget 45','Århus',
 	NULL,'8200','Denmark');
 INSERT INTO "Orders"
 ("OrderID","CustomerID","EmployeeID","OrderDate","RequiredDate",
@@ -1437,7 +1437,7 @@ INSERT INTO "Orders"
 	"ShippedDate","ShipVia","Freight","ShipName","ShipAddress",
 	"ShipCity","ShipRegion","ShipPostalCode","ShipCountry")
 VALUES (10372,'QUEEN',5,'12/4/1996','1/1/1997','12/9/1996',2,890.78,
-	'Queen Cozinha','Alameda dos CanÃ rios, 891','Sao Paulo',
+	'Queen Cozinha','Alameda dos Canàrios, 891','Sao Paulo',
 	'SP','05487-020','Brazil');
 INSERT INTO "Orders"
 ("OrderID","CustomerID","EmployeeID","OrderDate","RequiredDate",
@@ -1465,8 +1465,8 @@ INSERT INTO "Orders"
 	"ShippedDate","ShipVia","Freight","ShipName","ShipAddress",
 	"ShipCity","ShipRegion","ShipPostalCode","ShipCountry")
 VALUES (10376,'MEREP',1,'12/9/1996','1/6/1997','12/13/1996',2,20.39,
-	'MÃ¨re Paillarde','43 rue St. Laurent','MontrÃ©al',
-	'QuÃ©bec','H1J 1C3','Canada');
+	'Mère Paillarde','43 rue St. Laurent','Montréal',
+	'Québec','H1J 1C3','Canada');
 INSERT INTO "Orders"
 ("OrderID","CustomerID","EmployeeID","OrderDate","RequiredDate",
 	"ShippedDate","ShipVia","Freight","ShipName","ShipAddress",
@@ -1479,14 +1479,14 @@ INSERT INTO "Orders"
 	"ShippedDate","ShipVia","Freight","ShipName","ShipAddress",
 	"ShipCity","ShipRegion","ShipPostalCode","ShipCountry")
 VALUES (10378,'FOLKO',5,'12/10/1996','1/7/1997','12/19/1996',3,5.44,
-	'Folk och fÃ¤ HB','Ã…kergatan 24','BrÃ¤cke',
+	'Folk och fä HB','Åkergatan 24','Bräcke',
 	NULL,'S-844 67','Sweden');
 INSERT INTO "Orders"
 ("OrderID","CustomerID","EmployeeID","OrderDate","RequiredDate",
 	"ShippedDate","ShipVia","Freight","ShipName","ShipAddress",
 	"ShipCity","ShipRegion","ShipPostalCode","ShipCountry")
 VALUES (10379,'QUEDE',2,'12/11/1996','1/8/1997','12/13/1996',1,45.03,
-	'Que DelÃ­cia','Rua da Panificadora, 12','Rio de Janeiro',
+	'Que Delícia','Rua da Panificadora, 12','Rio de Janeiro',
 	'RJ','02389-673','Brazil');
 INSERT INTO "Orders"
 ("OrderID","CustomerID","EmployeeID","OrderDate","RequiredDate",
@@ -1500,7 +1500,7 @@ INSERT INTO "Orders"
 	"ShippedDate","ShipVia","Freight","ShipName","ShipAddress",
 	"ShipCity","ShipRegion","ShipPostalCode","ShipCountry")
 VALUES (10381,'LILAS',3,'12/12/1996','1/9/1997','12/13/1996',3,7.99,
-	'LILA-Supermercado','Carrera 52 con Ave. BolÃ­var #65-98 Llano Largo','Barquisimeto',
+	'LILA-Supermercado','Carrera 52 con Ave. Bolívar #65-98 Llano Largo','Barquisimeto',
 	'Lara','3508','Venezuela');
 INSERT INTO "Orders"
 ("OrderID","CustomerID","EmployeeID","OrderDate","RequiredDate",
@@ -1521,7 +1521,7 @@ INSERT INTO "Orders"
 	"ShippedDate","ShipVia","Freight","ShipName","ShipAddress",
 	"ShipCity","ShipRegion","ShipPostalCode","ShipCountry")
 VALUES (10384,'BERGS',3,'12/16/1996','1/13/1997','12/20/1996',3,168.64,
-	'Berglunds snabbkÃ¶p','BerguvsvÃ¤gen  8','LuleÃ¥',
+	'Berglunds snabbköp','Berguvsvägen  8','Luleå',
 	NULL,'S-958 22','Sweden');
 INSERT INTO "Orders"
 ("OrderID","CustomerID","EmployeeID","OrderDate","RequiredDate",
@@ -1535,14 +1535,14 @@ INSERT INTO "Orders"
 	"ShippedDate","ShipVia","Freight","ShipName","ShipAddress",
 	"ShipCity","ShipRegion","ShipPostalCode","ShipCountry")
 VALUES (10386,'FAMIA',9,'12/18/1996','1/1/1997','12/25/1996',3,13.99,
-	'Familia Arquibaldo','Rua OrÃ³s, 92','Sao Paulo',
+	'Familia Arquibaldo','Rua Orós, 92','Sao Paulo',
 	'SP','05442-030','Brazil');
 INSERT INTO "Orders"
 ("OrderID","CustomerID","EmployeeID","OrderDate","RequiredDate",
 	"ShippedDate","ShipVia","Freight","ShipName","ShipAddress",
 	"ShipCity","ShipRegion","ShipPostalCode","ShipCountry")
 VALUES (10387,'SANTG',1,'12/18/1996','1/15/1997','12/20/1996',2,93.63,
-	'SantÃ© Gourmet','Erling Skakkes gate 78','Stavern',
+	'Santé Gourmet','Erling Skakkes gate 78','Stavern',
 	NULL,'4110','Norway');
 INSERT INTO "Orders"
 ("OrderID","CustomerID","EmployeeID","OrderDate","RequiredDate",
@@ -1598,21 +1598,21 @@ INSERT INTO "Orders"
 	"ShippedDate","ShipVia","Freight","ShipName","ShipAddress",
 	"ShipCity","ShipRegion","ShipPostalCode","ShipCountry")
 VALUES (10395,'HILAA',6,'12/26/1996','1/23/1997','1/3/1997',1,184.41,
-	'HILARION-Abastos','Carrera 22 con Ave. Carlos Soublette #8-35','San CristÃ³bal',
-	'TÃ¡chira','5022','Venezuela');
+	'HILARION-Abastos','Carrera 22 con Ave. Carlos Soublette #8-35','San Cristóbal',
+	'Táchira','5022','Venezuela');
 INSERT INTO "Orders"
 ("OrderID","CustomerID","EmployeeID","OrderDate","RequiredDate",
 	"ShippedDate","ShipVia","Freight","ShipName","ShipAddress",
 	"ShipCity","ShipRegion","ShipPostalCode","ShipCountry")
 VALUES (10396,'FRANK',1,'12/27/1996','1/10/1997','1/6/1997',3,135.35,
-	'Frankenversand','Berliner Platz 43','MÃ¼nchen',
+	'Frankenversand','Berliner Platz 43','München',
 	NULL,'80805','Germany');
 INSERT INTO "Orders"
 ("OrderID","CustomerID","EmployeeID","OrderDate","RequiredDate",
 	"ShippedDate","ShipVia","Freight","ShipName","ShipAddress",
 	"ShipCity","ShipRegion","ShipPostalCode","ShipCountry")
 VALUES (10397,'PRINI',5,'12/27/1996','1/24/1997','1/2/1997',1,60.26,
-	'Princesa Isabel Vinhos','Estrada da saÃºde n. 58','Lisboa',
+	'Princesa Isabel Vinhos','Estrada da saúde n. 58','Lisboa',
 	NULL,'1756','Portugal');
 INSERT INTO "Orders"
 ("OrderID","CustomerID","EmployeeID","OrderDate","RequiredDate",
@@ -1626,7 +1626,7 @@ INSERT INTO "Orders"
 	"ShippedDate","ShipVia","Freight","ShipName","ShipAddress",
 	"ShipCity","ShipRegion","ShipPostalCode","ShipCountry")
 VALUES (10399,'VAFFE',8,'12/31/1996','1/14/1997','1/8/1997',3,27.36,
-	'Vaffeljernet','Smagsloget 45','Ã…rhus',
+	'Vaffeljernet','Smagsloget 45','Århus',
 	NULL,'8200','Denmark');
 INSERT INTO "Orders"
 ("OrderID","CustomerID","EmployeeID","OrderDate","RequiredDate",
@@ -1675,28 +1675,28 @@ INSERT INTO "Orders"
 	"ShippedDate","ShipVia","Freight","ShipName","ShipAddress",
 	"ShipCity","ShipRegion","ShipPostalCode","ShipCountry")
 VALUES (10406,'QUEEN',7,'1/7/1997','2/18/1997','1/13/1997',1,108.04,
-	'Queen Cozinha','Alameda dos CanÃ rios, 891','Sao Paulo',
+	'Queen Cozinha','Alameda dos Canàrios, 891','Sao Paulo',
 	'SP','05487-020','Brazil');
 INSERT INTO "Orders"
 ("OrderID","CustomerID","EmployeeID","OrderDate","RequiredDate",
 	"ShippedDate","ShipVia","Freight","ShipName","ShipAddress",
 	"ShipCity","ShipRegion","ShipPostalCode","ShipCountry")
 VALUES (10407,'OTTIK',2,'1/7/1997','2/4/1997','1/30/1997',2,91.48,
-	'Ottilies KÃ¤seladen','Mehrheimerstr. 369','KÃ¶ln',
+	'Ottilies Käseladen','Mehrheimerstr. 369','Köln',
 	NULL,'50739','Germany');
 INSERT INTO "Orders"
 ("OrderID","CustomerID","EmployeeID","OrderDate","RequiredDate",
 	"ShippedDate","ShipVia","Freight","ShipName","ShipAddress",
 	"ShipCity","ShipRegion","ShipPostalCode","ShipCountry")
 VALUES (10408,'FOLIG',8,'1/8/1997','2/5/1997','1/14/1997',1,11.26,
-	'Folies gourmandes','184, chaussÃ©e de Tournai','Lille',
+	'Folies gourmandes','184, chaussée de Tournai','Lille',
 	NULL,'59000','France');
 INSERT INTO "Orders"
 ("OrderID","CustomerID","EmployeeID","OrderDate","RequiredDate",
 	"ShippedDate","ShipVia","Freight","ShipName","ShipAddress",
 	"ShipCity","ShipRegion","ShipPostalCode","ShipCountry")
 VALUES (10409,'OCEAN',3,'1/9/1997','2/6/1997','1/14/1997',1,29.83,
-	'OcÃ©ano AtlÃ¡ntico Ltda.','Ing. Gustavo Moncada 8585 Piso 20-A','Buenos Aires',
+	'Océano Atlántico Ltda.','Ing. Gustavo Moncada 8585 Piso 20-A','Buenos Aires',
 	NULL,'1010','Argentina');
 INSERT INTO "Orders"
 ("OrderID","CustomerID","EmployeeID","OrderDate","RequiredDate",
@@ -1731,7 +1731,7 @@ INSERT INTO "Orders"
 	"ShippedDate","ShipVia","Freight","ShipName","ShipAddress",
 	"ShipCity","ShipRegion","ShipPostalCode","ShipCountry")
 VALUES (10414,'FAMIA',2,'1/14/1997','2/11/1997','1/17/1997',3,21.48,
-	'Familia Arquibaldo','Rua OrÃ³s, 92','Sao Paulo',
+	'Familia Arquibaldo','Rua Orós, 92','Sao Paulo',
 	'SP','05442-030','Brazil');
 INSERT INTO "Orders"
 ("OrderID","CustomerID","EmployeeID","OrderDate","RequiredDate",
@@ -1752,21 +1752,21 @@ INSERT INTO "Orders"
 	"ShippedDate","ShipVia","Freight","ShipName","ShipAddress",
 	"ShipCity","ShipRegion","ShipPostalCode","ShipCountry")
 VALUES (10417,'SIMOB',4,'1/16/1997','2/13/1997','1/28/1997',3,70.29,
-	'Simons bistro','VinbÃ¦ltet 34','Kobenhavn',
+	'Simons bistro','Vinbæltet 34','Kobenhavn',
 	NULL,'1734','Denmark');
 INSERT INTO "Orders"
 ("OrderID","CustomerID","EmployeeID","OrderDate","RequiredDate",
 	"ShippedDate","ShipVia","Freight","ShipName","ShipAddress",
 	"ShipCity","ShipRegion","ShipPostalCode","ShipCountry")
 VALUES (10418,'QUICK',4,'1/17/1997','2/14/1997','1/24/1997',1,17.55,
-	'QUICK-Stop','TaucherstraÃŸe 10','Cunewalde',
+	'QUICK-Stop','Taucherstraße 10','Cunewalde',
 	NULL,'01307','Germany');
 INSERT INTO "Orders"
 ("OrderID","CustomerID","EmployeeID","OrderDate","RequiredDate",
 	"ShippedDate","ShipVia","Freight","ShipName","ShipAddress",
 	"ShipCity","ShipRegion","ShipPostalCode","ShipCountry")
 VALUES (10419,'RICSU',4,'1/20/1997','2/17/1997','1/30/1997',2,137.35,
-	'Richter Supermarkt','Starenweg 5','GenÃ¨ve',
+	'Richter Supermarkt','Starenweg 5','Genève',
 	NULL,'1204','Switzerland');
 INSERT INTO "Orders"
 ("OrderID","CustomerID","EmployeeID","OrderDate","RequiredDate",
@@ -1780,7 +1780,7 @@ INSERT INTO "Orders"
 	"ShippedDate","ShipVia","Freight","ShipName","ShipAddress",
 	"ShipCity","ShipRegion","ShipPostalCode","ShipCountry")
 VALUES (10421,'QUEDE',8,'1/21/1997','3/4/1997','1/27/1997',1,99.23,
-	'Que DelÃ­cia','Rua da Panificadora, 12','Rio de Janeiro',
+	'Que Delícia','Rua da Panificadora, 12','Rio de Janeiro',
 	'RJ','02389-673','Brazil');
 INSERT INTO "Orders"
 ("OrderID","CustomerID","EmployeeID","OrderDate","RequiredDate",
@@ -1801,8 +1801,8 @@ INSERT INTO "Orders"
 	"ShippedDate","ShipVia","Freight","ShipName","ShipAddress",
 	"ShipCity","ShipRegion","ShipPostalCode","ShipCountry")
 VALUES (10424,'MEREP',7,'1/23/1997','2/20/1997','1/27/1997',2,370.61,
-	'MÃ¨re Paillarde','43 rue St. Laurent','MontrÃ©al',
-	'QuÃ©bec','H1J 1C3','Canada');
+	'Mère Paillarde','43 rue St. Laurent','Montréal',
+	'Québec','H1J 1C3','Canada');
 INSERT INTO "Orders"
 ("OrderID","CustomerID","EmployeeID","OrderDate","RequiredDate",
 	"ShippedDate","ShipVia","Freight","ShipName","ShipAddress",
@@ -1815,7 +1815,7 @@ INSERT INTO "Orders"
 	"ShippedDate","ShipVia","Freight","ShipName","ShipAddress",
 	"ShipCity","ShipRegion","ShipPostalCode","ShipCountry")
 VALUES (10426,'GALED',4,'1/27/1997','2/24/1997','2/6/1997',1,18.69,
-	'GalerÃ­a del gastronÃ³mo','Rambla de CataluÃ±a, 23','Barcelona',
+	'Galería del gastronómo','Rambla de Cataluña, 23','Barcelona',
 	NULL,'8022','Spain');
 INSERT INTO "Orders"
 ("OrderID","CustomerID","EmployeeID","OrderDate","RequiredDate",
@@ -1864,14 +1864,14 @@ INSERT INTO "Orders"
 	"ShippedDate","ShipVia","Freight","ShipName","ShipAddress",
 	"ShipCity","ShipRegion","ShipPostalCode","ShipCountry")
 VALUES (10433,'PRINI',3,'2/3/1997','3/3/1997','3/4/1997',3,73.83,
-	'Princesa Isabel Vinhos','Estrada da saÃºde n. 58','Lisboa',
+	'Princesa Isabel Vinhos','Estrada da saúde n. 58','Lisboa',
 	NULL,'1756','Portugal');
 INSERT INTO "Orders"
 ("OrderID","CustomerID","EmployeeID","OrderDate","RequiredDate",
 	"ShippedDate","ShipVia","Freight","ShipName","ShipAddress",
 	"ShipCity","ShipRegion","ShipPostalCode","ShipCountry")
 VALUES (10434,'FOLKO',3,'2/3/1997','3/3/1997','2/13/1997',2,17.92,
-	'Folk och fÃ¤ HB','Ã…kergatan 24','BrÃ¤cke',
+	'Folk och fä HB','Åkergatan 24','Bräcke',
 	NULL,'S-844 67','Sweden');
 INSERT INTO "Orders"
 ("OrderID","CustomerID","EmployeeID","OrderDate","RequiredDate",
@@ -1885,7 +1885,7 @@ INSERT INTO "Orders"
 	"ShippedDate","ShipVia","Freight","ShipName","ShipAddress",
 	"ShipCity","ShipRegion","ShipPostalCode","ShipCountry")
 VALUES (10436,'BLONP',3,'2/5/1997','3/5/1997','2/11/1997',2,156.66,
-	'Blondel pÃ¨re et fils','24, place KlÃ©ber','Strasbourg',
+	'Blondel père et fils','24, place Kléber','Strasbourg',
 	NULL,'67000','France');
 INSERT INTO "Orders"
 ("OrderID","CustomerID","EmployeeID","OrderDate","RequiredDate",
@@ -1899,15 +1899,15 @@ INSERT INTO "Orders"
 	"ShippedDate","ShipVia","Freight","ShipName","ShipAddress",
 	"ShipCity","ShipRegion","ShipPostalCode","ShipCountry")
 VALUES (10438,'TOMSP',3,'2/6/1997','3/6/1997','2/14/1997',2,8.24,
-	'Toms SpezialitÃ¤ten','Luisenstr. 48','MÃ¼nster',
+	'Toms Spezialitäten','Luisenstr. 48','Münster',
 	NULL,'44087','Germany');
 INSERT INTO "Orders"
 ("OrderID","CustomerID","EmployeeID","OrderDate","RequiredDate",
 	"ShippedDate","ShipVia","Freight","ShipName","ShipAddress",
 	"ShipCity","ShipRegion","ShipPostalCode","ShipCountry")
 VALUES (10439,'MEREP',6,'2/7/1997','3/7/1997','2/10/1997',3,4.07,
-	'MÃ¨re Paillarde','43 rue St. Laurent','MontrÃ©al',
-	'QuÃ©bec','H1J 1C3','Canada');
+	'Mère Paillarde','43 rue St. Laurent','Montréal',
+	'Québec','H1J 1C3','Canada');
 INSERT INTO "Orders"
 ("OrderID","CustomerID","EmployeeID","OrderDate","RequiredDate",
 	"ShippedDate","ShipVia","Freight","ShipName","ShipAddress",
@@ -1941,21 +1941,21 @@ INSERT INTO "Orders"
 	"ShippedDate","ShipVia","Freight","ShipName","ShipAddress",
 	"ShipCity","ShipRegion","ShipPostalCode","ShipCountry")
 VALUES (10444,'BERGS',3,'2/12/1997','3/12/1997','2/21/1997',3,3.50,
-	'Berglunds snabbkÃ¶p','BerguvsvÃ¤gen  8','LuleÃ¥',
+	'Berglunds snabbköp','Berguvsvägen  8','Luleå',
 	NULL,'S-958 22','Sweden');
 INSERT INTO "Orders"
 ("OrderID","CustomerID","EmployeeID","OrderDate","RequiredDate",
 	"ShippedDate","ShipVia","Freight","ShipName","ShipAddress",
 	"ShipCity","ShipRegion","ShipPostalCode","ShipCountry")
 VALUES (10445,'BERGS',3,'2/13/1997','3/13/1997','2/20/1997',1,9.30,
-	'Berglunds snabbkÃ¶p','BerguvsvÃ¤gen  8','LuleÃ¥',
+	'Berglunds snabbköp','Berguvsvägen  8','Luleå',
 	NULL,'S-958 22','Sweden');
 INSERT INTO "Orders"
 ("OrderID","CustomerID","EmployeeID","OrderDate","RequiredDate",
 	"ShippedDate","ShipVia","Freight","ShipName","ShipAddress",
 	"ShipCity","ShipRegion","ShipPostalCode","ShipCountry")
 VALUES (10446,'TOMSP',6,'2/14/1997','3/14/1997','2/19/1997',1,14.68,
-	'Toms SpezialitÃ¤ten','Luisenstr. 48','MÃ¼nster',
+	'Toms Spezialitäten','Luisenstr. 48','Münster',
 	NULL,'44087','Germany');
 INSERT INTO "Orders"
 ("OrderID","CustomerID","EmployeeID","OrderDate","RequiredDate",
@@ -1976,7 +1976,7 @@ INSERT INTO "Orders"
 	"ShippedDate","ShipVia","Freight","ShipName","ShipAddress",
 	"ShipCity","ShipRegion","ShipPostalCode","ShipCountry")
 VALUES (10449,'BLONP',3,'2/18/1997','3/18/1997','2/27/1997',2,53.30,
-	'Blondel pÃ¨re et fils','24, place KlÃ©ber','Strasbourg',
+	'Blondel père et fils','24, place Kléber','Strasbourg',
 	NULL,'67000','France');
 INSERT INTO "Orders"
 ("OrderID","CustomerID","EmployeeID","OrderDate","RequiredDate",
@@ -1990,7 +1990,7 @@ INSERT INTO "Orders"
 	"ShippedDate","ShipVia","Freight","ShipName","ShipAddress",
 	"ShipCity","ShipRegion","ShipPostalCode","ShipCountry")
 VALUES (10451,'QUICK',4,'2/19/1997','3/5/1997','3/12/1997',3,189.09,
-	'QUICK-Stop','TaucherstraÃŸe 10','Cunewalde',
+	'QUICK-Stop','Taucherstraße 10','Cunewalde',
 	NULL,'01307','Germany');
 INSERT INTO "Orders"
 ("OrderID","CustomerID","EmployeeID","OrderDate","RequiredDate",
@@ -2025,21 +2025,21 @@ INSERT INTO "Orders"
 	"ShippedDate","ShipVia","Freight","ShipName","ShipAddress",
 	"ShipCity","ShipRegion","ShipPostalCode","ShipCountry")
 VALUES (10456,'KOENE',8,'2/25/1997','4/8/1997','2/28/1997',2,8.12,
-	'KÃ¶niglich Essen','Maubelstr. 90','Brandenburg',
+	'Königlich Essen','Maubelstr. 90','Brandenburg',
 	NULL,'14776','Germany');
 INSERT INTO "Orders"
 ("OrderID","CustomerID","EmployeeID","OrderDate","RequiredDate",
 	"ShippedDate","ShipVia","Freight","ShipName","ShipAddress",
 	"ShipCity","ShipRegion","ShipPostalCode","ShipCountry")
 VALUES (10457,'KOENE',2,'2/25/1997','3/25/1997','3/3/1997',1,11.57,
-	'KÃ¶niglich Essen','Maubelstr. 90','Brandenburg',
+	'Königlich Essen','Maubelstr. 90','Brandenburg',
 	NULL,'14776','Germany');
 INSERT INTO "Orders"
 ("OrderID","CustomerID","EmployeeID","OrderDate","RequiredDate",
 	"ShippedDate","ShipVia","Freight","ShipName","ShipAddress",
 	"ShipCity","ShipRegion","ShipPostalCode","ShipCountry")
 VALUES (10458,'SUPRD',7,'2/26/1997','3/26/1997','3/4/1997',3,147.06,
-	'SuprÃªmes dÃ©lices','Boulevard Tirou, 255','Charleroi',
+	'Suprêmes délices','Boulevard Tirou, 255','Charleroi',
 	NULL,'B-6000','Belgium');
 INSERT INTO "Orders"
 ("OrderID","CustomerID","EmployeeID","OrderDate","RequiredDate",
@@ -2053,14 +2053,14 @@ INSERT INTO "Orders"
 	"ShippedDate","ShipVia","Freight","ShipName","ShipAddress",
 	"ShipCity","ShipRegion","ShipPostalCode","ShipCountry")
 VALUES (10460,'FOLKO',8,'2/28/1997','3/28/1997','3/3/1997',1,16.27,
-	'Folk och fÃ¤ HB','Ã…kergatan 24','BrÃ¤cke',
+	'Folk och fä HB','Åkergatan 24','Bräcke',
 	NULL,'S-844 67','Sweden');
 INSERT INTO "Orders"
 ("OrderID","CustomerID","EmployeeID","OrderDate","RequiredDate",
 	"ShippedDate","ShipVia","Freight","ShipName","ShipAddress",
 	"ShipCity","ShipRegion","ShipPostalCode","ShipCountry")
 VALUES (10461,'LILAS',1,'2/28/1997','3/28/1997','3/5/1997',3,148.61,
-	'LILA-Supermercado','Carrera 52 con Ave. BolÃ­var #65-98 Llano Largo','Barquisimeto',
+	'LILA-Supermercado','Carrera 52 con Ave. Bolívar #65-98 Llano Largo','Barquisimeto',
 	'Lara','3508','Venezuela');
 INSERT INTO "Orders"
 ("OrderID","CustomerID","EmployeeID","OrderDate","RequiredDate",
@@ -2074,7 +2074,7 @@ INSERT INTO "Orders"
 	"ShippedDate","ShipVia","Freight","ShipName","ShipAddress",
 	"ShipCity","ShipRegion","ShipPostalCode","ShipCountry")
 VALUES (10463,'SUPRD',5,'3/4/1997','4/1/1997','3/6/1997',3,14.78,
-	'SuprÃªmes dÃ©lices','Boulevard Tirou, 255','Charleroi',
+	'Suprêmes délices','Boulevard Tirou, 255','Charleroi',
 	NULL,'B-6000','Belgium');
 INSERT INTO "Orders"
 ("OrderID","CustomerID","EmployeeID","OrderDate","RequiredDate",
@@ -2088,14 +2088,14 @@ INSERT INTO "Orders"
 	"ShippedDate","ShipVia","Freight","ShipName","ShipAddress",
 	"ShipCity","ShipRegion","ShipPostalCode","ShipCountry")
 VALUES (10465,'VAFFE',1,'3/5/1997','4/2/1997','3/14/1997',3,145.04,
-	'Vaffeljernet','Smagsloget 45','Ã…rhus',
+	'Vaffeljernet','Smagsloget 45','Århus',
 	NULL,'8200','Denmark');
 INSERT INTO "Orders"
 ("OrderID","CustomerID","EmployeeID","OrderDate","RequiredDate",
 	"ShippedDate","ShipVia","Freight","ShipName","ShipAddress",
 	"ShipCity","ShipRegion","ShipPostalCode","ShipCountry")
 VALUES (10466,'COMMI',4,'3/6/1997','4/3/1997','3/13/1997',1,11.93,
-	'ComÃ©rcio Mineiro','Av. dos LusÃ­adas, 23','Sao Paulo',
+	'Comércio Mineiro','Av. dos Lusíadas, 23','Sao Paulo',
 	'SP','05432-043','Brazil');
 INSERT INTO "Orders"
 ("OrderID","CustomerID","EmployeeID","OrderDate","RequiredDate",
@@ -2109,7 +2109,7 @@ INSERT INTO "Orders"
 	"ShippedDate","ShipVia","Freight","ShipName","ShipAddress",
 	"ShipCity","ShipRegion","ShipPostalCode","ShipCountry")
 VALUES (10468,'KOENE',3,'3/7/1997','4/4/1997','3/12/1997',3,44.12,
-	'KÃ¶niglich Essen','Maubelstr. 90','Brandenburg',
+	'Königlich Essen','Maubelstr. 90','Brandenburg',
 	NULL,'14776','Germany');
 INSERT INTO "Orders"
 ("OrderID","CustomerID","EmployeeID","OrderDate","RequiredDate",
@@ -2151,28 +2151,28 @@ INSERT INTO "Orders"
 	"ShippedDate","ShipVia","Freight","ShipName","ShipAddress",
 	"ShipCity","ShipRegion","ShipPostalCode","ShipCountry")
 VALUES (10474,'PERIC',5,'3/13/1997','4/10/1997','3/21/1997',2,83.49,
-	'Pericles Comidas clÃ¡sicas','Calle Dr. Jorge Cash 321','MÃ©xico D.F.',
+	'Pericles Comidas clásicas','Calle Dr. Jorge Cash 321','México D.F.',
 	NULL,'05033','Mexico');
 INSERT INTO "Orders"
 ("OrderID","CustomerID","EmployeeID","OrderDate","RequiredDate",
 	"ShippedDate","ShipVia","Freight","ShipName","ShipAddress",
 	"ShipCity","ShipRegion","ShipPostalCode","ShipCountry")
 VALUES (10475,'SUPRD',9,'3/14/1997','4/11/1997','4/4/1997',1,68.52,
-	'SuprÃªmes dÃ©lices','Boulevard Tirou, 255','Charleroi',
+	'Suprêmes délices','Boulevard Tirou, 255','Charleroi',
 	NULL,'B-6000','Belgium');
 INSERT INTO "Orders"
 ("OrderID","CustomerID","EmployeeID","OrderDate","RequiredDate",
 	"ShippedDate","ShipVia","Freight","ShipName","ShipAddress",
 	"ShipCity","ShipRegion","ShipPostalCode","ShipCountry")
 VALUES (10476,'HILAA',8,'3/17/1997','4/14/1997','3/24/1997',3,4.41,
-	'HILARION-Abastos','Carrera 22 con Ave. Carlos Soublette #8-35','San CristÃ³bal',
-	'TÃ¡chira','5022','Venezuela');
+	'HILARION-Abastos','Carrera 22 con Ave. Carlos Soublette #8-35','San Cristóbal',
+	'Táchira','5022','Venezuela');
 INSERT INTO "Orders"
 ("OrderID","CustomerID","EmployeeID","OrderDate","RequiredDate",
 	"ShippedDate","ShipVia","Freight","ShipName","ShipAddress",
 	"ShipCity","ShipRegion","ShipPostalCode","ShipCountry")
 VALUES (10477,'PRINI',5,'3/17/1997','4/14/1997','3/25/1997',2,13.02,
-	'Princesa Isabel Vinhos','Estrada da saÃºde n. 58','Lisboa',
+	'Princesa Isabel Vinhos','Estrada da saúde n. 58','Lisboa',
 	NULL,'1756','Portugal');
 INSERT INTO "Orders"
 ("OrderID","CustomerID","EmployeeID","OrderDate","RequiredDate",
@@ -2193,7 +2193,7 @@ INSERT INTO "Orders"
 	"ShippedDate","ShipVia","Freight","ShipName","ShipAddress",
 	"ShipCity","ShipRegion","ShipPostalCode","ShipCountry")
 VALUES (10480,'FOLIG',6,'3/20/1997','4/17/1997','3/24/1997',2,1.35,
-	'Folies gourmandes','184, chaussÃ©e de Tournai','Lille',
+	'Folies gourmandes','184, chaussée de Tournai','Lille',
 	NULL,'59000','France');
 INSERT INTO "Orders"
 ("OrderID","CustomerID","EmployeeID","OrderDate","RequiredDate",
@@ -2235,21 +2235,21 @@ INSERT INTO "Orders"
 	"ShippedDate","ShipVia","Freight","ShipName","ShipAddress",
 	"ShipCity","ShipRegion","ShipPostalCode","ShipCountry")
 VALUES (10486,'HILAA',1,'3/26/1997','4/23/1997','4/2/1997',2,30.53,
-	'HILARION-Abastos','Carrera 22 con Ave. Carlos Soublette #8-35','San CristÃ³bal',
-	'TÃ¡chira','5022','Venezuela');
+	'HILARION-Abastos','Carrera 22 con Ave. Carlos Soublette #8-35','San Cristóbal',
+	'Táchira','5022','Venezuela');
 INSERT INTO "Orders"
 ("OrderID","CustomerID","EmployeeID","OrderDate","RequiredDate",
 	"ShippedDate","ShipVia","Freight","ShipName","ShipAddress",
 	"ShipCity","ShipRegion","ShipPostalCode","ShipCountry")
 VALUES (10487,'QUEEN',2,'3/26/1997','4/23/1997','3/28/1997',2,71.07,
-	'Queen Cozinha','Alameda dos CanÃ rios, 891','Sao Paulo',
+	'Queen Cozinha','Alameda dos Canàrios, 891','Sao Paulo',
 	'SP','05487-020','Brazil');
 INSERT INTO "Orders"
 ("OrderID","CustomerID","EmployeeID","OrderDate","RequiredDate",
 	"ShippedDate","ShipVia","Freight","ShipName","ShipAddress",
 	"ShipCity","ShipRegion","ShipPostalCode","ShipCountry")
 VALUES (10488,'FRANK',8,'3/27/1997','4/24/1997','4/2/1997',2,4.93,
-	'Frankenversand','Berliner Platz 43','MÃ¼nchen',
+	'Frankenversand','Berliner Platz 43','München',
 	NULL,'80805','Germany');
 INSERT INTO "Orders"
 ("OrderID","CustomerID","EmployeeID","OrderDate","RequiredDate",
@@ -2263,8 +2263,8 @@ INSERT INTO "Orders"
 	"ShippedDate","ShipVia","Freight","ShipName","ShipAddress",
 	"ShipCity","ShipRegion","ShipPostalCode","ShipCountry")
 VALUES (10490,'HILAA',7,'3/31/1997','4/28/1997','4/3/1997',2,210.19,
-	'HILARION-Abastos','Carrera 22 con Ave. Carlos Soublette #8-35','San CristÃ³bal',
-	'TÃ¡chira','5022','Venezuela');
+	'HILARION-Abastos','Carrera 22 con Ave. Carlos Soublette #8-35','San Cristóbal',
+	'Táchira','5022','Venezuela');
 INSERT INTO "Orders"
 ("OrderID","CustomerID","EmployeeID","OrderDate","RequiredDate",
 	"ShippedDate","ShipVia","Freight","ShipName","ShipAddress",
@@ -2291,7 +2291,7 @@ INSERT INTO "Orders"
 	"ShippedDate","ShipVia","Freight","ShipName","ShipAddress",
 	"ShipCity","ShipRegion","ShipPostalCode","ShipCountry")
 VALUES (10494,'COMMI',4,'4/2/1997','4/30/1997','4/9/1997',2,65.99,
-	'ComÃ©rcio Mineiro','Av. dos LusÃ­adas, 23','Sao Paulo',
+	'Comércio Mineiro','Av. dos Lusíadas, 23','Sao Paulo',
 	'SP','05432-043','Brazil');
 INSERT INTO "Orders"
 ("OrderID","CustomerID","EmployeeID","OrderDate","RequiredDate",
@@ -2305,7 +2305,7 @@ INSERT INTO "Orders"
 	"ShippedDate","ShipVia","Freight","ShipName","ShipAddress",
 	"ShipCity","ShipRegion","ShipPostalCode","ShipCountry")
 VALUES (10496,'TRADH',7,'4/4/1997','5/2/1997','4/7/1997',2,46.77,
-	'TradiÃ§ao Hipermercados','Av. InÃªs de Castro, 414','Sao Paulo',
+	'Tradiçao Hipermercados','Av. Inês de Castro, 414','Sao Paulo',
 	'SP','05634-030','Brazil');
 INSERT INTO "Orders"
 ("OrderID","CustomerID","EmployeeID","OrderDate","RequiredDate",
@@ -2319,14 +2319,14 @@ INSERT INTO "Orders"
 	"ShippedDate","ShipVia","Freight","ShipName","ShipAddress",
 	"ShipCity","ShipRegion","ShipPostalCode","ShipCountry")
 VALUES (10498,'HILAA',8,'4/7/1997','5/5/1997','4/11/1997',2,29.75,
-	'HILARION-Abastos','Carrera 22 con Ave. Carlos Soublette #8-35','San CristÃ³bal',
-	'TÃ¡chira','5022','Venezuela');
+	'HILARION-Abastos','Carrera 22 con Ave. Carlos Soublette #8-35','San Cristóbal',
+	'Táchira','5022','Venezuela');
 INSERT INTO "Orders"
 ("OrderID","CustomerID","EmployeeID","OrderDate","RequiredDate",
 	"ShippedDate","ShipVia","Freight","ShipName","ShipAddress",
 	"ShipCity","ShipRegion","ShipPostalCode","ShipCountry")
 VALUES (10499,'LILAS',4,'4/8/1997','5/6/1997','4/16/1997',2,102.02,
-	'LILA-Supermercado','Carrera 52 con Ave. BolÃ­var #65-98 Llano Largo','Barquisimeto',
+	'LILA-Supermercado','Carrera 52 con Ave. Bolívar #65-98 Llano Largo','Barquisimeto',
 	'Lara','3508','Venezuela');
 INSERT INTO "Orders"
 ("OrderID","CustomerID","EmployeeID","OrderDate","RequiredDate",
@@ -2347,7 +2347,7 @@ INSERT INTO "Orders"
 	"ShippedDate","ShipVia","Freight","ShipName","ShipAddress",
 	"ShipCity","ShipRegion","ShipPostalCode","ShipCountry")
 VALUES (10502,'PERIC',2,'4/10/1997','5/8/1997','4/29/1997',1,69.32,
-	'Pericles Comidas clÃ¡sicas','Calle Dr. Jorge Cash 321','MÃ©xico D.F.',
+	'Pericles Comidas clásicas','Calle Dr. Jorge Cash 321','México D.F.',
 	NULL,'05033','Mexico');
 INSERT INTO "Orders"
 ("OrderID","CustomerID","EmployeeID","OrderDate","RequiredDate",
@@ -2368,28 +2368,28 @@ INSERT INTO "Orders"
 	"ShippedDate","ShipVia","Freight","ShipName","ShipAddress",
 	"ShipCity","ShipRegion","ShipPostalCode","ShipCountry")
 VALUES (10505,'MEREP',3,'4/14/1997','5/12/1997','4/21/1997',3,7.13,
-	'MÃ¨re Paillarde','43 rue St. Laurent','MontrÃ©al',
-	'QuÃ©bec','H1J 1C3','Canada');
+	'Mère Paillarde','43 rue St. Laurent','Montréal',
+	'Québec','H1J 1C3','Canada');
 INSERT INTO "Orders"
 ("OrderID","CustomerID","EmployeeID","OrderDate","RequiredDate",
 	"ShippedDate","ShipVia","Freight","ShipName","ShipAddress",
 	"ShipCity","ShipRegion","ShipPostalCode","ShipCountry")
 VALUES (10506,'KOENE',9,'4/15/1997','5/13/1997','5/2/1997',2,21.19,
-	'KÃ¶niglich Essen','Maubelstr. 90','Brandenburg',
+	'Königlich Essen','Maubelstr. 90','Brandenburg',
 	NULL,'14776','Germany');
 INSERT INTO "Orders"
 ("OrderID","CustomerID","EmployeeID","OrderDate","RequiredDate",
 	"ShippedDate","ShipVia","Freight","ShipName","ShipAddress",
 	"ShipCity","ShipRegion","ShipPostalCode","ShipCountry")
 VALUES (10507,'ANTON',7,'4/15/1997','5/13/1997','4/22/1997',1,47.45,
-	'Antonio Moreno TaquerÃ­a','Mataderos  2312','MÃ©xico D.F.',
+	'Antonio Moreno Taquería','Mataderos  2312','México D.F.',
 	NULL,'05023','Mexico');
 INSERT INTO "Orders"
 ("OrderID","CustomerID","EmployeeID","OrderDate","RequiredDate",
 	"ShippedDate","ShipVia","Freight","ShipName","ShipAddress",
 	"ShipCity","ShipRegion","ShipPostalCode","ShipCountry")
 VALUES (10508,'OTTIK',1,'4/16/1997','5/14/1997','5/13/1997',2,4.99,
-	'Ottilies KÃ¤seladen','Mehrheimerstr. 369','KÃ¶ln',
+	'Ottilies Käseladen','Mehrheimerstr. 369','Köln',
 	NULL,'50739','Germany');
 INSERT INTO "Orders"
 ("OrderID","CustomerID","EmployeeID","OrderDate","RequiredDate",
@@ -2417,7 +2417,7 @@ INSERT INTO "Orders"
 	"ShippedDate","ShipVia","Freight","ShipName","ShipAddress",
 	"ShipCity","ShipRegion","ShipPostalCode","ShipCountry")
 VALUES (10512,'FAMIA',7,'4/21/1997','5/19/1997','4/24/1997',2,3.53,
-	'Familia Arquibaldo','Rua OrÃ³s, 92','Sao Paulo',
+	'Familia Arquibaldo','Rua Orós, 92','Sao Paulo',
 	'SP','05442-030','Brazil');
 INSERT INTO "Orders"
 ("OrderID","CustomerID","EmployeeID","OrderDate","RequiredDate",
@@ -2438,7 +2438,7 @@ INSERT INTO "Orders"
 	"ShippedDate","ShipVia","Freight","ShipName","ShipAddress",
 	"ShipCity","ShipRegion","ShipPostalCode","ShipCountry")
 VALUES (10515,'QUICK',2,'4/23/1997','5/7/1997','5/23/1997',1,204.47,
-	'QUICK-Stop','TaucherstraÃŸe 10','Cunewalde',
+	'QUICK-Stop','Taucherstraße 10','Cunewalde',
 	NULL,'01307','Germany');
 INSERT INTO "Orders"
 ("OrderID","CustomerID","EmployeeID","OrderDate","RequiredDate",
@@ -2459,7 +2459,7 @@ INSERT INTO "Orders"
 	"ShippedDate","ShipVia","Freight","ShipName","ShipAddress",
 	"ShipCity","ShipRegion","ShipPostalCode","ShipCountry")
 VALUES (10518,'TORTU',4,'4/25/1997','5/9/1997','5/5/1997',2,218.15,
-	'Tortuga Restaurante','Avda. Azteca 123','MÃ©xico D.F.',
+	'Tortuga Restaurante','Avda. Azteca 123','México D.F.',
 	NULL,'05033','Mexico');
 INSERT INTO "Orders"
 ("OrderID","CustomerID","EmployeeID","OrderDate","RequiredDate",
@@ -2473,7 +2473,7 @@ INSERT INTO "Orders"
 	"ShippedDate","ShipVia","Freight","ShipName","ShipAddress",
 	"ShipCity","ShipRegion","ShipPostalCode","ShipCountry")
 VALUES (10520,'SANTG',7,'4/29/1997','5/27/1997','5/1/1997',1,13.37,
-	'SantÃ© Gourmet','Erling Skakkes gate 78','Stavern',
+	'Santé Gourmet','Erling Skakkes gate 78','Stavern',
 	NULL,'4110','Norway');
 INSERT INTO "Orders"
 ("OrderID","CustomerID","EmployeeID","OrderDate","RequiredDate",
@@ -2501,7 +2501,7 @@ INSERT INTO "Orders"
 	"ShippedDate","ShipVia","Freight","ShipName","ShipAddress",
 	"ShipCity","ShipRegion","ShipPostalCode","ShipCountry")
 VALUES (10524,'BERGS',1,'5/1/1997','5/29/1997','5/7/1997',2,244.79,
-	'Berglunds snabbkÃ¶p','BerguvsvÃ¤gen  8','LuleÃ¥',
+	'Berglunds snabbköp','Berguvsvägen  8','Luleå',
 	NULL,'S-958 22','Sweden');
 INSERT INTO "Orders"
 ("OrderID","CustomerID","EmployeeID","OrderDate","RequiredDate",
@@ -2522,7 +2522,7 @@ INSERT INTO "Orders"
 	"ShippedDate","ShipVia","Freight","ShipName","ShipAddress",
 	"ShipCity","ShipRegion","ShipPostalCode","ShipCountry")
 VALUES (10527,'QUICK',7,'5/5/1997','6/2/1997','5/7/1997',1,41.90,
-	'QUICK-Stop','TaucherstraÃŸe 10','Cunewalde',
+	'QUICK-Stop','Taucherstraße 10','Cunewalde',
 	NULL,'01307','Germany');
 INSERT INTO "Orders"
 ("OrderID","CustomerID","EmployeeID","OrderDate","RequiredDate",
@@ -2550,7 +2550,7 @@ INSERT INTO "Orders"
 	"ShippedDate","ShipVia","Freight","ShipName","ShipAddress",
 	"ShipCity","ShipRegion","ShipPostalCode","ShipCountry")
 VALUES (10531,'OCEAN',7,'5/8/1997','6/5/1997','5/19/1997',1,8.12,
-	'OcÃ©ano AtlÃ¡ntico Ltda.','Ing. Gustavo Moncada 8585 Piso 20-A','Buenos Aires',
+	'Océano Atlántico Ltda.','Ing. Gustavo Moncada 8585 Piso 20-A','Buenos Aires',
 	NULL,'1010','Argentina');
 INSERT INTO "Orders"
 ("OrderID","CustomerID","EmployeeID","OrderDate","RequiredDate",
@@ -2564,7 +2564,7 @@ INSERT INTO "Orders"
 	"ShippedDate","ShipVia","Freight","ShipName","ShipAddress",
 	"ShipCity","ShipRegion","ShipPostalCode","ShipCountry")
 VALUES (10533,'FOLKO',8,'5/12/1997','6/9/1997','5/22/1997',1,188.04,
-	'Folk och fÃ¤ HB','Ã…kergatan 24','BrÃ¤cke',
+	'Folk och fä HB','Åkergatan 24','Bräcke',
 	NULL,'S-844 67','Sweden');
 INSERT INTO "Orders"
 ("OrderID","CustomerID","EmployeeID","OrderDate","RequiredDate",
@@ -2578,7 +2578,7 @@ INSERT INTO "Orders"
 	"ShippedDate","ShipVia","Freight","ShipName","ShipAddress",
 	"ShipCity","ShipRegion","ShipPostalCode","ShipCountry")
 VALUES (10535,'ANTON',4,'5/13/1997','6/10/1997','5/21/1997',1,15.64,
-	'Antonio Moreno TaquerÃ­a','Mataderos  2312','MÃ©xico D.F.',
+	'Antonio Moreno Taquería','Mataderos  2312','México D.F.',
 	NULL,'05023','Mexico');
 INSERT INTO "Orders"
 ("OrderID","CustomerID","EmployeeID","OrderDate","RequiredDate",
@@ -2592,7 +2592,7 @@ INSERT INTO "Orders"
 	"ShippedDate","ShipVia","Freight","ShipName","ShipAddress",
 	"ShipCity","ShipRegion","ShipPostalCode","ShipCountry")
 VALUES (10537,'RICSU',1,'5/14/1997','5/28/1997','5/19/1997',1,78.85,
-	'Richter Supermarkt','Starenweg 5','GenÃ¨ve',
+	'Richter Supermarkt','Starenweg 5','Genève',
 	NULL,'1204','Switzerland');
 INSERT INTO "Orders"
 ("OrderID","CustomerID","EmployeeID","OrderDate","RequiredDate",
@@ -2613,28 +2613,28 @@ INSERT INTO "Orders"
 	"ShippedDate","ShipVia","Freight","ShipName","ShipAddress",
 	"ShipCity","ShipRegion","ShipPostalCode","ShipCountry")
 VALUES (10540,'QUICK',3,'5/19/1997','6/16/1997','6/13/1997',3,1007.64,
-	'QUICK-Stop','TaucherstraÃŸe 10','Cunewalde',
+	'QUICK-Stop','Taucherstraße 10','Cunewalde',
 	NULL,'01307','Germany');
 INSERT INTO "Orders"
 ("OrderID","CustomerID","EmployeeID","OrderDate","RequiredDate",
 	"ShippedDate","ShipVia","Freight","ShipName","ShipAddress",
 	"ShipCity","ShipRegion","ShipPostalCode","ShipCountry")
 VALUES (10541,'HANAR',2,'5/19/1997','6/16/1997','5/29/1997',1,68.65,
-	'Hanari Carnes','Rua do PaÃ§o, 67','Rio de Janeiro',
+	'Hanari Carnes','Rua do Paço, 67','Rio de Janeiro',
 	'RJ','05454-876','Brazil');
 INSERT INTO "Orders"
 ("OrderID","CustomerID","EmployeeID","OrderDate","RequiredDate",
 	"ShippedDate","ShipVia","Freight","ShipName","ShipAddress",
 	"ShipCity","ShipRegion","ShipPostalCode","ShipCountry")
 VALUES (10542,'KOENE',1,'5/20/1997','6/17/1997','5/26/1997',3,10.95,
-	'KÃ¶niglich Essen','Maubelstr. 90','Brandenburg',
+	'Königlich Essen','Maubelstr. 90','Brandenburg',
 	NULL,'14776','Germany');
 INSERT INTO "Orders"
 ("OrderID","CustomerID","EmployeeID","OrderDate","RequiredDate",
 	"ShippedDate","ShipVia","Freight","ShipName","ShipAddress",
 	"ShipCity","ShipRegion","ShipPostalCode","ShipCountry")
 VALUES (10543,'LILAS',8,'5/21/1997','6/18/1997','5/23/1997',2,48.17,
-	'LILA-Supermercado','Carrera 52 con Ave. BolÃ­var #65-98 Llano Largo','Barquisimeto',
+	'LILA-Supermercado','Carrera 52 con Ave. Bolívar #65-98 Llano Largo','Barquisimeto',
 	'Lara','3508','Venezuela');
 INSERT INTO "Orders"
 ("OrderID","CustomerID","EmployeeID","OrderDate","RequiredDate",
@@ -2669,21 +2669,21 @@ INSERT INTO "Orders"
 	"ShippedDate","ShipVia","Freight","ShipName","ShipAddress",
 	"ShipCity","ShipRegion","ShipPostalCode","ShipCountry")
 VALUES (10548,'TOMSP',3,'5/26/1997','6/23/1997','6/2/1997',2,1.43,
-	'Toms SpezialitÃ¤ten','Luisenstr. 48','MÃ¼nster',
+	'Toms Spezialitäten','Luisenstr. 48','Münster',
 	NULL,'44087','Germany');
 INSERT INTO "Orders"
 ("OrderID","CustomerID","EmployeeID","OrderDate","RequiredDate",
 	"ShippedDate","ShipVia","Freight","ShipName","ShipAddress",
 	"ShipCity","ShipRegion","ShipPostalCode","ShipCountry")
 VALUES (10549,'QUICK',5,'5/27/1997','6/10/1997','5/30/1997',1,171.24,
-	'QUICK-Stop','TaucherstraÃŸe 10','Cunewalde',
+	'QUICK-Stop','Taucherstraße 10','Cunewalde',
 	NULL,'01307','Germany');
 INSERT INTO "Orders"
 ("OrderID","CustomerID","EmployeeID","OrderDate","RequiredDate",
 	"ShippedDate","ShipVia","Freight","ShipName","ShipAddress",
 	"ShipCity","ShipRegion","ShipPostalCode","ShipCountry")
 VALUES (10550,'GODOS',7,'5/28/1997','6/25/1997','6/6/1997',3,4.32,
-	'Godos Cocina TÃ­pica','C/ Romero, 33','Sevilla',
+	'Godos Cocina Típica','C/ Romero, 33','Sevilla',
 	NULL,'41101','Spain');
 INSERT INTO "Orders"
 ("OrderID","CustomerID","EmployeeID","OrderDate","RequiredDate",
@@ -2697,8 +2697,8 @@ INSERT INTO "Orders"
 	"ShippedDate","ShipVia","Freight","ShipName","ShipAddress",
 	"ShipCity","ShipRegion","ShipPostalCode","ShipCountry")
 VALUES (10552,'HILAA',2,'5/29/1997','6/26/1997','6/5/1997',1,83.22,
-	'HILARION-Abastos','Carrera 22 con Ave. Carlos Soublette #8-35','San CristÃ³bal',
-	'TÃ¡chira','5022','Venezuela');
+	'HILARION-Abastos','Carrera 22 con Ave. Carlos Soublette #8-35','San Cristóbal',
+	'Táchira','5022','Venezuela');
 INSERT INTO "Orders"
 ("OrderID","CustomerID","EmployeeID","OrderDate","RequiredDate",
 	"ShippedDate","ShipVia","Freight","ShipName","ShipAddress",
@@ -2711,7 +2711,7 @@ INSERT INTO "Orders"
 	"ShippedDate","ShipVia","Freight","ShipName","ShipAddress",
 	"ShipCity","ShipRegion","ShipPostalCode","ShipCountry")
 VALUES (10554,'OTTIK',4,'5/30/1997','6/27/1997','6/5/1997',3,120.97,
-	'Ottilies KÃ¤seladen','Mehrheimerstr. 369','KÃ¶ln',
+	'Ottilies Käseladen','Mehrheimerstr. 369','Köln',
 	NULL,'50739','Germany');
 INSERT INTO "Orders"
 ("OrderID","CustomerID","EmployeeID","OrderDate","RequiredDate",
@@ -2725,7 +2725,7 @@ INSERT INTO "Orders"
 	"ShippedDate","ShipVia","Freight","ShipName","ShipAddress",
 	"ShipCity","ShipRegion","ShipPostalCode","ShipCountry")
 VALUES (10556,'SIMOB',2,'6/3/1997','7/15/1997','6/13/1997',1,9.80,
-	'Simons bistro','VinbÃ¦ltet 34','Kobenhavn',
+	'Simons bistro','Vinbæltet 34','Kobenhavn',
 	NULL,'1734','Denmark');
 INSERT INTO "Orders"
 ("OrderID","CustomerID","EmployeeID","OrderDate","RequiredDate",
@@ -2746,21 +2746,21 @@ INSERT INTO "Orders"
 	"ShippedDate","ShipVia","Freight","ShipName","ShipAddress",
 	"ShipCity","ShipRegion","ShipPostalCode","ShipCountry")
 VALUES (10559,'BLONP',6,'6/5/1997','7/3/1997','6/13/1997',1,8.05,
-	'Blondel pÃ¨re et fils','24, place KlÃ©ber','Strasbourg',
+	'Blondel père et fils','24, place Kléber','Strasbourg',
 	NULL,'67000','France');
 INSERT INTO "Orders"
 ("OrderID","CustomerID","EmployeeID","OrderDate","RequiredDate",
 	"ShippedDate","ShipVia","Freight","ShipName","ShipAddress",
 	"ShipCity","ShipRegion","ShipPostalCode","ShipCountry")
 VALUES (10560,'FRANK',8,'6/6/1997','7/4/1997','6/9/1997',1,36.65,
-	'Frankenversand','Berliner Platz 43','MÃ¼nchen',
+	'Frankenversand','Berliner Platz 43','München',
 	NULL,'80805','Germany');
 INSERT INTO "Orders"
 ("OrderID","CustomerID","EmployeeID","OrderDate","RequiredDate",
 	"ShippedDate","ShipVia","Freight","ShipName","ShipAddress",
 	"ShipCity","ShipRegion","ShipPostalCode","ShipCountry")
 VALUES (10561,'FOLKO',2,'6/6/1997','7/4/1997','6/9/1997',2,242.21,
-	'Folk och fÃ¤ HB','Ã…kergatan 24','BrÃ¤cke',
+	'Folk och fä HB','Åkergatan 24','Bräcke',
 	NULL,'S-844 67','Sweden');
 INSERT INTO "Orders"
 ("OrderID","CustomerID","EmployeeID","OrderDate","RequiredDate",
@@ -2788,14 +2788,14 @@ INSERT INTO "Orders"
 	"ShippedDate","ShipVia","Freight","ShipName","ShipAddress",
 	"ShipCity","ShipRegion","ShipPostalCode","ShipCountry")
 VALUES (10565,'MEREP',8,'6/11/1997','7/9/1997','6/18/1997',2,7.15,
-	'MÃ¨re Paillarde','43 rue St. Laurent','MontrÃ©al',
-	'QuÃ©bec','H1J 1C3','Canada');
+	'Mère Paillarde','43 rue St. Laurent','Montréal',
+	'Québec','H1J 1C3','Canada');
 INSERT INTO "Orders"
 ("OrderID","CustomerID","EmployeeID","OrderDate","RequiredDate",
 	"ShippedDate","ShipVia","Freight","ShipName","ShipAddress",
 	"ShipCity","ShipRegion","ShipPostalCode","ShipCountry")
 VALUES (10566,'BLONP',9,'6/12/1997','7/10/1997','6/18/1997',1,88.40,
-	'Blondel pÃ¨re et fils','24, place KlÃ©ber','Strasbourg',
+	'Blondel père et fils','24, place Kléber','Strasbourg',
 	NULL,'67000','France');
 INSERT INTO "Orders"
 ("OrderID","CustomerID","EmployeeID","OrderDate","RequiredDate",
@@ -2809,7 +2809,7 @@ INSERT INTO "Orders"
 	"ShippedDate","ShipVia","Freight","ShipName","ShipAddress",
 	"ShipCity","ShipRegion","ShipPostalCode","ShipCountry")
 VALUES (10568,'GALED',3,'6/13/1997','7/11/1997','7/9/1997',3,6.54,
-	'GalerÃ­a del gastronÃ³mo','Rambla de CataluÃ±a, 23','Barcelona',
+	'Galería del gastronómo','Rambla de Cataluña, 23','Barcelona',
 	NULL,'8022','Spain');
 INSERT INTO "Orders"
 ("OrderID","CustomerID","EmployeeID","OrderDate","RequiredDate",
@@ -2823,8 +2823,8 @@ INSERT INTO "Orders"
 	"ShippedDate","ShipVia","Freight","ShipName","ShipAddress",
 	"ShipCity","ShipRegion","ShipPostalCode","ShipCountry")
 VALUES (10570,'MEREP',3,'6/17/1997','7/15/1997','6/19/1997',3,188.99,
-	'MÃ¨re Paillarde','43 rue St. Laurent','MontrÃ©al',
-	'QuÃ©bec','H1J 1C3','Canada');
+	'Mère Paillarde','43 rue St. Laurent','Montréal',
+	'Québec','H1J 1C3','Canada');
 INSERT INTO "Orders"
 ("OrderID","CustomerID","EmployeeID","OrderDate","RequiredDate",
 	"ShippedDate","ShipVia","Freight","ShipName","ShipAddress",
@@ -2837,14 +2837,14 @@ INSERT INTO "Orders"
 	"ShippedDate","ShipVia","Freight","ShipName","ShipAddress",
 	"ShipCity","ShipRegion","ShipPostalCode","ShipCountry")
 VALUES (10572,'BERGS',3,'6/18/1997','7/16/1997','6/25/1997',2,116.43,
-	'Berglunds snabbkÃ¶p','BerguvsvÃ¤gen  8','LuleÃ¥',
+	'Berglunds snabbköp','Berguvsvägen  8','Luleå',
 	NULL,'S-958 22','Sweden');
 INSERT INTO "Orders"
 ("OrderID","CustomerID","EmployeeID","OrderDate","RequiredDate",
 	"ShippedDate","ShipVia","Freight","ShipName","ShipAddress",
 	"ShipCity","ShipRegion","ShipPostalCode","ShipCountry")
 VALUES (10573,'ANTON',7,'6/19/1997','7/17/1997','6/20/1997',3,84.84,
-	'Antonio Moreno TaquerÃ­a','Mataderos  2312','MÃ©xico D.F.',
+	'Antonio Moreno Taquería','Mataderos  2312','México D.F.',
 	NULL,'05023','Mexico');
 INSERT INTO "Orders"
 ("OrderID","CustomerID","EmployeeID","OrderDate","RequiredDate",
@@ -2865,7 +2865,7 @@ INSERT INTO "Orders"
 	"ShippedDate","ShipVia","Freight","ShipName","ShipAddress",
 	"ShipCity","ShipRegion","ShipPostalCode","ShipCountry")
 VALUES (10576,'TORTU',3,'6/23/1997','7/7/1997','6/30/1997',3,18.56,
-	'Tortuga Restaurante','Avda. Azteca 123','MÃ©xico D.F.',
+	'Tortuga Restaurante','Avda. Azteca 123','México D.F.',
 	NULL,'05033','Mexico');
 INSERT INTO "Orders"
 ("OrderID","CustomerID","EmployeeID","OrderDate","RequiredDate",
@@ -2893,14 +2893,14 @@ INSERT INTO "Orders"
 	"ShippedDate","ShipVia","Freight","ShipName","ShipAddress",
 	"ShipCity","ShipRegion","ShipPostalCode","ShipCountry")
 VALUES (10580,'OTTIK',4,'6/26/1997','7/24/1997','7/1/1997',3,75.89,
-	'Ottilies KÃ¤seladen','Mehrheimerstr. 369','KÃ¶ln',
+	'Ottilies Käseladen','Mehrheimerstr. 369','Köln',
 	NULL,'50739','Germany');
 INSERT INTO "Orders"
 ("OrderID","CustomerID","EmployeeID","OrderDate","RequiredDate",
 	"ShippedDate","ShipVia","Freight","ShipName","ShipAddress",
 	"ShipCity","ShipRegion","ShipPostalCode","ShipCountry")
 VALUES (10581,'FAMIA',3,'6/26/1997','7/24/1997','7/2/1997',1,3.01,
-	'Familia Arquibaldo','Rua OrÃ³s, 92','Sao Paulo',
+	'Familia Arquibaldo','Rua Orós, 92','Sao Paulo',
 	'SP','05442-030','Brazil');
 INSERT INTO "Orders"
 ("OrderID","CustomerID","EmployeeID","OrderDate","RequiredDate",
@@ -2921,7 +2921,7 @@ INSERT INTO "Orders"
 	"ShippedDate","ShipVia","Freight","ShipName","ShipAddress",
 	"ShipCity","ShipRegion","ShipPostalCode","ShipCountry")
 VALUES (10584,'BLONP',4,'6/30/1997','7/28/1997','7/4/1997',1,59.14,
-	'Blondel pÃ¨re et fils','24, place KlÃ©ber','Strasbourg',
+	'Blondel père et fils','24, place Kléber','Strasbourg',
 	NULL,'67000','France');
 INSERT INTO "Orders"
 ("OrderID","CustomerID","EmployeeID","OrderDate","RequiredDate",
@@ -2942,14 +2942,14 @@ INSERT INTO "Orders"
 	"ShippedDate","ShipVia","Freight","ShipName","ShipAddress",
 	"ShipCity","ShipRegion","ShipPostalCode","ShipCountry")
 VALUES (10587,'QUEDE',1,'7/2/1997','7/30/1997','7/9/1997',1,62.52,
-	'Que DelÃ­cia','Rua da Panificadora, 12','Rio de Janeiro',
+	'Que Delícia','Rua da Panificadora, 12','Rio de Janeiro',
 	'RJ','02389-673','Brazil');
 INSERT INTO "Orders"
 ("OrderID","CustomerID","EmployeeID","OrderDate","RequiredDate",
 	"ShippedDate","ShipVia","Freight","ShipName","ShipAddress",
 	"ShipCity","ShipRegion","ShipPostalCode","ShipCountry")
 VALUES (10588,'QUICK',2,'7/3/1997','7/31/1997','7/10/1997',3,194.67,
-	'QUICK-Stop','TaucherstraÃŸe 10','Cunewalde',
+	'QUICK-Stop','Taucherstraße 10','Cunewalde',
 	NULL,'01307','Germany');
 INSERT INTO "Orders"
 ("OrderID","CustomerID","EmployeeID","OrderDate","RequiredDate",
@@ -2963,14 +2963,14 @@ INSERT INTO "Orders"
 	"ShippedDate","ShipVia","Freight","ShipName","ShipAddress",
 	"ShipCity","ShipRegion","ShipPostalCode","ShipCountry")
 VALUES (10590,'MEREP',4,'7/7/1997','8/4/1997','7/14/1997',3,44.77,
-	'MÃ¨re Paillarde','43 rue St. Laurent','MontrÃ©al',
-	'QuÃ©bec','H1J 1C3','Canada');
+	'Mère Paillarde','43 rue St. Laurent','Montréal',
+	'Québec','H1J 1C3','Canada');
 INSERT INTO "Orders"
 ("OrderID","CustomerID","EmployeeID","OrderDate","RequiredDate",
 	"ShippedDate","ShipVia","Freight","ShipName","ShipAddress",
 	"ShipCity","ShipRegion","ShipPostalCode","ShipCountry")
 VALUES (10591,'VAFFE',1,'7/7/1997','7/21/1997','7/16/1997',1,55.92,
-	'Vaffeljernet','Smagsloget 45','Ã…rhus',
+	'Vaffeljernet','Smagsloget 45','Århus',
 	NULL,'8200','Denmark');
 INSERT INTO "Orders"
 ("OrderID","CustomerID","EmployeeID","OrderDate","RequiredDate",
@@ -3040,14 +3040,14 @@ INSERT INTO "Orders"
 	"ShippedDate","ShipVia","Freight","ShipName","ShipAddress",
 	"ShipCity","ShipRegion","ShipPostalCode","ShipCountry")
 VALUES (10601,'HILAA',7,'7/16/1997','8/27/1997','7/22/1997',1,58.30,
-	'HILARION-Abastos','Carrera 22 con Ave. Carlos Soublette #8-35','San CristÃ³bal',
-	'TÃ¡chira','5022','Venezuela');
+	'HILARION-Abastos','Carrera 22 con Ave. Carlos Soublette #8-35','San Cristóbal',
+	'Táchira','5022','Venezuela');
 INSERT INTO "Orders"
 ("OrderID","CustomerID","EmployeeID","OrderDate","RequiredDate",
 	"ShippedDate","ShipVia","Freight","ShipName","ShipAddress",
 	"ShipCity","ShipRegion","ShipPostalCode","ShipCountry")
 VALUES (10602,'VAFFE',8,'7/17/1997','8/14/1997','7/22/1997',2,2.92,
-	'Vaffeljernet','Smagsloget 45','Ã…rhus',
+	'Vaffeljernet','Smagsloget 45','Århus',
 	NULL,'8200','Denmark');
 INSERT INTO "Orders"
 ("OrderID","CustomerID","EmployeeID","OrderDate","RequiredDate",
@@ -3068,14 +3068,14 @@ INSERT INTO "Orders"
 	"ShippedDate","ShipVia","Freight","ShipName","ShipAddress",
 	"ShipCity","ShipRegion","ShipPostalCode","ShipCountry")
 VALUES (10605,'MEREP',1,'7/21/1997','8/18/1997','7/29/1997',2,379.13,
-	'MÃ¨re Paillarde','43 rue St. Laurent','MontrÃ©al',
-	'QuÃ©bec','H1J 1C3','Canada');
+	'Mère Paillarde','43 rue St. Laurent','Montréal',
+	'Québec','H1J 1C3','Canada');
 INSERT INTO "Orders"
 ("OrderID","CustomerID","EmployeeID","OrderDate","RequiredDate",
 	"ShippedDate","ShipVia","Freight","ShipName","ShipAddress",
 	"ShipCity","ShipRegion","ShipPostalCode","ShipCountry")
 VALUES (10606,'TRADH',4,'7/22/1997','8/19/1997','7/31/1997',3,79.40,
-	'TradiÃ§ao Hipermercados','Av. InÃªs de Castro, 414','Sao Paulo',
+	'Tradiçao Hipermercados','Av. Inês de Castro, 414','Sao Paulo',
 	'SP','05634-030','Brazil');
 INSERT INTO "Orders"
 ("OrderID","CustomerID","EmployeeID","OrderDate","RequiredDate",
@@ -3089,7 +3089,7 @@ INSERT INTO "Orders"
 	"ShippedDate","ShipVia","Freight","ShipName","ShipAddress",
 	"ShipCity","ShipRegion","ShipPostalCode","ShipCountry")
 VALUES (10608,'TOMSP',4,'7/23/1997','8/20/1997','8/1/1997',2,27.79,
-	'Toms SpezialitÃ¤ten','Luisenstr. 48','MÃ¼nster',
+	'Toms Spezialitäten','Luisenstr. 48','Münster',
 	NULL,'44087','Germany');
 INSERT INTO "Orders"
 ("OrderID","CustomerID","EmployeeID","OrderDate","RequiredDate",
@@ -3124,8 +3124,8 @@ INSERT INTO "Orders"
 	"ShippedDate","ShipVia","Freight","ShipName","ShipAddress",
 	"ShipCity","ShipRegion","ShipPostalCode","ShipCountry")
 VALUES (10613,'HILAA',4,'7/29/1997','8/26/1997','8/1/1997',2,8.11,
-	'HILARION-Abastos','Carrera 22 con Ave. Carlos Soublette #8-35','San CristÃ³bal',
-	'TÃ¡chira','5022','Venezuela');
+	'HILARION-Abastos','Carrera 22 con Ave. Carlos Soublette #8-35','San Cristóbal',
+	'Táchira','5022','Venezuela');
 INSERT INTO "Orders"
 ("OrderID","CustomerID","EmployeeID","OrderDate","RequiredDate",
 	"ShippedDate","ShipVia","Freight","ShipName","ShipAddress",
@@ -3159,15 +3159,15 @@ INSERT INTO "Orders"
 	"ShippedDate","ShipVia","Freight","ShipName","ShipAddress",
 	"ShipCity","ShipRegion","ShipPostalCode","ShipCountry")
 VALUES (10618,'MEREP',1,'8/1/1997','9/12/1997','8/8/1997',1,154.68,
-	'MÃ¨re Paillarde','43 rue St. Laurent','MontrÃ©al',
-	'QuÃ©bec','H1J 1C3','Canada');
+	'Mère Paillarde','43 rue St. Laurent','Montréal',
+	'Québec','H1J 1C3','Canada');
 INSERT INTO "Orders"
 ("OrderID","CustomerID","EmployeeID","OrderDate","RequiredDate",
 	"ShippedDate","ShipVia","Freight","ShipName","ShipAddress",
 	"ShipCity","ShipRegion","ShipPostalCode","ShipCountry")
 VALUES (10619,'MEREP',3,'8/4/1997','9/1/1997','8/7/1997',3,91.05,
-	'MÃ¨re Paillarde','43 rue St. Laurent','MontrÃ©al',
-	'QuÃ©bec','H1J 1C3','Canada');
+	'Mère Paillarde','43 rue St. Laurent','Montréal',
+	'Québec','H1J 1C3','Canada');
 INSERT INTO "Orders"
 ("OrderID","CustomerID","EmployeeID","OrderDate","RequiredDate",
 	"ShippedDate","ShipVia","Freight","ShipName","ShipAddress",
@@ -3194,7 +3194,7 @@ INSERT INTO "Orders"
 	"ShippedDate","ShipVia","Freight","ShipName","ShipAddress",
 	"ShipCity","ShipRegion","ShipPostalCode","ShipCountry")
 VALUES (10623,'FRANK',8,'8/7/1997','9/4/1997','8/12/1997',2,97.18,
-	'Frankenversand','Berliner Platz 43','MÃ¼nchen',
+	'Frankenversand','Berliner Platz 43','München',
 	NULL,'80805','Germany');
 INSERT INTO "Orders"
 ("OrderID","CustomerID","EmployeeID","OrderDate","RequiredDate",
@@ -3208,14 +3208,14 @@ INSERT INTO "Orders"
 	"ShippedDate","ShipVia","Freight","ShipName","ShipAddress",
 	"ShipCity","ShipRegion","ShipPostalCode","ShipCountry")
 VALUES (10625,'ANATR',3,'8/8/1997','9/5/1997','8/14/1997',1,43.90,
-	'Ana Trujillo Emparedados y helados','Avda. de la ConstituciÃ³n 2222','MÃ©xico D.F.',
+	'Ana Trujillo Emparedados y helados','Avda. de la Constitución 2222','México D.F.',
 	NULL,'05021','Mexico');
 INSERT INTO "Orders"
 ("OrderID","CustomerID","EmployeeID","OrderDate","RequiredDate",
 	"ShippedDate","ShipVia","Freight","ShipName","ShipAddress",
 	"ShipCity","ShipRegion","ShipPostalCode","ShipCountry")
 VALUES (10626,'BERGS',1,'8/11/1997','9/8/1997','8/20/1997',2,138.69,
-	'Berglunds snabbkÃ¶p','BerguvsvÃ¤gen  8','LuleÃ¥',
+	'Berglunds snabbköp','Berguvsvägen  8','Luleå',
 	NULL,'S-958 22','Sweden');
 INSERT INTO "Orders"
 ("OrderID","CustomerID","EmployeeID","OrderDate","RequiredDate",
@@ -3229,21 +3229,21 @@ INSERT INTO "Orders"
 	"ShippedDate","ShipVia","Freight","ShipName","ShipAddress",
 	"ShipCity","ShipRegion","ShipPostalCode","ShipCountry")
 VALUES (10628,'BLONP',4,'8/12/1997','9/9/1997','8/20/1997',3,30.36,
-	'Blondel pÃ¨re et fils','24, place KlÃ©ber','Strasbourg',
+	'Blondel père et fils','24, place Kléber','Strasbourg',
 	NULL,'67000','France');
 INSERT INTO "Orders"
 ("OrderID","CustomerID","EmployeeID","OrderDate","RequiredDate",
 	"ShippedDate","ShipVia","Freight","ShipName","ShipAddress",
 	"ShipCity","ShipRegion","ShipPostalCode","ShipCountry")
 VALUES (10629,'GODOS',4,'8/12/1997','9/9/1997','8/20/1997',3,85.46,
-	'Godos Cocina TÃ­pica','C/ Romero, 33','Sevilla',
+	'Godos Cocina Típica','C/ Romero, 33','Sevilla',
 	NULL,'41101','Spain');
 INSERT INTO "Orders"
 ("OrderID","CustomerID","EmployeeID","OrderDate","RequiredDate",
 	"ShippedDate","ShipVia","Freight","ShipName","ShipAddress",
 	"ShipCity","ShipRegion","ShipPostalCode","ShipCountry")
 VALUES (10630,'KOENE',1,'8/13/1997','9/10/1997','8/19/1997',2,32.35,
-	'KÃ¶niglich Essen','Maubelstr. 90','Brandenburg',
+	'Königlich Essen','Maubelstr. 90','Brandenburg',
 	NULL,'14776','Germany');
 INSERT INTO "Orders"
 ("OrderID","CustomerID","EmployeeID","OrderDate","RequiredDate",
@@ -3271,7 +3271,7 @@ INSERT INTO "Orders"
 	"ShippedDate","ShipVia","Freight","ShipName","ShipAddress",
 	"ShipCity","ShipRegion","ShipPostalCode","ShipCountry")
 VALUES (10634,'FOLIG',4,'8/15/1997','9/12/1997','8/21/1997',3,487.38,
-	'Folies gourmandes','184, chaussÃ©e de Tournai','Lille',
+	'Folies gourmandes','184, chaussée de Tournai','Lille',
 	NULL,'59000','France');
 INSERT INTO "Orders"
 ("OrderID","CustomerID","EmployeeID","OrderDate","RequiredDate",
@@ -3292,7 +3292,7 @@ INSERT INTO "Orders"
 	"ShippedDate","ShipVia","Freight","ShipName","ShipAddress",
 	"ShipCity","ShipRegion","ShipPostalCode","ShipCountry")
 VALUES (10637,'QUEEN',6,'8/19/1997','9/16/1997','8/26/1997',1,201.29,
-	'Queen Cozinha','Alameda dos CanÃ rios, 891','Sao Paulo',
+	'Queen Cozinha','Alameda dos Canàrios, 891','Sao Paulo',
 	'SP','05487-020','Brazil');
 INSERT INTO "Orders"
 ("OrderID","CustomerID","EmployeeID","OrderDate","RequiredDate",
@@ -3306,7 +3306,7 @@ INSERT INTO "Orders"
 	"ShippedDate","ShipVia","Freight","ShipName","ShipAddress",
 	"ShipCity","ShipRegion","ShipPostalCode","ShipCountry")
 VALUES (10639,'SANTG',7,'8/20/1997','9/17/1997','8/27/1997',3,38.64,
-	'SantÃ© Gourmet','Erling Skakkes gate 78','Stavern',
+	'Santé Gourmet','Erling Skakkes gate 78','Stavern',
 	NULL,'4110','Norway');
 INSERT INTO "Orders"
 ("OrderID","CustomerID","EmployeeID","OrderDate","RequiredDate",
@@ -3320,14 +3320,14 @@ INSERT INTO "Orders"
 	"ShippedDate","ShipVia","Freight","ShipName","ShipAddress",
 	"ShipCity","ShipRegion","ShipPostalCode","ShipCountry")
 VALUES (10641,'HILAA',4,'8/22/1997','9/19/1997','8/26/1997',2,179.61,
-	'HILARION-Abastos','Carrera 22 con Ave. Carlos Soublette #8-35','San CristÃ³bal',
-	'TÃ¡chira','5022','Venezuela');
+	'HILARION-Abastos','Carrera 22 con Ave. Carlos Soublette #8-35','San Cristóbal',
+	'Táchira','5022','Venezuela');
 INSERT INTO "Orders"
 ("OrderID","CustomerID","EmployeeID","OrderDate","RequiredDate",
 	"ShippedDate","ShipVia","Freight","ShipName","ShipAddress",
 	"ShipCity","ShipRegion","ShipPostalCode","ShipCountry")
 VALUES (10642,'SIMOB',7,'8/22/1997','9/19/1997','9/5/1997',3,41.89,
-	'Simons bistro','VinbÃ¦ltet 34','Kobenhavn',
+	'Simons bistro','Vinbæltet 34','Kobenhavn',
 	NULL,'1734','Denmark');
 INSERT INTO "Orders"
 ("OrderID","CustomerID","EmployeeID","OrderDate","RequiredDate",
@@ -3348,7 +3348,7 @@ INSERT INTO "Orders"
 	"ShippedDate","ShipVia","Freight","ShipName","ShipAddress",
 	"ShipCity","ShipRegion","ShipPostalCode","ShipCountry")
 VALUES (10645,'HANAR',4,'8/26/1997','9/23/1997','9/2/1997',1,12.41,
-	'Hanari Carnes','Rua do PaÃ§o, 67','Rio de Janeiro',
+	'Hanari Carnes','Rua do Paço, 67','Rio de Janeiro',
 	'RJ','05454-876','Brazil');
 INSERT INTO "Orders"
 ("OrderID","CustomerID","EmployeeID","OrderDate","RequiredDate",
@@ -3362,7 +3362,7 @@ INSERT INTO "Orders"
 	"ShippedDate","ShipVia","Freight","ShipName","ShipAddress",
 	"ShipCity","ShipRegion","ShipPostalCode","ShipCountry")
 VALUES (10647,'QUEDE',4,'8/27/1997','9/10/1997','9/3/1997',2,45.54,
-	'Que DelÃ­cia','Rua da Panificadora, 12','Rio de Janeiro',
+	'Que Delícia','Rua da Panificadora, 12','Rio de Janeiro',
 	'RJ','02389-673','Brazil');
 INSERT INTO "Orders"
 ("OrderID","CustomerID","EmployeeID","OrderDate","RequiredDate",
@@ -3383,7 +3383,7 @@ INSERT INTO "Orders"
 	"ShippedDate","ShipVia","Freight","ShipName","ShipAddress",
 	"ShipCity","ShipRegion","ShipPostalCode","ShipCountry")
 VALUES (10650,'FAMIA',5,'8/29/1997','9/26/1997','9/3/1997',3,176.81,
-	'Familia Arquibaldo','Rua OrÃ³s, 92','Sao Paulo',
+	'Familia Arquibaldo','Rua Orós, 92','Sao Paulo',
 	'SP','05442-030','Brazil');
 INSERT INTO "Orders"
 ("OrderID","CustomerID","EmployeeID","OrderDate","RequiredDate",
@@ -3404,14 +3404,14 @@ INSERT INTO "Orders"
 	"ShippedDate","ShipVia","Freight","ShipName","ShipAddress",
 	"ShipCity","ShipRegion","ShipPostalCode","ShipCountry")
 VALUES (10653,'FRANK',1,'9/2/1997','9/30/1997','9/19/1997',1,93.25,
-	'Frankenversand','Berliner Platz 43','MÃ¼nchen',
+	'Frankenversand','Berliner Platz 43','München',
 	NULL,'80805','Germany');
 INSERT INTO "Orders"
 ("OrderID","CustomerID","EmployeeID","OrderDate","RequiredDate",
 	"ShippedDate","ShipVia","Freight","ShipName","ShipAddress",
 	"ShipCity","ShipRegion","ShipPostalCode","ShipCountry")
 VALUES (10654,'BERGS',5,'9/2/1997','9/30/1997','9/11/1997',1,55.26,
-	'Berglunds snabbkÃ¶p','BerguvsvÃ¤gen  8','LuleÃ¥',
+	'Berglunds snabbköp','Berguvsvägen  8','Luleå',
 	NULL,'S-958 22','Sweden');
 INSERT INTO "Orders"
 ("OrderID","CustomerID","EmployeeID","OrderDate","RequiredDate",
@@ -3439,14 +3439,14 @@ INSERT INTO "Orders"
 	"ShippedDate","ShipVia","Freight","ShipName","ShipAddress",
 	"ShipCity","ShipRegion","ShipPostalCode","ShipCountry")
 VALUES (10658,'QUICK',4,'9/5/1997','10/3/1997','9/8/1997',1,364.15,
-	'QUICK-Stop','TaucherstraÃŸe 10','Cunewalde',
+	'QUICK-Stop','Taucherstraße 10','Cunewalde',
 	NULL,'01307','Germany');
 INSERT INTO "Orders"
 ("OrderID","CustomerID","EmployeeID","OrderDate","RequiredDate",
 	"ShippedDate","ShipVia","Freight","ShipName","ShipAddress",
 	"ShipCity","ShipRegion","ShipPostalCode","ShipCountry")
 VALUES (10659,'QUEEN',7,'9/5/1997','10/3/1997','9/10/1997',2,105.81,
-	'Queen Cozinha','Alameda dos CanÃ rios, 891','Sao Paulo',
+	'Queen Cozinha','Alameda dos Canàrios, 891','Sao Paulo',
 	'SP','05487-020','Brazil');
 INSERT INTO "Orders"
 ("OrderID","CustomerID","EmployeeID","OrderDate","RequiredDate",
@@ -3495,7 +3495,7 @@ INSERT INTO "Orders"
 	"ShippedDate","ShipVia","Freight","ShipName","ShipAddress",
 	"ShipCity","ShipRegion","ShipPostalCode","ShipCountry")
 VALUES (10666,'RICSU',7,'9/12/1997','10/10/1997','9/22/1997',2,232.42,
-	'Richter Supermarkt','Starenweg 5','GenÃ¨ve',
+	'Richter Supermarkt','Starenweg 5','Genève',
 	NULL,'1204','Switzerland');
 INSERT INTO "Orders"
 ("OrderID","CustomerID","EmployeeID","OrderDate","RequiredDate",
@@ -3516,14 +3516,14 @@ INSERT INTO "Orders"
 	"ShippedDate","ShipVia","Freight","ShipName","ShipAddress",
 	"ShipCity","ShipRegion","ShipPostalCode","ShipCountry")
 VALUES (10669,'SIMOB',2,'9/15/1997','10/13/1997','9/22/1997',1,24.39,
-	'Simons bistro','VinbÃ¦ltet 34','Kobenhavn',
+	'Simons bistro','Vinbæltet 34','Kobenhavn',
 	NULL,'1734','Denmark');
 INSERT INTO "Orders"
 ("OrderID","CustomerID","EmployeeID","OrderDate","RequiredDate",
 	"ShippedDate","ShipVia","Freight","ShipName","ShipAddress",
 	"ShipCity","ShipRegion","ShipPostalCode","ShipCountry")
 VALUES (10670,'FRANK',4,'9/16/1997','10/14/1997','9/18/1997',1,203.48,
-	'Frankenversand','Berliner Platz 43','MÃ¼nchen',
+	'Frankenversand','Berliner Platz 43','München',
 	NULL,'80805','Germany');
 INSERT INTO "Orders"
 ("OrderID","CustomerID","EmployeeID","OrderDate","RequiredDate",
@@ -3537,7 +3537,7 @@ INSERT INTO "Orders"
 	"ShippedDate","ShipVia","Freight","ShipName","ShipAddress",
 	"ShipCity","ShipRegion","ShipPostalCode","ShipCountry")
 VALUES (10672,'BERGS',9,'9/17/1997','10/1/1997','9/26/1997',2,95.75,
-	'Berglunds snabbkÃ¶p','BerguvsvÃ¤gen  8','LuleÃ¥',
+	'Berglunds snabbköp','Berguvsvägen  8','Luleå',
 	NULL,'S-958 22','Sweden');
 INSERT INTO "Orders"
 ("OrderID","CustomerID","EmployeeID","OrderDate","RequiredDate",
@@ -3558,21 +3558,21 @@ INSERT INTO "Orders"
 	"ShippedDate","ShipVia","Freight","ShipName","ShipAddress",
 	"ShipCity","ShipRegion","ShipPostalCode","ShipCountry")
 VALUES (10675,'FRANK',5,'9/19/1997','10/17/1997','9/23/1997',2,31.85,
-	'Frankenversand','Berliner Platz 43','MÃ¼nchen',
+	'Frankenversand','Berliner Platz 43','München',
 	NULL,'80805','Germany');
 INSERT INTO "Orders"
 ("OrderID","CustomerID","EmployeeID","OrderDate","RequiredDate",
 	"ShippedDate","ShipVia","Freight","ShipName","ShipAddress",
 	"ShipCity","ShipRegion","ShipPostalCode","ShipCountry")
 VALUES (10676,'TORTU',2,'9/22/1997','10/20/1997','9/29/1997',2,2.01,
-	'Tortuga Restaurante','Avda. Azteca 123','MÃ©xico D.F.',
+	'Tortuga Restaurante','Avda. Azteca 123','México D.F.',
 	NULL,'05033','Mexico');
 INSERT INTO "Orders"
 ("OrderID","CustomerID","EmployeeID","OrderDate","RequiredDate",
 	"ShippedDate","ShipVia","Freight","ShipName","ShipAddress",
 	"ShipCity","ShipRegion","ShipPostalCode","ShipCountry")
 VALUES (10677,'ANTON',1,'9/22/1997','10/20/1997','9/26/1997',3,4.03,
-	'Antonio Moreno TaquerÃ­a','Mataderos  2312','MÃ©xico D.F.',
+	'Antonio Moreno Taquería','Mataderos  2312','México D.F.',
 	NULL,'05023','Mexico');
 INSERT INTO "Orders"
 ("OrderID","CustomerID","EmployeeID","OrderDate","RequiredDate",
@@ -3586,7 +3586,7 @@ INSERT INTO "Orders"
 	"ShippedDate","ShipVia","Freight","ShipName","ShipAddress",
 	"ShipCity","ShipRegion","ShipPostalCode","ShipCountry")
 VALUES (10679,'BLONP',8,'9/23/1997','10/21/1997','9/30/1997',3,27.94,
-	'Blondel pÃ¨re et fils','24, place KlÃ©ber','Strasbourg',
+	'Blondel père et fils','24, place Kléber','Strasbourg',
 	NULL,'67000','France');
 INSERT INTO "Orders"
 ("OrderID","CustomerID","EmployeeID","OrderDate","RequiredDate",
@@ -3607,7 +3607,7 @@ INSERT INTO "Orders"
 	"ShippedDate","ShipVia","Freight","ShipName","ShipAddress",
 	"ShipCity","ShipRegion","ShipPostalCode","ShipCountry")
 VALUES (10682,'ANTON',3,'9/25/1997','10/23/1997','10/1/1997',2,36.13,
-	'Antonio Moreno TaquerÃ­a','Mataderos  2312','MÃ©xico D.F.',
+	'Antonio Moreno Taquería','Mataderos  2312','México D.F.',
 	NULL,'05023','Mexico');
 INSERT INTO "Orders"
 ("OrderID","CustomerID","EmployeeID","OrderDate","RequiredDate",
@@ -3621,7 +3621,7 @@ INSERT INTO "Orders"
 	"ShippedDate","ShipVia","Freight","ShipName","ShipAddress",
 	"ShipCity","ShipRegion","ShipPostalCode","ShipCountry")
 VALUES (10684,'OTTIK',3,'9/26/1997','10/24/1997','9/30/1997',1,145.63,
-	'Ottilies KÃ¤seladen','Mehrheimerstr. 369','KÃ¶ln',
+	'Ottilies Käseladen','Mehrheimerstr. 369','Köln',
 	NULL,'50739','Germany');
 INSERT INTO "Orders"
 ("OrderID","CustomerID","EmployeeID","OrderDate","RequiredDate",
@@ -3649,28 +3649,28 @@ INSERT INTO "Orders"
 	"ShippedDate","ShipVia","Freight","ShipName","ShipAddress",
 	"ShipCity","ShipRegion","ShipPostalCode","ShipCountry")
 VALUES (10688,'VAFFE',4,'10/1/1997','10/15/1997','10/7/1997',2,299.09,
-	'Vaffeljernet','Smagsloget 45','Ã…rhus',
+	'Vaffeljernet','Smagsloget 45','Århus',
 	NULL,'8200','Denmark');
 INSERT INTO "Orders"
 ("OrderID","CustomerID","EmployeeID","OrderDate","RequiredDate",
 	"ShippedDate","ShipVia","Freight","ShipName","ShipAddress",
 	"ShipCity","ShipRegion","ShipPostalCode","ShipCountry")
 VALUES (10689,'BERGS',1,'10/1/1997','10/29/1997','10/7/1997',2,13.42,
-	'Berglunds snabbkÃ¶p','BerguvsvÃ¤gen  8','LuleÃ¥',
+	'Berglunds snabbköp','Berguvsvägen  8','Luleå',
 	NULL,'S-958 22','Sweden');
 INSERT INTO "Orders"
 ("OrderID","CustomerID","EmployeeID","OrderDate","RequiredDate",
 	"ShippedDate","ShipVia","Freight","ShipName","ShipAddress",
 	"ShipCity","ShipRegion","ShipPostalCode","ShipCountry")
 VALUES (10690,'HANAR',1,'10/2/1997','10/30/1997','10/3/1997',1,15.80,
-	'Hanari Carnes','Rua do PaÃ§o, 67','Rio de Janeiro',
+	'Hanari Carnes','Rua do Paço, 67','Rio de Janeiro',
 	'RJ','05454-876','Brazil');
 INSERT INTO "Orders"
 ("OrderID","CustomerID","EmployeeID","OrderDate","RequiredDate",
 	"ShippedDate","ShipVia","Freight","ShipName","ShipAddress",
 	"ShipCity","ShipRegion","ShipPostalCode","ShipCountry")
 VALUES (10691,'QUICK',2,'10/3/1997','11/14/1997','10/22/1997',2,810.05,
-	'QUICK-Stop','TaucherstraÃŸe 10','Cunewalde',
+	'QUICK-Stop','Taucherstraße 10','Cunewalde',
 	NULL,'01307','Germany');
 INSERT INTO "Orders"
 ("OrderID","CustomerID","EmployeeID","OrderDate","RequiredDate",
@@ -3691,7 +3691,7 @@ INSERT INTO "Orders"
 	"ShippedDate","ShipVia","Freight","ShipName","ShipAddress",
 	"ShipCity","ShipRegion","ShipPostalCode","ShipCountry")
 VALUES (10694,'QUICK',8,'10/6/1997','11/3/1997','10/9/1997',3,398.36,
-	'QUICK-Stop','TaucherstraÃŸe 10','Cunewalde',
+	'QUICK-Stop','Taucherstraße 10','Cunewalde',
 	NULL,'01307','Germany');
 INSERT INTO "Orders"
 ("OrderID","CustomerID","EmployeeID","OrderDate","RequiredDate",
@@ -3754,22 +3754,22 @@ INSERT INTO "Orders"
 	"ShippedDate","ShipVia","Freight","ShipName","ShipAddress",
 	"ShipCity","ShipRegion","ShipPostalCode","ShipCountry")
 VALUES (10703,'FOLKO',6,'10/14/1997','11/11/1997','10/20/1997',2,152.30,
-	'Folk och fÃ¤ HB','Ã…kergatan 24','BrÃ¤cke',
+	'Folk och fä HB','Åkergatan 24','Bräcke',
 	NULL,'S-844 67','Sweden');
 INSERT INTO "Orders"
 ("OrderID","CustomerID","EmployeeID","OrderDate","RequiredDate",
 	"ShippedDate","ShipVia","Freight","ShipName","ShipAddress",
 	"ShipCity","ShipRegion","ShipPostalCode","ShipCountry")
 VALUES (10704,'QUEEN',6,'10/14/1997','11/11/1997','11/7/1997',1,4.78,
-	'Queen Cozinha','Alameda dos CanÃ rios, 891','Sao Paulo',
+	'Queen Cozinha','Alameda dos Canàrios, 891','Sao Paulo',
 	'SP','05487-020','Brazil');
 INSERT INTO "Orders"
 ("OrderID","CustomerID","EmployeeID","OrderDate","RequiredDate",
 	"ShippedDate","ShipVia","Freight","ShipName","ShipAddress",
 	"ShipCity","ShipRegion","ShipPostalCode","ShipCountry")
 VALUES (10705,'HILAA',9,'10/15/1997','11/12/1997','11/18/1997',2,3.52,
-	'HILARION-Abastos','Carrera 22 con Ave. Carlos Soublette #8-35','San CristÃ³bal',
-	'TÃ¡chira','5022','Venezuela');
+	'HILARION-Abastos','Carrera 22 con Ave. Carlos Soublette #8-35','San Cristóbal',
+	'Táchira','5022','Venezuela');
 INSERT INTO "Orders"
 ("OrderID","CustomerID","EmployeeID","OrderDate","RequiredDate",
 	"ShippedDate","ShipVia","Freight","ShipName","ShipAddress",
@@ -3852,14 +3852,14 @@ INSERT INTO "Orders"
 	"ShippedDate","ShipVia","Freight","ShipName","ShipAddress",
 	"ShipCity","ShipRegion","ShipPostalCode","ShipCountry")
 VALUES (10717,'FRANK',1,'10/24/1997','11/21/1997','10/29/1997',2,59.25,
-	'Frankenversand','Berliner Platz 43','MÃ¼nchen',
+	'Frankenversand','Berliner Platz 43','München',
 	NULL,'80805','Germany');
 INSERT INTO "Orders"
 ("OrderID","CustomerID","EmployeeID","OrderDate","RequiredDate",
 	"ShippedDate","ShipVia","Freight","ShipName","ShipAddress",
 	"ShipCity","ShipRegion","ShipPostalCode","ShipCountry")
 VALUES (10718,'KOENE',1,'10/27/1997','11/24/1997','10/29/1997',3,170.88,
-	'KÃ¶niglich Essen','Maubelstr. 90','Brandenburg',
+	'Königlich Essen','Maubelstr. 90','Brandenburg',
 	NULL,'14776','Germany');
 INSERT INTO "Orders"
 ("OrderID","CustomerID","EmployeeID","OrderDate","RequiredDate",
@@ -3873,14 +3873,14 @@ INSERT INTO "Orders"
 	"ShippedDate","ShipVia","Freight","ShipName","ShipAddress",
 	"ShipCity","ShipRegion","ShipPostalCode","ShipCountry")
 VALUES (10720,'QUEDE',8,'10/28/1997','11/11/1997','11/5/1997',2,9.53,
-	'Que DelÃ­cia','Rua da Panificadora, 12','Rio de Janeiro',
+	'Que Delícia','Rua da Panificadora, 12','Rio de Janeiro',
 	'RJ','02389-673','Brazil');
 INSERT INTO "Orders"
 ("OrderID","CustomerID","EmployeeID","OrderDate","RequiredDate",
 	"ShippedDate","ShipVia","Freight","ShipName","ShipAddress",
 	"ShipCity","ShipRegion","ShipPostalCode","ShipCountry")
 VALUES (10721,'QUICK',5,'10/29/1997','11/26/1997','10/31/1997',3,48.92,
-	'QUICK-Stop','TaucherstraÃŸe 10','Cunewalde',
+	'QUICK-Stop','Taucherstraße 10','Cunewalde',
 	NULL,'01307','Germany');
 INSERT INTO "Orders"
 ("OrderID","CustomerID","EmployeeID","OrderDate","RequiredDate",
@@ -3901,14 +3901,14 @@ INSERT INTO "Orders"
 	"ShippedDate","ShipVia","Freight","ShipName","ShipAddress",
 	"ShipCity","ShipRegion","ShipPostalCode","ShipCountry")
 VALUES (10724,'MEREP',8,'10/30/1997','12/11/1997','11/5/1997',2,57.75,
-	'MÃ¨re Paillarde','43 rue St. Laurent','MontrÃ©al',
-	'QuÃ©bec','H1J 1C3','Canada');
+	'Mère Paillarde','43 rue St. Laurent','Montréal',
+	'Québec','H1J 1C3','Canada');
 INSERT INTO "Orders"
 ("OrderID","CustomerID","EmployeeID","OrderDate","RequiredDate",
 	"ShippedDate","ShipVia","Freight","ShipName","ShipAddress",
 	"ShipCity","ShipRegion","ShipPostalCode","ShipCountry")
 VALUES (10725,'FAMIA',4,'10/31/1997','11/28/1997','11/5/1997',3,10.83,
-	'Familia Arquibaldo','Rua OrÃ³s, 92','Sao Paulo',
+	'Familia Arquibaldo','Rua Orós, 92','Sao Paulo',
 	'SP','05442-030','Brazil');
 INSERT INTO "Orders"
 ("OrderID","CustomerID","EmployeeID","OrderDate","RequiredDate",
@@ -3929,7 +3929,7 @@ INSERT INTO "Orders"
 	"ShippedDate","ShipVia","Freight","ShipName","ShipAddress",
 	"ShipCity","ShipRegion","ShipPostalCode","ShipCountry")
 VALUES (10728,'QUEEN',4,'11/4/1997','12/2/1997','11/11/1997',2,58.33,
-	'Queen Cozinha','Alameda dos CanÃ rios, 891','Sao Paulo',
+	'Queen Cozinha','Alameda dos Canàrios, 891','Sao Paulo',
 	'SP','05487-020','Brazil');
 INSERT INTO "Orders"
 ("OrderID","CustomerID","EmployeeID","OrderDate","RequiredDate",
@@ -3964,7 +3964,7 @@ INSERT INTO "Orders"
 	"ShippedDate","ShipVia","Freight","ShipName","ShipAddress",
 	"ShipCity","ShipRegion","ShipPostalCode","ShipCountry")
 VALUES (10733,'BERGS',1,'11/7/1997','12/5/1997','11/10/1997',3,110.11,
-	'Berglunds snabbkÃ¶p','BerguvsvÃ¤gen  8','LuleÃ¥',
+	'Berglunds snabbköp','Berguvsvägen  8','Luleå',
 	NULL,'S-958 22','Sweden');
 INSERT INTO "Orders"
 ("OrderID","CustomerID","EmployeeID","OrderDate","RequiredDate",
@@ -3999,7 +3999,7 @@ INSERT INTO "Orders"
 	"ShippedDate","ShipVia","Freight","ShipName","ShipAddress",
 	"ShipCity","ShipRegion","ShipPostalCode","ShipCountry")
 VALUES (10738,'SPECD',2,'11/12/1997','12/10/1997','11/18/1997',1,2.91,
-	'SpÃ©cialitÃ©s du monde','25, rue Lauriston','Paris',
+	'Spécialités du monde','25, rue Lauriston','Paris',
 	NULL,'75016','France');
 INSERT INTO "Orders"
 ("OrderID","CustomerID","EmployeeID","OrderDate","RequiredDate",
@@ -4041,14 +4041,14 @@ INSERT INTO "Orders"
 	"ShippedDate","ShipVia","Freight","ShipName","ShipAddress",
 	"ShipCity","ShipRegion","ShipPostalCode","ShipCountry")
 VALUES (10744,'VAFFE',6,'11/17/1997','12/15/1997','11/24/1997',1,69.19,
-	'Vaffeljernet','Smagsloget 45','Ã…rhus',
+	'Vaffeljernet','Smagsloget 45','Århus',
 	NULL,'8200','Denmark');
 INSERT INTO "Orders"
 ("OrderID","CustomerID","EmployeeID","OrderDate","RequiredDate",
 	"ShippedDate","ShipVia","Freight","ShipName","ShipAddress",
 	"ShipCity","ShipRegion","ShipPostalCode","ShipCountry")
 VALUES (10745,'QUICK',9,'11/18/1997','12/16/1997','11/27/1997',1,3.52,
-	'QUICK-Stop','TaucherstraÃŸe 10','Cunewalde',
+	'QUICK-Stop','Taucherstraße 10','Cunewalde',
 	NULL,'01307','Germany');
 INSERT INTO "Orders"
 ("OrderID","CustomerID","EmployeeID","OrderDate","RequiredDate",
@@ -4090,7 +4090,7 @@ INSERT INTO "Orders"
 	"ShippedDate","ShipVia","Freight","ShipName","ShipAddress",
 	"ShipCity","ShipRegion","ShipPostalCode","ShipCountry")
 VALUES (10751,'RICSU',3,'11/24/1997','12/22/1997','12/3/1997',3,130.79,
-	'Richter Supermarkt','Starenweg 5','GenÃ¨ve',
+	'Richter Supermarkt','Starenweg 5','Genève',
 	NULL,'1204','Switzerland');
 INSERT INTO "Orders"
 ("OrderID","CustomerID","EmployeeID","OrderDate","RequiredDate",
@@ -4139,14 +4139,14 @@ INSERT INTO "Orders"
 	"ShippedDate","ShipVia","Freight","ShipName","ShipAddress",
 	"ShipCity","ShipRegion","ShipPostalCode","ShipCountry")
 VALUES (10758,'RICSU',3,'11/28/1997','12/26/1997','12/4/1997',3,138.17,
-	'Richter Supermarkt','Starenweg 5','GenÃ¨ve',
+	'Richter Supermarkt','Starenweg 5','Genève',
 	NULL,'1204','Switzerland');
 INSERT INTO "Orders"
 ("OrderID","CustomerID","EmployeeID","OrderDate","RequiredDate",
 	"ShippedDate","ShipVia","Freight","ShipName","ShipAddress",
 	"ShipCity","ShipRegion","ShipPostalCode","ShipCountry")
 VALUES (10759,'ANATR',3,'11/28/1997','12/26/1997','12/12/1997',3,11.99,
-	'Ana Trujillo Emparedados y helados','Avda. de la ConstituciÃ³n 2222','MÃ©xico D.F.',
+	'Ana Trujillo Emparedados y helados','Avda. de la Constitución 2222','México D.F.',
 	NULL,'05021','Mexico');
 INSERT INTO "Orders"
 ("OrderID","CustomerID","EmployeeID","OrderDate","RequiredDate",
@@ -4167,14 +4167,14 @@ INSERT INTO "Orders"
 	"ShippedDate","ShipVia","Freight","ShipName","ShipAddress",
 	"ShipCity","ShipRegion","ShipPostalCode","ShipCountry")
 VALUES (10762,'FOLKO',3,'12/2/1997','12/30/1997','12/9/1997',1,328.74,
-	'Folk och fÃ¤ HB','Ã…kergatan 24','BrÃ¤cke',
+	'Folk och fä HB','Åkergatan 24','Bräcke',
 	NULL,'S-844 67','Sweden');
 INSERT INTO "Orders"
 ("OrderID","CustomerID","EmployeeID","OrderDate","RequiredDate",
 	"ShippedDate","ShipVia","Freight","ShipName","ShipAddress",
 	"ShipCity","ShipRegion","ShipPostalCode","ShipCountry")
 VALUES (10763,'FOLIG',3,'12/3/1997','12/31/1997','12/8/1997',3,37.35,
-	'Folies gourmandes','184, chaussÃ©e de Tournai','Lille',
+	'Folies gourmandes','184, chaussée de Tournai','Lille',
 	NULL,'59000','France');
 INSERT INTO "Orders"
 ("OrderID","CustomerID","EmployeeID","OrderDate","RequiredDate",
@@ -4188,21 +4188,21 @@ INSERT INTO "Orders"
 	"ShippedDate","ShipVia","Freight","ShipName","ShipAddress",
 	"ShipCity","ShipRegion","ShipPostalCode","ShipCountry")
 VALUES (10765,'QUICK',3,'12/4/1997','1/1/1998','12/9/1997',3,42.74,
-	'QUICK-Stop','TaucherstraÃŸe 10','Cunewalde',
+	'QUICK-Stop','Taucherstraße 10','Cunewalde',
 	NULL,'01307','Germany');
 INSERT INTO "Orders"
 ("OrderID","CustomerID","EmployeeID","OrderDate","RequiredDate",
 	"ShippedDate","ShipVia","Freight","ShipName","ShipAddress",
 	"ShipCity","ShipRegion","ShipPostalCode","ShipCountry")
 VALUES (10766,'OTTIK',4,'12/5/1997','1/2/1998','12/9/1997',1,157.55,
-	'Ottilies KÃ¤seladen','Mehrheimerstr. 369','KÃ¶ln',
+	'Ottilies Käseladen','Mehrheimerstr. 369','Köln',
 	NULL,'50739','Germany');
 INSERT INTO "Orders"
 ("OrderID","CustomerID","EmployeeID","OrderDate","RequiredDate",
 	"ShippedDate","ShipVia","Freight","ShipName","ShipAddress",
 	"ShipCity","ShipRegion","ShipPostalCode","ShipCountry")
 VALUES (10767,'SUPRD',4,'12/5/1997','1/2/1998','12/15/1997',3,1.59,
-	'SuprÃªmes dÃ©lices','Boulevard Tirou, 255','Charleroi',
+	'Suprêmes délices','Boulevard Tirou, 255','Charleroi',
 	NULL,'B-6000','Belgium');
 INSERT INTO "Orders"
 ("OrderID","CustomerID","EmployeeID","OrderDate","RequiredDate",
@@ -4216,14 +4216,14 @@ INSERT INTO "Orders"
 	"ShippedDate","ShipVia","Freight","ShipName","ShipAddress",
 	"ShipCity","ShipRegion","ShipPostalCode","ShipCountry")
 VALUES (10769,'VAFFE',3,'12/8/1997','1/5/1998','12/12/1997',1,65.06,
-	'Vaffeljernet','Smagsloget 45','Ã…rhus',
+	'Vaffeljernet','Smagsloget 45','Århus',
 	NULL,'8200','Denmark');
 INSERT INTO "Orders"
 ("OrderID","CustomerID","EmployeeID","OrderDate","RequiredDate",
 	"ShippedDate","ShipVia","Freight","ShipName","ShipAddress",
 	"ShipCity","ShipRegion","ShipPostalCode","ShipCountry")
 VALUES (10770,'HANAR',8,'12/9/1997','1/6/1998','12/17/1997',3,5.32,
-	'Hanari Carnes','Rua do PaÃ§o, 67','Rio de Janeiro',
+	'Hanari Carnes','Rua do Paço, 67','Rio de Janeiro',
 	'RJ','05454-876','Brazil');
 INSERT INTO "Orders"
 ("OrderID","CustomerID","EmployeeID","OrderDate","RequiredDate",
@@ -4251,7 +4251,7 @@ INSERT INTO "Orders"
 	"ShippedDate","ShipVia","Freight","ShipName","ShipAddress",
 	"ShipCity","ShipRegion","ShipPostalCode","ShipCountry")
 VALUES (10774,'FOLKO',4,'12/11/1997','12/25/1997','12/12/1997',1,48.20,
-	'Folk och fÃ¤ HB','Ã…kergatan 24','BrÃ¤cke',
+	'Folk och fä HB','Åkergatan 24','Bräcke',
 	NULL,'S-844 67','Sweden');
 INSERT INTO "Orders"
 ("OrderID","CustomerID","EmployeeID","OrderDate","RequiredDate",
@@ -4279,7 +4279,7 @@ INSERT INTO "Orders"
 	"ShippedDate","ShipVia","Freight","ShipName","ShipAddress",
 	"ShipCity","ShipRegion","ShipPostalCode","ShipCountry")
 VALUES (10778,'BERGS',3,'12/16/1997','1/13/1998','12/24/1997',1,6.79,
-	'Berglunds snabbkÃ¶p','BerguvsvÃ¤gen  8','LuleÃ¥',
+	'Berglunds snabbköp','Berguvsvägen  8','Luleå',
 	NULL,'S-958 22','Sweden');
 INSERT INTO "Orders"
 ("OrderID","CustomerID","EmployeeID","OrderDate","RequiredDate",
@@ -4293,7 +4293,7 @@ INSERT INTO "Orders"
 	"ShippedDate","ShipVia","Freight","ShipName","ShipAddress",
 	"ShipCity","ShipRegion","ShipPostalCode","ShipCountry")
 VALUES (10780,'LILAS',2,'12/16/1997','12/30/1997','12/25/1997',1,42.13,
-	'LILA-Supermercado','Carrera 52 con Ave. BolÃ­var #65-98 Llano Largo','Barquisimeto',
+	'LILA-Supermercado','Carrera 52 con Ave. Bolívar #65-98 Llano Largo','Barquisimeto',
 	'Lara','3508','Venezuela');
 INSERT INTO "Orders"
 ("OrderID","CustomerID","EmployeeID","OrderDate","RequiredDate",
@@ -4314,7 +4314,7 @@ INSERT INTO "Orders"
 	"ShippedDate","ShipVia","Freight","ShipName","ShipAddress",
 	"ShipCity","ShipRegion","ShipPostalCode","ShipCountry")
 VALUES (10783,'HANAR',4,'12/18/1997','1/15/1998','12/19/1997',2,124.98,
-	'Hanari Carnes','Rua do PaÃ§o, 67','Rio de Janeiro',
+	'Hanari Carnes','Rua do Paço, 67','Rio de Janeiro',
 	'RJ','05454-876','Brazil');
 INSERT INTO "Orders"
 ("OrderID","CustomerID","EmployeeID","OrderDate","RequiredDate",
@@ -4328,14 +4328,14 @@ INSERT INTO "Orders"
 	"ShippedDate","ShipVia","Freight","ShipName","ShipAddress",
 	"ShipCity","ShipRegion","ShipPostalCode","ShipCountry")
 VALUES (10785,'GROSR',1,'12/18/1997','1/15/1998','12/24/1997',3,1.51,
-	'GROSELLA-Restaurante','5Âª Ave. Los Palos Grandes','Caracas',
+	'GROSELLA-Restaurante','5ª Ave. Los Palos Grandes','Caracas',
 	'DF','1081','Venezuela');
 INSERT INTO "Orders"
 ("OrderID","CustomerID","EmployeeID","OrderDate","RequiredDate",
 	"ShippedDate","ShipVia","Freight","ShipName","ShipAddress",
 	"ShipCity","ShipRegion","ShipPostalCode","ShipCountry")
 VALUES (10786,'QUEEN',8,'12/19/1997','1/16/1998','12/23/1997',1,110.87,
-	'Queen Cozinha','Alameda dos CanÃ rios, 891','Sao Paulo',
+	'Queen Cozinha','Alameda dos Canàrios, 891','Sao Paulo',
 	'SP','05487-020','Brazil');
 INSERT INTO "Orders"
 ("OrderID","CustomerID","EmployeeID","OrderDate","RequiredDate",
@@ -4349,14 +4349,14 @@ INSERT INTO "Orders"
 	"ShippedDate","ShipVia","Freight","ShipName","ShipAddress",
 	"ShipCity","ShipRegion","ShipPostalCode","ShipCountry")
 VALUES (10788,'QUICK',1,'12/22/1997','1/19/1998','1/19/1998',2,42.70,
-	'QUICK-Stop','TaucherstraÃŸe 10','Cunewalde',
+	'QUICK-Stop','Taucherstraße 10','Cunewalde',
 	NULL,'01307','Germany');
 INSERT INTO "Orders"
 ("OrderID","CustomerID","EmployeeID","OrderDate","RequiredDate",
 	"ShippedDate","ShipVia","Freight","ShipName","ShipAddress",
 	"ShipCity","ShipRegion","ShipPostalCode","ShipCountry")
 VALUES (10789,'FOLIG',1,'12/22/1997','1/19/1998','12/31/1997',2,100.60,
-	'Folies gourmandes','184, chaussÃ©e de Tournai','Lille',
+	'Folies gourmandes','184, chaussée de Tournai','Lille',
 	NULL,'59000','France');
 INSERT INTO "Orders"
 ("OrderID","CustomerID","EmployeeID","OrderDate","RequiredDate",
@@ -4370,7 +4370,7 @@ INSERT INTO "Orders"
 	"ShippedDate","ShipVia","Freight","ShipName","ShipAddress",
 	"ShipCity","ShipRegion","ShipPostalCode","ShipCountry")
 VALUES (10791,'FRANK',6,'12/23/1997','1/20/1998','1/1/1998',2,16.85,
-	'Frankenversand','Berliner Platz 43','MÃ¼nchen',
+	'Frankenversand','Berliner Platz 43','München',
 	NULL,'80805','Germany');
 INSERT INTO "Orders"
 ("OrderID","CustomerID","EmployeeID","OrderDate","RequiredDate",
@@ -4391,7 +4391,7 @@ INSERT INTO "Orders"
 	"ShippedDate","ShipVia","Freight","ShipName","ShipAddress",
 	"ShipCity","ShipRegion","ShipPostalCode","ShipCountry")
 VALUES (10794,'QUEDE',6,'12/24/1997','1/21/1998','1/2/1998',1,21.49,
-	'Que DelÃ­cia','Rua da Panificadora, 12','Rio de Janeiro',
+	'Que Delícia','Rua da Panificadora, 12','Rio de Janeiro',
 	'RJ','02389-673','Brazil');
 INSERT INTO "Orders"
 ("OrderID","CustomerID","EmployeeID","OrderDate","RequiredDate",
@@ -4405,8 +4405,8 @@ INSERT INTO "Orders"
 	"ShippedDate","ShipVia","Freight","ShipName","ShipAddress",
 	"ShipCity","ShipRegion","ShipPostalCode","ShipCountry")
 VALUES (10796,'HILAA',3,'12/25/1997','1/22/1998','1/14/1998',1,26.52,
-	'HILARION-Abastos','Carrera 22 con Ave. Carlos Soublette #8-35','San CristÃ³bal',
-	'TÃ¡chira','5022','Venezuela');
+	'HILARION-Abastos','Carrera 22 con Ave. Carlos Soublette #8-35','San Cristóbal',
+	'Táchira','5022','Venezuela');
 INSERT INTO "Orders"
 ("OrderID","CustomerID","EmployeeID","OrderDate","RequiredDate",
 	"ShippedDate","ShipVia","Freight","ShipName","ShipAddress",
@@ -4426,7 +4426,7 @@ INSERT INTO "Orders"
 	"ShippedDate","ShipVia","Freight","ShipName","ShipAddress",
 	"ShipCity","ShipRegion","ShipPostalCode","ShipCountry")
 VALUES (10799,'KOENE',9,'12/26/1997','2/6/1998','1/5/1998',3,30.76,
-	'KÃ¶niglich Essen','Maubelstr. 90','Brandenburg',
+	'Königlich Essen','Maubelstr. 90','Brandenburg',
 	NULL,'14776','Germany');
 INSERT INTO "Orders"
 ("OrderID","CustomerID","EmployeeID","OrderDate","RequiredDate",
@@ -4440,14 +4440,14 @@ INSERT INTO "Orders"
 	"ShippedDate","ShipVia","Freight","ShipName","ShipAddress",
 	"ShipCity","ShipRegion","ShipPostalCode","ShipCountry")
 VALUES (10801,'BOLID',4,'12/29/1997','1/26/1998','12/31/1997',2,97.09,
-	'BÃ³lido Comidas preparadas','C/ Araquil, 67','Madrid',
+	'Bólido Comidas preparadas','C/ Araquil, 67','Madrid',
 	NULL,'28023','Spain');
 INSERT INTO "Orders"
 ("OrderID","CustomerID","EmployeeID","OrderDate","RequiredDate",
 	"ShippedDate","ShipVia","Freight","ShipName","ShipAddress",
 	"ShipCity","ShipRegion","ShipPostalCode","ShipCountry")
 VALUES (10802,'SIMOB',4,'12/29/1997','1/26/1998','1/2/1998',2,257.26,
-	'Simons bistro','VinbÃ¦ltet 34','Kobenhavn',
+	'Simons bistro','Vinbæltet 34','Kobenhavn',
 	NULL,'1734','Denmark');
 INSERT INTO "Orders"
 ("OrderID","CustomerID","EmployeeID","OrderDate","RequiredDate",
@@ -4552,7 +4552,7 @@ INSERT INTO "Orders"
 	"ShippedDate","ShipVia","Freight","ShipName","ShipAddress",
 	"ShipCity","ShipRegion","ShipPostalCode","ShipCountry")
 VALUES (10817,'KOENE',3,'1/6/1998','1/20/1998','1/13/1998',2,306.07,
-	'KÃ¶niglich Essen','Maubelstr. 90','Brandenburg',
+	'Königlich Essen','Maubelstr. 90','Brandenburg',
 	NULL,'14776','Germany');
 INSERT INTO "Orders"
 ("OrderID","CustomerID","EmployeeID","OrderDate","RequiredDate",
@@ -4594,14 +4594,14 @@ INSERT INTO "Orders"
 	"ShippedDate","ShipVia","Freight","ShipName","ShipAddress",
 	"ShipCity","ShipRegion","ShipPostalCode","ShipCountry")
 VALUES (10823,'LILAS',5,'1/9/1998','2/6/1998','1/13/1998',2,163.97,
-	'LILA-Supermercado','Carrera 52 con Ave. BolÃ­var #65-98 Llano Largo','Barquisimeto',
+	'LILA-Supermercado','Carrera 52 con Ave. Bolívar #65-98 Llano Largo','Barquisimeto',
 	'Lara','3508','Venezuela');
 INSERT INTO "Orders"
 ("OrderID","CustomerID","EmployeeID","OrderDate","RequiredDate",
 	"ShippedDate","ShipVia","Freight","ShipName","ShipAddress",
 	"ShipCity","ShipRegion","ShipPostalCode","ShipCountry")
 VALUES (10824,'FOLKO',8,'1/9/1998','2/6/1998','1/30/1998',1,1.23,
-	'Folk och fÃ¤ HB','Ã…kergatan 24','BrÃ¤cke',
+	'Folk och fä HB','Åkergatan 24','Bräcke',
 	NULL,'S-844 67','Sweden');
 INSERT INTO "Orders"
 ("OrderID","CustomerID","EmployeeID","OrderDate","RequiredDate",
@@ -4615,7 +4615,7 @@ INSERT INTO "Orders"
 	"ShippedDate","ShipVia","Freight","ShipName","ShipAddress",
 	"ShipCity","ShipRegion","ShipPostalCode","ShipCountry")
 VALUES (10826,'BLONP',6,'1/12/1998','2/9/1998','2/6/1998',1,7.09,
-	'Blondel pÃ¨re et fils','24, place KlÃ©ber','Strasbourg',
+	'Blondel père et fils','24, place Kléber','Strasbourg',
 	NULL,'67000','France');
 INSERT INTO "Orders"
 ("OrderID","CustomerID","EmployeeID","OrderDate","RequiredDate",
@@ -4643,14 +4643,14 @@ INSERT INTO "Orders"
 	"ShippedDate","ShipVia","Freight","ShipName","ShipAddress",
 	"ShipCity","ShipRegion","ShipPostalCode","ShipCountry")
 VALUES (10830,'TRADH',4,'1/13/1998','2/24/1998','1/21/1998',2,81.83,
-	'TradiÃ§ao Hipermercados','Av. InÃªs de Castro, 414','Sao Paulo',
+	'Tradiçao Hipermercados','Av. Inês de Castro, 414','Sao Paulo',
 	'SP','05634-030','Brazil');
 INSERT INTO "Orders"
 ("OrderID","CustomerID","EmployeeID","OrderDate","RequiredDate",
 	"ShippedDate","ShipVia","Freight","ShipName","ShipAddress",
 	"ShipCity","ShipRegion","ShipPostalCode","ShipCountry")
 VALUES (10831,'SANTG',3,'1/14/1998','2/11/1998','1/23/1998',2,72.19,
-	'SantÃ© Gourmet','Erling Skakkes gate 78','Stavern',
+	'Santé Gourmet','Erling Skakkes gate 78','Stavern',
 	NULL,'4110','Norway');
 INSERT INTO "Orders"
 ("OrderID","CustomerID","EmployeeID","OrderDate","RequiredDate",
@@ -4664,14 +4664,14 @@ INSERT INTO "Orders"
 	"ShippedDate","ShipVia","Freight","ShipName","ShipAddress",
 	"ShipCity","ShipRegion","ShipPostalCode","ShipCountry")
 VALUES (10833,'OTTIK',6,'1/15/1998','2/12/1998','1/23/1998',2,71.49,
-	'Ottilies KÃ¤seladen','Mehrheimerstr. 369','KÃ¶ln',
+	'Ottilies Käseladen','Mehrheimerstr. 369','Köln',
 	NULL,'50739','Germany');
 INSERT INTO "Orders"
 ("OrderID","CustomerID","EmployeeID","OrderDate","RequiredDate",
 	"ShippedDate","ShipVia","Freight","ShipName","ShipAddress",
 	"ShipCity","ShipRegion","ShipPostalCode","ShipCountry")
 VALUES (10834,'TRADH',1,'1/15/1998','2/12/1998','1/19/1998',3,29.78,
-	'TradiÃ§ao Hipermercados','Av. InÃªs de Castro, 414','Sao Paulo',
+	'Tradiçao Hipermercados','Av. Inês de Castro, 414','Sao Paulo',
 	'SP','05634-030','Brazil');
 INSERT INTO "Orders"
 ("OrderID","CustomerID","EmployeeID","OrderDate","RequiredDate",
@@ -4692,7 +4692,7 @@ INSERT INTO "Orders"
 	"ShippedDate","ShipVia","Freight","ShipName","ShipAddress",
 	"ShipCity","ShipRegion","ShipPostalCode","ShipCountry")
 VALUES (10837,'BERGS',9,'1/16/1998','2/13/1998','1/23/1998',3,13.32,
-	'Berglunds snabbkÃ¶p','BerguvsvÃ¤gen  8','LuleÃ¥',
+	'Berglunds snabbköp','Berguvsvägen  8','Luleå',
 	NULL,'S-958 22','Sweden');
 INSERT INTO "Orders"
 ("OrderID","CustomerID","EmployeeID","OrderDate","RequiredDate",
@@ -4706,7 +4706,7 @@ INSERT INTO "Orders"
 	"ShippedDate","ShipVia","Freight","ShipName","ShipAddress",
 	"ShipCity","ShipRegion","ShipPostalCode","ShipCountry")
 VALUES (10839,'TRADH',3,'1/19/1998','2/16/1998','1/22/1998',3,35.43,
-	'TradiÃ§ao Hipermercados','Av. InÃªs de Castro, 414','Sao Paulo',
+	'Tradiçao Hipermercados','Av. Inês de Castro, 414','Sao Paulo',
 	'SP','05634-030','Brazil');
 INSERT INTO "Orders"
 ("OrderID","CustomerID","EmployeeID","OrderDate","RequiredDate",
@@ -4720,14 +4720,14 @@ INSERT INTO "Orders"
 	"ShippedDate","ShipVia","Freight","ShipName","ShipAddress",
 	"ShipCity","ShipRegion","ShipPostalCode","ShipCountry")
 VALUES (10841,'SUPRD',5,'1/20/1998','2/17/1998','1/29/1998',2,424.30,
-	'SuprÃªmes dÃ©lices','Boulevard Tirou, 255','Charleroi',
+	'Suprêmes délices','Boulevard Tirou, 255','Charleroi',
 	NULL,'B-6000','Belgium');
 INSERT INTO "Orders"
 ("OrderID","CustomerID","EmployeeID","OrderDate","RequiredDate",
 	"ShippedDate","ShipVia","Freight","ShipName","ShipAddress",
 	"ShipCity","ShipRegion","ShipPostalCode","ShipCountry")
 VALUES (10842,'TORTU',1,'1/20/1998','2/17/1998','1/29/1998',3,54.42,
-	'Tortuga Restaurante','Avda. Azteca 123','MÃ©xico D.F.',
+	'Tortuga Restaurante','Avda. Azteca 123','México D.F.',
 	NULL,'05033','Mexico');
 INSERT INTO "Orders"
 ("OrderID","CustomerID","EmployeeID","OrderDate","RequiredDate",
@@ -4748,14 +4748,14 @@ INSERT INTO "Orders"
 	"ShippedDate","ShipVia","Freight","ShipName","ShipAddress",
 	"ShipCity","ShipRegion","ShipPostalCode","ShipCountry")
 VALUES (10845,'QUICK',8,'1/21/1998','2/4/1998','1/30/1998',1,212.98,
-	'QUICK-Stop','TaucherstraÃŸe 10','Cunewalde',
+	'QUICK-Stop','Taucherstraße 10','Cunewalde',
 	NULL,'01307','Germany');
 INSERT INTO "Orders"
 ("OrderID","CustomerID","EmployeeID","OrderDate","RequiredDate",
 	"ShippedDate","ShipVia","Freight","ShipName","ShipAddress",
 	"ShipCity","ShipRegion","ShipPostalCode","ShipCountry")
 VALUES (10846,'SUPRD',2,'1/22/1998','3/5/1998','1/23/1998',3,56.46,
-	'SuprÃªmes dÃ©lices','Boulevard Tirou, 255','Charleroi',
+	'Suprêmes délices','Boulevard Tirou, 255','Charleroi',
 	NULL,'B-6000','Belgium');
 INSERT INTO "Orders"
 ("OrderID","CustomerID","EmployeeID","OrderDate","RequiredDate",
@@ -4776,7 +4776,7 @@ INSERT INTO "Orders"
 	"ShippedDate","ShipVia","Freight","ShipName","ShipAddress",
 	"ShipCity","ShipRegion","ShipPostalCode","ShipCountry")
 VALUES (10849,'KOENE',9,'1/23/1998','2/20/1998','1/30/1998',2,0.56,
-	'KÃ¶niglich Essen','Maubelstr. 90','Brandenburg',
+	'Königlich Essen','Maubelstr. 90','Brandenburg',
 	NULL,'14776','Germany');
 INSERT INTO "Orders"
 ("OrderID","CustomerID","EmployeeID","OrderDate","RequiredDate",
@@ -4825,14 +4825,14 @@ INSERT INTO "Orders"
 	"ShippedDate","ShipVia","Freight","ShipName","ShipAddress",
 	"ShipCity","ShipRegion","ShipPostalCode","ShipCountry")
 VALUES (10856,'ANTON',3,'1/28/1998','2/25/1998','2/10/1998',2,58.43,
-	'Antonio Moreno TaquerÃ­a','Mataderos  2312','MÃ©xico D.F.',
+	'Antonio Moreno Taquería','Mataderos  2312','México D.F.',
 	NULL,'05023','Mexico');
 INSERT INTO "Orders"
 ("OrderID","CustomerID","EmployeeID","OrderDate","RequiredDate",
 	"ShippedDate","ShipVia","Freight","ShipName","ShipAddress",
 	"ShipCity","ShipRegion","ShipPostalCode","ShipCountry")
 VALUES (10857,'BERGS',8,'1/28/1998','2/25/1998','2/6/1998',2,188.85,
-	'Berglunds snabbkÃ¶p','BerguvsvÃ¤gen  8','LuleÃ¥',
+	'Berglunds snabbköp','Berguvsvägen  8','Luleå',
 	NULL,'S-958 22','Sweden');
 INSERT INTO "Orders"
 ("OrderID","CustomerID","EmployeeID","OrderDate","RequiredDate",
@@ -4846,7 +4846,7 @@ INSERT INTO "Orders"
 	"ShippedDate","ShipVia","Freight","ShipName","ShipAddress",
 	"ShipCity","ShipRegion","ShipPostalCode","ShipCountry")
 VALUES (10859,'FRANK',1,'1/29/1998','2/26/1998','2/2/1998',2,76.10,
-	'Frankenversand','Berliner Platz 43','MÃ¼nchen',
+	'Frankenversand','Berliner Platz 43','München',
 	NULL,'80805','Germany');
 INSERT INTO "Orders"
 ("OrderID","CustomerID","EmployeeID","OrderDate","RequiredDate",
@@ -4874,8 +4874,8 @@ INSERT INTO "Orders"
 	"ShippedDate","ShipVia","Freight","ShipName","ShipAddress",
 	"ShipCity","ShipRegion","ShipPostalCode","ShipCountry")
 VALUES (10863,'HILAA',4,'2/2/1998','3/2/1998','2/17/1998',2,30.26,
-	'HILARION-Abastos','Carrera 22 con Ave. Carlos Soublette #8-35','San CristÃ³bal',
-	'TÃ¡chira','5022','Venezuela');
+	'HILARION-Abastos','Carrera 22 con Ave. Carlos Soublette #8-35','San Cristóbal',
+	'Táchira','5022','Venezuela');
 INSERT INTO "Orders"
 ("OrderID","CustomerID","EmployeeID","OrderDate","RequiredDate",
 	"ShippedDate","ShipVia","Freight","ShipName","ShipAddress",
@@ -4888,14 +4888,14 @@ INSERT INTO "Orders"
 	"ShippedDate","ShipVia","Freight","ShipName","ShipAddress",
 	"ShipCity","ShipRegion","ShipPostalCode","ShipCountry")
 VALUES (10865,'QUICK',2,'2/2/1998','2/16/1998','2/12/1998',1,348.14,
-	'QUICK-Stop','TaucherstraÃŸe 10','Cunewalde',
+	'QUICK-Stop','Taucherstraße 10','Cunewalde',
 	NULL,'01307','Germany');
 INSERT INTO "Orders"
 ("OrderID","CustomerID","EmployeeID","OrderDate","RequiredDate",
 	"ShippedDate","ShipVia","Freight","ShipName","ShipAddress",
 	"ShipCity","ShipRegion","ShipPostalCode","ShipCountry")
 VALUES (10866,'BERGS',5,'2/3/1998','3/3/1998','2/12/1998',1,109.11,
-	'Berglunds snabbkÃ¶p','BerguvsvÃ¤gen  8','LuleÃ¥',
+	'Berglunds snabbköp','Berguvsvägen  8','Luleå',
 	NULL,'S-958 22','Sweden');
 INSERT INTO "Orders"
 ("OrderID","CustomerID","EmployeeID","OrderDate","RequiredDate",
@@ -4909,7 +4909,7 @@ INSERT INTO "Orders"
 	"ShippedDate","ShipVia","Freight","ShipName","ShipAddress",
 	"ShipCity","ShipRegion","ShipPostalCode","ShipCountry")
 VALUES (10868,'QUEEN',7,'2/4/1998','3/4/1998','2/23/1998',2,191.27,
-	'Queen Cozinha','Alameda dos CanÃ rios, 891','Sao Paulo',
+	'Queen Cozinha','Alameda dos Canàrios, 891','Sao Paulo',
 	'SP','05487-020','Brazil');
 INSERT INTO "Orders"
 ("OrderID","CustomerID","EmployeeID","OrderDate","RequiredDate",
@@ -4937,7 +4937,7 @@ INSERT INTO "Orders"
 	"ShippedDate","ShipVia","Freight","ShipName","ShipAddress",
 	"ShipCity","ShipRegion","ShipPostalCode","ShipCountry")
 VALUES (10872,'GODOS',5,'2/5/1998','3/5/1998','2/9/1998',2,175.32,
-	'Godos Cocina TÃ­pica','C/ Romero, 33','Sevilla',
+	'Godos Cocina Típica','C/ Romero, 33','Sevilla',
 	NULL,'41101','Spain');
 INSERT INTO "Orders"
 ("OrderID","CustomerID","EmployeeID","OrderDate","RequiredDate",
@@ -4951,14 +4951,14 @@ INSERT INTO "Orders"
 	"ShippedDate","ShipVia","Freight","ShipName","ShipAddress",
 	"ShipCity","ShipRegion","ShipPostalCode","ShipCountry")
 VALUES (10874,'GODOS',5,'2/6/1998','3/6/1998','2/11/1998',2,19.58,
-	'Godos Cocina TÃ­pica','C/ Romero, 33','Sevilla',
+	'Godos Cocina Típica','C/ Romero, 33','Sevilla',
 	NULL,'41101','Spain');
 INSERT INTO "Orders"
 ("OrderID","CustomerID","EmployeeID","OrderDate","RequiredDate",
 	"ShippedDate","ShipVia","Freight","ShipName","ShipAddress",
 	"ShipCity","ShipRegion","ShipPostalCode","ShipCountry")
 VALUES (10875,'BERGS',4,'2/6/1998','3/6/1998','3/3/1998',2,32.37,
-	'Berglunds snabbkÃ¶p','BerguvsvÃ¤gen  8','LuleÃ¥',
+	'Berglunds snabbköp','Berguvsvägen  8','Luleå',
 	NULL,'S-958 22','Sweden');
 INSERT INTO "Orders"
 ("OrderID","CustomerID","EmployeeID","OrderDate","RequiredDate",
@@ -4979,7 +4979,7 @@ INSERT INTO "Orders"
 	"ShippedDate","ShipVia","Freight","ShipName","ShipAddress",
 	"ShipCity","ShipRegion","ShipPostalCode","ShipCountry")
 VALUES (10878,'QUICK',4,'2/10/1998','3/10/1998','2/12/1998',1,46.69,
-	'QUICK-Stop','TaucherstraÃŸe 10','Cunewalde',
+	'QUICK-Stop','Taucherstraße 10','Cunewalde',
 	NULL,'01307','Germany');
 INSERT INTO "Orders"
 ("OrderID","CustomerID","EmployeeID","OrderDate","RequiredDate",
@@ -4993,7 +4993,7 @@ INSERT INTO "Orders"
 	"ShippedDate","ShipVia","Freight","ShipName","ShipAddress",
 	"ShipCity","ShipRegion","ShipPostalCode","ShipCountry")
 VALUES (10880,'FOLKO',7,'2/10/1998','3/24/1998','2/18/1998',1,88.01,
-	'Folk och fÃ¤ HB','Ã…kergatan 24','BrÃ¤cke',
+	'Folk och fä HB','Åkergatan 24','Bräcke',
 	NULL,'S-844 67','Sweden');
 INSERT INTO "Orders"
 ("OrderID","CustomerID","EmployeeID","OrderDate","RequiredDate",
@@ -5028,28 +5028,28 @@ INSERT INTO "Orders"
 	"ShippedDate","ShipVia","Freight","ShipName","ShipAddress",
 	"ShipCity","ShipRegion","ShipPostalCode","ShipCountry")
 VALUES (10885,'SUPRD',6,'2/12/1998','3/12/1998','2/18/1998',3,5.64,
-	'SuprÃªmes dÃ©lices','Boulevard Tirou, 255','Charleroi',
+	'Suprêmes délices','Boulevard Tirou, 255','Charleroi',
 	NULL,'B-6000','Belgium');
 INSERT INTO "Orders"
 ("OrderID","CustomerID","EmployeeID","OrderDate","RequiredDate",
 	"ShippedDate","ShipVia","Freight","ShipName","ShipAddress",
 	"ShipCity","ShipRegion","ShipPostalCode","ShipCountry")
 VALUES (10886,'HANAR',1,'2/13/1998','3/13/1998','3/2/1998',1,4.99,
-	'Hanari Carnes','Rua do PaÃ§o, 67','Rio de Janeiro',
+	'Hanari Carnes','Rua do Paço, 67','Rio de Janeiro',
 	'RJ','05454-876','Brazil');
 INSERT INTO "Orders"
 ("OrderID","CustomerID","EmployeeID","OrderDate","RequiredDate",
 	"ShippedDate","ShipVia","Freight","ShipName","ShipAddress",
 	"ShipCity","ShipRegion","ShipPostalCode","ShipCountry")
 VALUES (10887,'GALED',8,'2/13/1998','3/13/1998','2/16/1998',3,1.25,
-	'GalerÃ­a del gastronÃ³mo','Rambla de CataluÃ±a, 23','Barcelona',
+	'Galería del gastronómo','Rambla de Cataluña, 23','Barcelona',
 	NULL,'8022','Spain');
 INSERT INTO "Orders"
 ("OrderID","CustomerID","EmployeeID","OrderDate","RequiredDate",
 	"ShippedDate","ShipVia","Freight","ShipName","ShipAddress",
 	"ShipCity","ShipRegion","ShipPostalCode","ShipCountry")
 VALUES (10888,'GODOS',1,'2/16/1998','3/16/1998','2/23/1998',2,51.87,
-	'Godos Cocina TÃ­pica','C/ Romero, 33','Sevilla',
+	'Godos Cocina Típica','C/ Romero, 33','Sevilla',
 	NULL,'41101','Spain');
 INSERT INTO "Orders"
 ("OrderID","CustomerID","EmployeeID","OrderDate","RequiredDate",
@@ -5084,7 +5084,7 @@ INSERT INTO "Orders"
 	"ShippedDate","ShipVia","Freight","ShipName","ShipAddress",
 	"ShipCity","ShipRegion","ShipPostalCode","ShipCountry")
 VALUES (10893,'KOENE',9,'2/18/1998','3/18/1998','2/20/1998',2,77.78,
-	'KÃ¶niglich Essen','Maubelstr. 90','Brandenburg',
+	'Königlich Essen','Maubelstr. 90','Brandenburg',
 	NULL,'14776','Germany');
 INSERT INTO "Orders"
 ("OrderID","CustomerID","EmployeeID","OrderDate","RequiredDate",
@@ -5119,14 +5119,14 @@ INSERT INTO "Orders"
 	"ShippedDate","ShipVia","Freight","ShipName","ShipAddress",
 	"ShipCity","ShipRegion","ShipPostalCode","ShipCountry")
 VALUES (10898,'OCEAN',4,'2/20/1998','3/20/1998','3/6/1998',2,1.27,
-	'OcÃ©ano AtlÃ¡ntico Ltda.','Ing. Gustavo Moncada 8585 Piso 20-A','Buenos Aires',
+	'Océano Atlántico Ltda.','Ing. Gustavo Moncada 8585 Piso 20-A','Buenos Aires',
 	NULL,'1010','Argentina');
 INSERT INTO "Orders"
 ("OrderID","CustomerID","EmployeeID","OrderDate","RequiredDate",
 	"ShippedDate","ShipVia","Freight","ShipName","ShipAddress",
 	"ShipCity","ShipRegion","ShipPostalCode","ShipCountry")
 VALUES (10899,'LILAS',5,'2/20/1998','3/20/1998','2/26/1998',3,1.21,
-	'LILA-Supermercado','Carrera 52 con Ave. BolÃ­var #65-98 Llano Largo','Barquisimeto',
+	'LILA-Supermercado','Carrera 52 con Ave. Bolívar #65-98 Llano Largo','Barquisimeto',
 	'Lara','3508','Venezuela');
 INSERT INTO "Orders"
 ("OrderID","CustomerID","EmployeeID","OrderDate","RequiredDate",
@@ -5140,21 +5140,21 @@ INSERT INTO "Orders"
 	"ShippedDate","ShipVia","Freight","ShipName","ShipAddress",
 	"ShipCity","ShipRegion","ShipPostalCode","ShipCountry")
 VALUES (10901,'HILAA',4,'2/23/1998','3/23/1998','2/26/1998',1,62.09,
-	'HILARION-Abastos','Carrera 22 con Ave. Carlos Soublette #8-35','San CristÃ³bal',
-	'TÃ¡chira','5022','Venezuela');
+	'HILARION-Abastos','Carrera 22 con Ave. Carlos Soublette #8-35','San Cristóbal',
+	'Táchira','5022','Venezuela');
 INSERT INTO "Orders"
 ("OrderID","CustomerID","EmployeeID","OrderDate","RequiredDate",
 	"ShippedDate","ShipVia","Freight","ShipName","ShipAddress",
 	"ShipCity","ShipRegion","ShipPostalCode","ShipCountry")
 VALUES (10902,'FOLKO',1,'2/23/1998','3/23/1998','3/3/1998',1,44.15,
-	'Folk och fÃ¤ HB','Ã…kergatan 24','BrÃ¤cke',
+	'Folk och fä HB','Åkergatan 24','Bräcke',
 	NULL,'S-844 67','Sweden');
 INSERT INTO "Orders"
 ("OrderID","CustomerID","EmployeeID","OrderDate","RequiredDate",
 	"ShippedDate","ShipVia","Freight","ShipName","ShipAddress",
 	"ShipCity","ShipRegion","ShipPostalCode","ShipCountry")
 VALUES (10903,'HANAR',3,'2/24/1998','3/24/1998','3/4/1998',3,36.71,
-	'Hanari Carnes','Rua do PaÃ§o, 67','Rio de Janeiro',
+	'Hanari Carnes','Rua do Paço, 67','Rio de Janeiro',
 	'RJ','05454-876','Brazil');
 INSERT INTO "Orders"
 ("OrderID","CustomerID","EmployeeID","OrderDate","RequiredDate",
@@ -5182,7 +5182,7 @@ INSERT INTO "Orders"
 	"ShippedDate","ShipVia","Freight","ShipName","ShipAddress",
 	"ShipCity","ShipRegion","ShipPostalCode","ShipCountry")
 VALUES (10907,'SPECD',6,'2/25/1998','3/25/1998','2/27/1998',3,9.19,
-	'SpÃ©cialitÃ©s du monde','25, rue Lauriston','Paris',
+	'Spécialités du monde','25, rue Lauriston','Paris',
 	NULL,'75016','France');
 INSERT INTO "Orders"
 ("OrderID","CustomerID","EmployeeID","OrderDate","RequiredDate",
@@ -5196,7 +5196,7 @@ INSERT INTO "Orders"
 	"ShippedDate","ShipVia","Freight","ShipName","ShipAddress",
 	"ShipCity","ShipRegion","ShipPostalCode","ShipCountry")
 VALUES (10909,'SANTG',1,'2/26/1998','3/26/1998','3/10/1998',2,53.05,
-	'SantÃ© Gourmet','Erling Skakkes gate 78','Stavern',
+	'Santé Gourmet','Erling Skakkes gate 78','Stavern',
 	NULL,'4110','Norway');
 INSERT INTO "Orders"
 ("OrderID","CustomerID","EmployeeID","OrderDate","RequiredDate",
@@ -5210,7 +5210,7 @@ INSERT INTO "Orders"
 	"ShippedDate","ShipVia","Freight","ShipName","ShipAddress",
 	"ShipCity","ShipRegion","ShipPostalCode","ShipCountry")
 VALUES (10911,'GODOS',3,'2/26/1998','3/26/1998','3/5/1998',1,38.19,
-	'Godos Cocina TÃ­pica','C/ Romero, 33','Sevilla',
+	'Godos Cocina Típica','C/ Romero, 33','Sevilla',
 	NULL,'41101','Spain');
 INSERT INTO "Orders"
 ("OrderID","CustomerID","EmployeeID","OrderDate","RequiredDate",
@@ -5224,21 +5224,21 @@ INSERT INTO "Orders"
 	"ShippedDate","ShipVia","Freight","ShipName","ShipAddress",
 	"ShipCity","ShipRegion","ShipPostalCode","ShipCountry")
 VALUES (10913,'QUEEN',4,'2/26/1998','3/26/1998','3/4/1998',1,33.05,
-	'Queen Cozinha','Alameda dos CanÃ rios, 891','Sao Paulo',
+	'Queen Cozinha','Alameda dos Canàrios, 891','Sao Paulo',
 	'SP','05487-020','Brazil');
 INSERT INTO "Orders"
 ("OrderID","CustomerID","EmployeeID","OrderDate","RequiredDate",
 	"ShippedDate","ShipVia","Freight","ShipName","ShipAddress",
 	"ShipCity","ShipRegion","ShipPostalCode","ShipCountry")
 VALUES (10914,'QUEEN',6,'2/27/1998','3/27/1998','3/2/1998',1,21.19,
-	'Queen Cozinha','Alameda dos CanÃ rios, 891','Sao Paulo',
+	'Queen Cozinha','Alameda dos Canàrios, 891','Sao Paulo',
 	'SP','05487-020','Brazil');
 INSERT INTO "Orders"
 ("OrderID","CustomerID","EmployeeID","OrderDate","RequiredDate",
 	"ShippedDate","ShipVia","Freight","ShipName","ShipAddress",
 	"ShipCity","ShipRegion","ShipPostalCode","ShipCountry")
 VALUES (10915,'TORTU',2,'2/27/1998','3/27/1998','3/2/1998',2,3.51,
-	'Tortuga Restaurante','Avda. Azteca 123','MÃ©xico D.F.',
+	'Tortuga Restaurante','Avda. Azteca 123','México D.F.',
 	NULL,'05033','Mexico');
 INSERT INTO "Orders"
 ("OrderID","CustomerID","EmployeeID","OrderDate","RequiredDate",
@@ -5252,7 +5252,7 @@ INSERT INTO "Orders"
 	"ShippedDate","ShipVia","Freight","ShipName","ShipAddress",
 	"ShipCity","ShipRegion","ShipPostalCode","ShipCountry")
 VALUES (10917,'ROMEY',4,'3/2/1998','3/30/1998','3/11/1998',2,8.29,
-	'Romero y tomillo','Gran VÃ­a, 1','Madrid',
+	'Romero y tomillo','Gran Vía, 1','Madrid',
 	NULL,'28001','Spain');
 INSERT INTO "Orders"
 ("OrderID","CustomerID","EmployeeID","OrderDate","RequiredDate",
@@ -5280,14 +5280,14 @@ INSERT INTO "Orders"
 	"ShippedDate","ShipVia","Freight","ShipName","ShipAddress",
 	"ShipCity","ShipRegion","ShipPostalCode","ShipCountry")
 VALUES (10921,'VAFFE',1,'3/3/1998','4/14/1998','3/9/1998',1,176.48,
-	'Vaffeljernet','Smagsloget 45','Ã…rhus',
+	'Vaffeljernet','Smagsloget 45','Århus',
 	NULL,'8200','Denmark');
 INSERT INTO "Orders"
 ("OrderID","CustomerID","EmployeeID","OrderDate","RequiredDate",
 	"ShippedDate","ShipVia","Freight","ShipName","ShipAddress",
 	"ShipCity","ShipRegion","ShipPostalCode","ShipCountry")
 VALUES (10922,'HANAR',5,'3/3/1998','3/31/1998','3/5/1998',3,62.74,
-	'Hanari Carnes','Rua do PaÃ§o, 67','Rio de Janeiro',
+	'Hanari Carnes','Rua do Paço, 67','Rio de Janeiro',
 	'RJ','05454-876','Brazil');
 INSERT INTO "Orders"
 ("OrderID","CustomerID","EmployeeID","OrderDate","RequiredDate",
@@ -5301,21 +5301,21 @@ INSERT INTO "Orders"
 	"ShippedDate","ShipVia","Freight","ShipName","ShipAddress",
 	"ShipCity","ShipRegion","ShipPostalCode","ShipCountry")
 VALUES (10924,'BERGS',3,'3/4/1998','4/1/1998','4/8/1998',2,151.52,
-	'Berglunds snabbkÃ¶p','BerguvsvÃ¤gen  8','LuleÃ¥',
+	'Berglunds snabbköp','Berguvsvägen  8','Luleå',
 	NULL,'S-958 22','Sweden');
 INSERT INTO "Orders"
 ("OrderID","CustomerID","EmployeeID","OrderDate","RequiredDate",
 	"ShippedDate","ShipVia","Freight","ShipName","ShipAddress",
 	"ShipCity","ShipRegion","ShipPostalCode","ShipCountry")
 VALUES (10925,'HANAR',3,'3/4/1998','4/1/1998','3/13/1998',1,2.27,
-	'Hanari Carnes','Rua do PaÃ§o, 67','Rio de Janeiro',
+	'Hanari Carnes','Rua do Paço, 67','Rio de Janeiro',
 	'RJ','05454-876','Brazil');
 INSERT INTO "Orders"
 ("OrderID","CustomerID","EmployeeID","OrderDate","RequiredDate",
 	"ShippedDate","ShipVia","Freight","ShipName","ShipAddress",
 	"ShipCity","ShipRegion","ShipPostalCode","ShipCountry")
 VALUES (10926,'ANATR',4,'3/4/1998','4/1/1998','3/11/1998',3,39.92,
-	'Ana Trujillo Emparedados y helados','Avda. de la ConstituciÃ³n 2222','MÃ©xico D.F.',
+	'Ana Trujillo Emparedados y helados','Avda. de la Constitución 2222','México D.F.',
 	NULL,'05021','Mexico');
 INSERT INTO "Orders"
 ("OrderID","CustomerID","EmployeeID","OrderDate","RequiredDate",
@@ -5329,28 +5329,28 @@ INSERT INTO "Orders"
 	"ShippedDate","ShipVia","Freight","ShipName","ShipAddress",
 	"ShipCity","ShipRegion","ShipPostalCode","ShipCountry")
 VALUES (10928,'GALED',1,'3/5/1998','4/2/1998','3/18/1998',1,1.36,
-	'GalerÃ­a del gastronÃ³mo','Rambla de CataluÃ±a, 23','Barcelona',
+	'Galería del gastronómo','Rambla de Cataluña, 23','Barcelona',
 	NULL,'8022','Spain');
 INSERT INTO "Orders"
 ("OrderID","CustomerID","EmployeeID","OrderDate","RequiredDate",
 	"ShippedDate","ShipVia","Freight","ShipName","ShipAddress",
 	"ShipCity","ShipRegion","ShipPostalCode","ShipCountry")
 VALUES (10929,'FRANK',6,'3/5/1998','4/2/1998','3/12/1998',1,33.93,
-	'Frankenversand','Berliner Platz 43','MÃ¼nchen',
+	'Frankenversand','Berliner Platz 43','München',
 	NULL,'80805','Germany');
 INSERT INTO "Orders"
 ("OrderID","CustomerID","EmployeeID","OrderDate","RequiredDate",
 	"ShippedDate","ShipVia","Freight","ShipName","ShipAddress",
 	"ShipCity","ShipRegion","ShipPostalCode","ShipCountry")
 VALUES (10930,'SUPRD',4,'3/6/1998','4/17/1998','3/18/1998',3,15.55,
-	'SuprÃªmes dÃ©lices','Boulevard Tirou, 255','Charleroi',
+	'Suprêmes délices','Boulevard Tirou, 255','Charleroi',
 	NULL,'B-6000','Belgium');
 INSERT INTO "Orders"
 ("OrderID","CustomerID","EmployeeID","OrderDate","RequiredDate",
 	"ShippedDate","ShipVia","Freight","ShipName","ShipAddress",
 	"ShipCity","ShipRegion","ShipPostalCode","ShipCountry")
 VALUES (10931,'RICSU',4,'3/6/1998','3/20/1998','3/19/1998',2,13.60,
-	'Richter Supermarkt','Starenweg 5','GenÃ¨ve',
+	'Richter Supermarkt','Starenweg 5','Genève',
 	NULL,'1204','Switzerland');
 INSERT INTO "Orders"
 ("OrderID","CustomerID","EmployeeID","OrderDate","RequiredDate",
@@ -5399,7 +5399,7 @@ INSERT INTO "Orders"
 	"ShippedDate","ShipVia","Freight","ShipName","ShipAddress",
 	"ShipCity","ShipRegion","ShipPostalCode","ShipCountry")
 VALUES (10938,'QUICK',3,'3/10/1998','4/7/1998','3/16/1998',2,31.89,
-	'QUICK-Stop','TaucherstraÃŸe 10','Cunewalde',
+	'QUICK-Stop','Taucherstraße 10','Cunewalde',
 	NULL,'01307','Germany');
 INSERT INTO "Orders"
 ("OrderID","CustomerID","EmployeeID","OrderDate","RequiredDate",
@@ -5455,7 +5455,7 @@ INSERT INTO "Orders"
 	"ShippedDate","ShipVia","Freight","ShipName","ShipAddress",
 	"ShipCity","ShipRegion","ShipPostalCode","ShipCountry")
 VALUES (10946,'VAFFE',1,'3/12/1998','4/9/1998','3/19/1998',2,27.20,
-	'Vaffeljernet','Smagsloget 45','Ã…rhus',
+	'Vaffeljernet','Smagsloget 45','Århus',
 	NULL,'8200','Denmark');
 INSERT INTO "Orders"
 ("OrderID","CustomerID","EmployeeID","OrderDate","RequiredDate",
@@ -5469,7 +5469,7 @@ INSERT INTO "Orders"
 	"ShippedDate","ShipVia","Freight","ShipName","ShipAddress",
 	"ShipCity","ShipRegion","ShipPostalCode","ShipCountry")
 VALUES (10948,'GODOS',3,'3/13/1998','4/10/1998','3/19/1998',3,23.39,
-	'Godos Cocina TÃ­pica','C/ Romero, 33','Sevilla',
+	'Godos Cocina Típica','C/ Romero, 33','Sevilla',
 	NULL,'41101','Spain');
 INSERT INTO "Orders"
 ("OrderID","CustomerID","EmployeeID","OrderDate","RequiredDate",
@@ -5490,7 +5490,7 @@ INSERT INTO "Orders"
 	"ShippedDate","ShipVia","Freight","ShipName","ShipAddress",
 	"ShipCity","ShipRegion","ShipPostalCode","ShipCountry")
 VALUES (10951,'RICSU',9,'3/16/1998','4/27/1998','4/7/1998',2,30.85,
-	'Richter Supermarkt','Starenweg 5','GenÃ¨ve',
+	'Richter Supermarkt','Starenweg 5','Genève',
 	NULL,'1204','Switzerland');
 INSERT INTO "Orders"
 ("OrderID","CustomerID","EmployeeID","OrderDate","RequiredDate",
@@ -5518,7 +5518,7 @@ INSERT INTO "Orders"
 	"ShippedDate","ShipVia","Freight","ShipName","ShipAddress",
 	"ShipCity","ShipRegion","ShipPostalCode","ShipCountry")
 VALUES (10955,'FOLKO',8,'3/17/1998','4/14/1998','3/20/1998',2,3.26,
-	'Folk och fÃ¤ HB','Ã…kergatan 24','BrÃ¤cke',
+	'Folk och fä HB','Åkergatan 24','Bräcke',
 	NULL,'S-844 67','Sweden');
 INSERT INTO "Orders"
 ("OrderID","CustomerID","EmployeeID","OrderDate","RequiredDate",
@@ -5532,14 +5532,14 @@ INSERT INTO "Orders"
 	"ShippedDate","ShipVia","Freight","ShipName","ShipAddress",
 	"ShipCity","ShipRegion","ShipPostalCode","ShipCountry")
 VALUES (10957,'HILAA',8,'3/18/1998','4/15/1998','3/27/1998',3,105.36,
-	'HILARION-Abastos','Carrera 22 con Ave. Carlos Soublette #8-35','San CristÃ³bal',
-	'TÃ¡chira','5022','Venezuela');
+	'HILARION-Abastos','Carrera 22 con Ave. Carlos Soublette #8-35','San Cristóbal',
+	'Táchira','5022','Venezuela');
 INSERT INTO "Orders"
 ("OrderID","CustomerID","EmployeeID","OrderDate","RequiredDate",
 	"ShippedDate","ShipVia","Freight","ShipName","ShipAddress",
 	"ShipCity","ShipRegion","ShipPostalCode","ShipCountry")
 VALUES (10958,'OCEAN',7,'3/18/1998','4/15/1998','3/27/1998',2,49.56,
-	'OcÃ©ano AtlÃ¡ntico Ltda.','Ing. Gustavo Moncada 8585 Piso 20-A','Buenos Aires',
+	'Océano Atlántico Ltda.','Ing. Gustavo Moncada 8585 Piso 20-A','Buenos Aires',
 	NULL,'1010','Argentina');
 INSERT INTO "Orders"
 ("OrderID","CustomerID","EmployeeID","OrderDate","RequiredDate",
@@ -5553,21 +5553,21 @@ INSERT INTO "Orders"
 	"ShippedDate","ShipVia","Freight","ShipName","ShipAddress",
 	"ShipCity","ShipRegion","ShipPostalCode","ShipCountry")
 VALUES (10960,'HILAA',3,'3/19/1998','4/2/1998','4/8/1998',1,2.08,
-	'HILARION-Abastos','Carrera 22 con Ave. Carlos Soublette #8-35','San CristÃ³bal',
-	'TÃ¡chira','5022','Venezuela');
+	'HILARION-Abastos','Carrera 22 con Ave. Carlos Soublette #8-35','San Cristóbal',
+	'Táchira','5022','Venezuela');
 INSERT INTO "Orders"
 ("OrderID","CustomerID","EmployeeID","OrderDate","RequiredDate",
 	"ShippedDate","ShipVia","Freight","ShipName","ShipAddress",
 	"ShipCity","ShipRegion","ShipPostalCode","ShipCountry")
 VALUES (10961,'QUEEN',8,'3/19/1998','4/16/1998','3/30/1998',1,104.47,
-	'Queen Cozinha','Alameda dos CanÃ rios, 891','Sao Paulo',
+	'Queen Cozinha','Alameda dos Canàrios, 891','Sao Paulo',
 	'SP','05487-020','Brazil');
 INSERT INTO "Orders"
 ("OrderID","CustomerID","EmployeeID","OrderDate","RequiredDate",
 	"ShippedDate","ShipVia","Freight","ShipName","ShipAddress",
 	"ShipCity","ShipRegion","ShipPostalCode","ShipCountry")
 VALUES (10962,'QUICK',8,'3/19/1998','4/16/1998','3/23/1998',2,275.79,
-	'QUICK-Stop','TaucherstraÃŸe 10','Cunewalde',
+	'QUICK-Stop','Taucherstraße 10','Cunewalde',
 	NULL,'01307','Germany');
 INSERT INTO "Orders"
 ("OrderID","CustomerID","EmployeeID","OrderDate","RequiredDate",
@@ -5581,7 +5581,7 @@ INSERT INTO "Orders"
 	"ShippedDate","ShipVia","Freight","ShipName","ShipAddress",
 	"ShipCity","ShipRegion","ShipPostalCode","ShipCountry")
 VALUES (10964,'SPECD',3,'3/20/1998','4/17/1998','3/24/1998',2,87.38,
-	'SpÃ©cialitÃ©s du monde','25, rue Lauriston','Paris',
+	'Spécialités du monde','25, rue Lauriston','Paris',
 	NULL,'75016','France');
 INSERT INTO "Orders"
 ("OrderID","CustomerID","EmployeeID","OrderDate","RequiredDate",
@@ -5602,7 +5602,7 @@ INSERT INTO "Orders"
 	"ShippedDate","ShipVia","Freight","ShipName","ShipAddress",
 	"ShipCity","ShipRegion","ShipPostalCode","ShipCountry")
 VALUES (10967,'TOMSP',2,'3/23/1998','4/20/1998','4/2/1998',2,62.22,
-	'Toms SpezialitÃ¤ten','Luisenstr. 48','MÃ¼nster',
+	'Toms Spezialitäten','Luisenstr. 48','Münster',
 	NULL,'44087','Germany');
 INSERT INTO "Orders"
 ("OrderID","CustomerID","EmployeeID","OrderDate","RequiredDate",
@@ -5616,14 +5616,14 @@ INSERT INTO "Orders"
 	"ShippedDate","ShipVia","Freight","ShipName","ShipAddress",
 	"ShipCity","ShipRegion","ShipPostalCode","ShipCountry")
 VALUES (10969,'COMMI',1,'3/23/1998','4/20/1998','3/30/1998',2,0.21,
-	'ComÃ©rcio Mineiro','Av. dos LusÃ­adas, 23','Sao Paulo',
+	'Comércio Mineiro','Av. dos Lusíadas, 23','Sao Paulo',
 	'SP','05432-043','Brazil');
 INSERT INTO "Orders"
 ("OrderID","CustomerID","EmployeeID","OrderDate","RequiredDate",
 	"ShippedDate","ShipVia","Freight","ShipName","ShipAddress",
 	"ShipCity","ShipRegion","ShipPostalCode","ShipCountry")
 VALUES (10970,'BOLID',9,'3/24/1998','4/7/1998','4/24/1998',1,16.16,
-	'BÃ³lido Comidas preparadas','C/ Araquil, 67','Madrid',
+	'Bólido Comidas preparadas','C/ Araquil, 67','Madrid',
 	NULL,'28023','Spain');
 INSERT INTO "Orders"
 ("OrderID","CustomerID","EmployeeID","OrderDate","RequiredDate",
@@ -5665,14 +5665,14 @@ INSERT INTO "Orders"
 	"ShippedDate","ShipVia","Freight","ShipName","ShipAddress",
 	"ShipCity","ShipRegion","ShipPostalCode","ShipCountry")
 VALUES (10976,'HILAA',1,'3/25/1998','5/6/1998','4/3/1998',1,37.97,
-	'HILARION-Abastos','Carrera 22 con Ave. Carlos Soublette #8-35','San CristÃ³bal',
-	'TÃ¡chira','5022','Venezuela');
+	'HILARION-Abastos','Carrera 22 con Ave. Carlos Soublette #8-35','San Cristóbal',
+	'Táchira','5022','Venezuela');
 INSERT INTO "Orders"
 ("OrderID","CustomerID","EmployeeID","OrderDate","RequiredDate",
 	"ShippedDate","ShipVia","Freight","ShipName","ShipAddress",
 	"ShipCity","ShipRegion","ShipPostalCode","ShipCountry")
 VALUES (10977,'FOLKO',8,'3/26/1998','4/23/1998','4/10/1998',3,208.50,
-	'Folk och fÃ¤ HB','Ã…kergatan 24','BrÃ¤cke',
+	'Folk och fä HB','Åkergatan 24','Bräcke',
 	NULL,'S-844 67','Sweden');
 INSERT INTO "Orders"
 ("OrderID","CustomerID","EmployeeID","OrderDate","RequiredDate",
@@ -5693,14 +5693,14 @@ INSERT INTO "Orders"
 	"ShippedDate","ShipVia","Freight","ShipName","ShipAddress",
 	"ShipCity","ShipRegion","ShipPostalCode","ShipCountry")
 VALUES (10980,'FOLKO',4,'3/27/1998','5/8/1998','4/17/1998',1,1.26,
-	'Folk och fÃ¤ HB','Ã…kergatan 24','BrÃ¤cke',
+	'Folk och fä HB','Åkergatan 24','Bräcke',
 	NULL,'S-844 67','Sweden');
 INSERT INTO "Orders"
 ("OrderID","CustomerID","EmployeeID","OrderDate","RequiredDate",
 	"ShippedDate","ShipVia","Freight","ShipName","ShipAddress",
 	"ShipCity","ShipRegion","ShipPostalCode","ShipCountry")
 VALUES (10981,'HANAR',1,'3/27/1998','4/24/1998','4/2/1998',2,193.37,
-	'Hanari Carnes','Rua do PaÃ§o, 67','Rio de Janeiro',
+	'Hanari Carnes','Rua do Paço, 67','Rio de Janeiro',
 	'RJ','05454-876','Brazil');
 INSERT INTO "Orders"
 ("OrderID","CustomerID","EmployeeID","OrderDate","RequiredDate",
@@ -5735,7 +5735,7 @@ INSERT INTO "Orders"
 	"ShippedDate","ShipVia","Freight","ShipName","ShipAddress",
 	"ShipCity","ShipRegion","ShipPostalCode","ShipCountry")
 VALUES (10986,'OCEAN',8,'3/30/1998','4/27/1998','4/21/1998',2,217.86,
-	'OcÃ©ano AtlÃ¡ntico Ltda.','Ing. Gustavo Moncada 8585 Piso 20-A','Buenos Aires',
+	'Océano Atlántico Ltda.','Ing. Gustavo Moncada 8585 Piso 20-A','Buenos Aires',
 	NULL,'1010','Argentina');
 INSERT INTO "Orders"
 ("OrderID","CustomerID","EmployeeID","OrderDate","RequiredDate",
@@ -5756,7 +5756,7 @@ INSERT INTO "Orders"
 	"ShippedDate","ShipVia","Freight","ShipName","ShipAddress",
 	"ShipCity","ShipRegion","ShipPostalCode","ShipCountry")
 VALUES (10989,'QUEDE',2,'3/31/1998','4/28/1998','4/2/1998',1,34.76,
-	'Que DelÃ­cia','Rua da Panificadora, 12','Rio de Janeiro',
+	'Que Delícia','Rua da Panificadora, 12','Rio de Janeiro',
 	'RJ','02389-673','Brazil');
 INSERT INTO "Orders"
 ("OrderID","CustomerID","EmployeeID","OrderDate","RequiredDate",
@@ -5770,7 +5770,7 @@ INSERT INTO "Orders"
 	"ShippedDate","ShipVia","Freight","ShipName","ShipAddress",
 	"ShipCity","ShipRegion","ShipPostalCode","ShipCountry")
 VALUES (10991,'QUICK',1,'4/1/1998','4/29/1998','4/7/1998',1,38.51,
-	'QUICK-Stop','TaucherstraÃŸe 10','Cunewalde',
+	'QUICK-Stop','Taucherstraße 10','Cunewalde',
 	NULL,'01307','Germany');
 INSERT INTO "Orders"
 ("OrderID","CustomerID","EmployeeID","OrderDate","RequiredDate",
@@ -5784,35 +5784,35 @@ INSERT INTO "Orders"
 	"ShippedDate","ShipVia","Freight","ShipName","ShipAddress",
 	"ShipCity","ShipRegion","ShipPostalCode","ShipCountry")
 VALUES (10993,'FOLKO',7,'4/1/1998','4/29/1998','4/10/1998',3,8.81,
-	'Folk och fÃ¤ HB','Ã…kergatan 24','BrÃ¤cke',
+	'Folk och fä HB','Åkergatan 24','Bräcke',
 	NULL,'S-844 67','Sweden');
 INSERT INTO "Orders"
 ("OrderID","CustomerID","EmployeeID","OrderDate","RequiredDate",
 	"ShippedDate","ShipVia","Freight","ShipName","ShipAddress",
 	"ShipCity","ShipRegion","ShipPostalCode","ShipCountry")
 VALUES (10994,'VAFFE',2,'4/2/1998','4/16/1998','4/9/1998',3,65.53,
-	'Vaffeljernet','Smagsloget 45','Ã…rhus',
+	'Vaffeljernet','Smagsloget 45','Århus',
 	NULL,'8200','Denmark');
 INSERT INTO "Orders"
 ("OrderID","CustomerID","EmployeeID","OrderDate","RequiredDate",
 	"ShippedDate","ShipVia","Freight","ShipName","ShipAddress",
 	"ShipCity","ShipRegion","ShipPostalCode","ShipCountry")
 VALUES (10995,'PERIC',1,'4/2/1998','4/30/1998','4/6/1998',3,46.00,
-	'Pericles Comidas clÃ¡sicas','Calle Dr. Jorge Cash 321','MÃ©xico D.F.',
+	'Pericles Comidas clásicas','Calle Dr. Jorge Cash 321','México D.F.',
 	NULL,'05033','Mexico');
 INSERT INTO "Orders"
 ("OrderID","CustomerID","EmployeeID","OrderDate","RequiredDate",
 	"ShippedDate","ShipVia","Freight","ShipName","ShipAddress",
 	"ShipCity","ShipRegion","ShipPostalCode","ShipCountry")
 VALUES (10996,'QUICK',4,'4/2/1998','4/30/1998','4/10/1998',2,1.12,
-	'QUICK-Stop','TaucherstraÃŸe 10','Cunewalde',
+	'QUICK-Stop','Taucherstraße 10','Cunewalde',
 	NULL,'01307','Germany');
 INSERT INTO "Orders"
 ("OrderID","CustomerID","EmployeeID","OrderDate","RequiredDate",
 	"ShippedDate","ShipVia","Freight","ShipName","ShipAddress",
 	"ShipCity","ShipRegion","ShipPostalCode","ShipCountry")
 VALUES (10997,'LILAS',8,'4/3/1998','5/15/1998','4/13/1998',2,73.91,
-	'LILA-Supermercado','Carrera 52 con Ave. BolÃ­var #65-98 Llano Largo','Barquisimeto',
+	'LILA-Supermercado','Carrera 52 con Ave. Bolívar #65-98 Llano Largo','Barquisimeto',
 	'Lara','3508','Venezuela');
 INSERT INTO "Orders"
 ("OrderID","CustomerID","EmployeeID","OrderDate","RequiredDate",
@@ -5826,7 +5826,7 @@ INSERT INTO "Orders"
 	"ShippedDate","ShipVia","Freight","ShipName","ShipAddress",
 	"ShipCity","ShipRegion","ShipPostalCode","ShipCountry")
 VALUES (10999,'OTTIK',6,'4/3/1998','5/1/1998','4/10/1998',2,96.35,
-	'Ottilies KÃ¤seladen','Mehrheimerstr. 369','KÃ¶ln',
+	'Ottilies Käseladen','Mehrheimerstr. 369','Köln',
 	NULL,'50739','Germany');
 INSERT INTO "Orders"
 ("OrderID","CustomerID","EmployeeID","OrderDate","RequiredDate",
@@ -5840,7 +5840,7 @@ INSERT INTO "Orders"
 	"ShippedDate","ShipVia","Freight","ShipName","ShipAddress",
 	"ShipCity","ShipRegion","ShipPostalCode","ShipCountry")
 VALUES (11001,'FOLKO',2,'4/6/1998','5/4/1998','4/14/1998',2,197.30,
-	'Folk och fÃ¤ HB','Ã…kergatan 24','BrÃ¤cke',
+	'Folk och fä HB','Åkergatan 24','Bräcke',
 	NULL,'S-844 67','Sweden');
 INSERT INTO "Orders"
 ("OrderID","CustomerID","EmployeeID","OrderDate","RequiredDate",
@@ -5882,7 +5882,7 @@ INSERT INTO "Orders"
 	"ShippedDate","ShipVia","Freight","ShipName","ShipAddress",
 	"ShipCity","ShipRegion","ShipPostalCode","ShipCountry")
 VALUES (11007,'PRINI',8,'4/8/1998','5/6/1998','4/13/1998',2,202.24,
-	'Princesa Isabel Vinhos','Estrada da saÃºde n. 58','Lisboa',
+	'Princesa Isabel Vinhos','Estrada da saúde n. 58','Lisboa',
 	NULL,'1756','Portugal');
 INSERT INTO "Orders"
 ("OrderID","CustomerID","EmployeeID","OrderDate","RequiredDate",
@@ -5896,7 +5896,7 @@ INSERT INTO "Orders"
 	"ShippedDate","ShipVia","Freight","ShipName","ShipAddress",
 	"ShipCity","ShipRegion","ShipPostalCode","ShipCountry")
 VALUES (11009,'GODOS',2,'4/8/1998','5/6/1998','4/10/1998',1,59.11,
-	'Godos Cocina TÃ­pica','C/ Romero, 33','Sevilla',
+	'Godos Cocina Típica','C/ Romero, 33','Sevilla',
 	NULL,'41101','Spain');
 INSERT INTO "Orders"
 ("OrderID","CustomerID","EmployeeID","OrderDate","RequiredDate",
@@ -5917,14 +5917,14 @@ INSERT INTO "Orders"
 	"ShippedDate","ShipVia","Freight","ShipName","ShipAddress",
 	"ShipCity","ShipRegion","ShipPostalCode","ShipCountry")
 VALUES (11012,'FRANK',1,'4/9/1998','4/23/1998','4/17/1998',3,242.95,
-	'Frankenversand','Berliner Platz 43','MÃ¼nchen',
+	'Frankenversand','Berliner Platz 43','München',
 	NULL,'80805','Germany');
 INSERT INTO "Orders"
 ("OrderID","CustomerID","EmployeeID","OrderDate","RequiredDate",
 	"ShippedDate","ShipVia","Freight","ShipName","ShipAddress",
 	"ShipCity","ShipRegion","ShipPostalCode","ShipCountry")
 VALUES (11013,'ROMEY',2,'4/9/1998','5/7/1998','4/10/1998',1,32.99,
-	'Romero y tomillo','Gran VÃ­a, 1','Madrid',
+	'Romero y tomillo','Gran Vía, 1','Madrid',
 	NULL,'28001','Spain');
 INSERT INTO "Orders"
 ("OrderID","CustomerID","EmployeeID","OrderDate","RequiredDate",
@@ -5938,7 +5938,7 @@ INSERT INTO "Orders"
 	"ShippedDate","ShipVia","Freight","ShipName","ShipAddress",
 	"ShipCity","ShipRegion","ShipPostalCode","ShipCountry")
 VALUES (11015,'SANTG',2,'4/10/1998','4/24/1998','4/20/1998',2,4.62,
-	'SantÃ© Gourmet','Erling Skakkes gate 78','Stavern',
+	'Santé Gourmet','Erling Skakkes gate 78','Stavern',
 	NULL,'4110','Norway');
 INSERT INTO "Orders"
 ("OrderID","CustomerID","EmployeeID","OrderDate","RequiredDate",
@@ -5973,21 +5973,21 @@ INSERT INTO "Orders"
 	"ShippedDate","ShipVia","Freight","ShipName","ShipAddress",
 	"ShipCity","ShipRegion","ShipPostalCode","ShipCountry")
 VALUES (11020,'OTTIK',2,'4/14/1998','5/12/1998','4/16/1998',2,43.30,
-	'Ottilies KÃ¤seladen','Mehrheimerstr. 369','KÃ¶ln',
+	'Ottilies Käseladen','Mehrheimerstr. 369','Köln',
 	NULL,'50739','Germany');
 INSERT INTO "Orders"
 ("OrderID","CustomerID","EmployeeID","OrderDate","RequiredDate",
 	"ShippedDate","ShipVia","Freight","ShipName","ShipAddress",
 	"ShipCity","ShipRegion","ShipPostalCode","ShipCountry")
 VALUES (11021,'QUICK',3,'4/14/1998','5/12/1998','4/21/1998',1,297.18,
-	'QUICK-Stop','TaucherstraÃŸe 10','Cunewalde',
+	'QUICK-Stop','Taucherstraße 10','Cunewalde',
 	NULL,'01307','Germany');
 INSERT INTO "Orders"
 ("OrderID","CustomerID","EmployeeID","OrderDate","RequiredDate",
 	"ShippedDate","ShipVia","Freight","ShipName","ShipAddress",
 	"ShipCity","ShipRegion","ShipPostalCode","ShipCountry")
 VALUES (11022,'HANAR',9,'4/14/1998','5/12/1998','5/4/1998',2,6.27,
-	'Hanari Carnes','Rua do PaÃ§o, 67','Rio de Janeiro',
+	'Hanari Carnes','Rua do Paço, 67','Rio de Janeiro',
 	'RJ','05454-876','Brazil');
 INSERT INTO "Orders"
 ("OrderID","CustomerID","EmployeeID","OrderDate","RequiredDate",
@@ -6029,7 +6029,7 @@ INSERT INTO "Orders"
 	"ShippedDate","ShipVia","Freight","ShipName","ShipAddress",
 	"ShipCity","ShipRegion","ShipPostalCode","ShipCountry")
 VALUES (11028,'KOENE',2,'4/16/1998','5/14/1998','4/22/1998',1,29.59,
-	'KÃ¶niglich Essen','Maubelstr. 90','Brandenburg',
+	'Königlich Essen','Maubelstr. 90','Brandenburg',
 	NULL,'14776','Germany');
 INSERT INTO "Orders"
 ("OrderID","CustomerID","EmployeeID","OrderDate","RequiredDate",
@@ -6064,7 +6064,7 @@ INSERT INTO "Orders"
 	"ShippedDate","ShipVia","Freight","ShipName","ShipAddress",
 	"ShipCity","ShipRegion","ShipPostalCode","ShipCountry")
 VALUES (11033,'RICSU',7,'4/17/1998','5/15/1998','4/23/1998',3,84.74,
-	'Richter Supermarkt','Starenweg 5','GenÃ¨ve',
+	'Richter Supermarkt','Starenweg 5','Genève',
 	NULL,'1204','Switzerland');
 INSERT INTO "Orders"
 ("OrderID","CustomerID","EmployeeID","OrderDate","RequiredDate",
@@ -6078,7 +6078,7 @@ INSERT INTO "Orders"
 	"ShippedDate","ShipVia","Freight","ShipName","ShipAddress",
 	"ShipCity","ShipRegion","ShipPostalCode","ShipCountry")
 VALUES (11035,'SUPRD',2,'4/20/1998','5/18/1998','4/24/1998',2,0.17,
-	'SuprÃªmes dÃ©lices','Boulevard Tirou, 255','Charleroi',
+	'Suprêmes délices','Boulevard Tirou, 255','Charleroi',
 	NULL,'B-6000','Belgium');
 INSERT INTO "Orders"
 ("OrderID","CustomerID","EmployeeID","OrderDate","RequiredDate",
@@ -6092,14 +6092,14 @@ INSERT INTO "Orders"
 	"ShippedDate","ShipVia","Freight","ShipName","ShipAddress",
 	"ShipCity","ShipRegion","ShipPostalCode","ShipCountry")
 VALUES (11037,'GODOS',7,'4/21/1998','5/19/1998','4/27/1998',1,3.20,
-	'Godos Cocina TÃ­pica','C/ Romero, 33','Sevilla',
+	'Godos Cocina Típica','C/ Romero, 33','Sevilla',
 	NULL,'41101','Spain');
 INSERT INTO "Orders"
 ("OrderID","CustomerID","EmployeeID","OrderDate","RequiredDate",
 	"ShippedDate","ShipVia","Freight","ShipName","ShipAddress",
 	"ShipCity","ShipRegion","ShipPostalCode","ShipCountry")
 VALUES (11038,'SUPRD',1,'4/21/1998','5/19/1998','4/30/1998',2,29.59,
-	'SuprÃªmes dÃ©lices','Boulevard Tirou, 255','Charleroi',
+	'Suprêmes délices','Boulevard Tirou, 255','Charleroi',
 	NULL,'B-6000','Belgium');
 INSERT INTO "Orders"
 ("OrderID","CustomerID","EmployeeID","OrderDate","RequiredDate",
@@ -6127,14 +6127,14 @@ INSERT INTO "Orders"
 	"ShippedDate","ShipVia","Freight","ShipName","ShipAddress",
 	"ShipCity","ShipRegion","ShipPostalCode","ShipCountry")
 VALUES (11042,'COMMI',2,'4/22/1998','5/6/1998','5/1/1998',1,29.99,
-	'ComÃ©rcio Mineiro','Av. dos LusÃ­adas, 23','Sao Paulo',
+	'Comércio Mineiro','Av. dos Lusíadas, 23','Sao Paulo',
 	'SP','05432-043','Brazil');
 INSERT INTO "Orders"
 ("OrderID","CustomerID","EmployeeID","OrderDate","RequiredDate",
 	"ShippedDate","ShipVia","Freight","ShipName","ShipAddress",
 	"ShipCity","ShipRegion","ShipPostalCode","ShipCountry")
 VALUES (11043,'SPECD',5,'4/22/1998','5/20/1998','4/29/1998',2,8.80,
-	'SpÃ©cialitÃ©s du monde','25, rue Lauriston','Paris',
+	'Spécialités du monde','25, rue Lauriston','Paris',
 	NULL,'75016','France');
 INSERT INTO "Orders"
 ("OrderID","CustomerID","EmployeeID","OrderDate","RequiredDate",
@@ -6183,7 +6183,7 @@ INSERT INTO "Orders"
 	"ShippedDate","ShipVia","Freight","ShipName","ShipAddress",
 	"ShipCity","ShipRegion","ShipPostalCode","ShipCountry")
 VALUES (11050,'FOLKO',8,'4/27/1998','5/25/1998','5/5/1998',2,59.41,
-	'Folk och fÃ¤ HB','Ã…kergatan 24','BrÃ¤cke',
+	'Folk och fä HB','Åkergatan 24','Bräcke',
 	NULL,'S-844 67','Sweden');
 INSERT INTO "Orders"
 ("OrderID","CustomerID","EmployeeID","OrderDate","RequiredDate",
@@ -6197,7 +6197,7 @@ INSERT INTO "Orders"
 	"ShippedDate","ShipVia","Freight","ShipName","ShipAddress",
 	"ShipCity","ShipRegion","ShipPostalCode","ShipCountry")
 VALUES (11052,'HANAR',3,'4/27/1998','5/25/1998','5/1/1998',1,67.26,
-	'Hanari Carnes','Rua do PaÃ§o, 67','Rio de Janeiro',
+	'Hanari Carnes','Rua do Paço, 67','Rio de Janeiro',
 	'RJ','05454-876','Brazil');
 INSERT INTO "Orders"
 ("OrderID","CustomerID","EmployeeID","OrderDate","RequiredDate",
@@ -6218,8 +6218,8 @@ INSERT INTO "Orders"
 	"ShippedDate","ShipVia","Freight","ShipName","ShipAddress",
 	"ShipCity","ShipRegion","ShipPostalCode","ShipCountry")
 VALUES (11055,'HILAA',7,'4/28/1998','5/26/1998','5/5/1998',2,120.92,
-	'HILARION-Abastos','Carrera 22 con Ave. Carlos Soublette #8-35','San CristÃ³bal',
-	'TÃ¡chira','5022','Venezuela');
+	'HILARION-Abastos','Carrera 22 con Ave. Carlos Soublette #8-35','San Cristóbal',
+	'Táchira','5022','Venezuela');
 INSERT INTO "Orders"
 ("OrderID","CustomerID","EmployeeID","OrderDate","RequiredDate",
 	"ShippedDate","ShipVia","Freight","ShipName","ShipAddress",
@@ -6288,7 +6288,7 @@ INSERT INTO "Orders"
 	"ShippedDate","ShipVia","Freight","ShipName","ShipAddress",
 	"ShipCity","ShipRegion","ShipPostalCode","ShipCountry")
 VALUES (11065,'LILAS',8,'5/1/1998','5/29/1998',NULL,1,12.91,
-	'LILA-Supermercado','Carrera 52 con Ave. BolÃ­var #65-98 Llano Largo','Barquisimeto',
+	'LILA-Supermercado','Carrera 52 con Ave. Bolívar #65-98 Llano Largo','Barquisimeto',
 	'Lara','3508','Venezuela');
 INSERT INTO "Orders"
 ("OrderID","CustomerID","EmployeeID","OrderDate","RequiredDate",
@@ -6309,14 +6309,14 @@ INSERT INTO "Orders"
 	"ShippedDate","ShipVia","Freight","ShipName","ShipAddress",
 	"ShipCity","ShipRegion","ShipPostalCode","ShipCountry")
 VALUES (11068,'QUEEN',8,'5/4/1998','6/1/1998',NULL,2,81.75,
-	'Queen Cozinha','Alameda dos CanÃ rios, 891','Sao Paulo',
+	'Queen Cozinha','Alameda dos Canàrios, 891','Sao Paulo',
 	'SP','05487-020','Brazil');
 INSERT INTO "Orders"
 ("OrderID","CustomerID","EmployeeID","OrderDate","RequiredDate",
 	"ShippedDate","ShipVia","Freight","ShipName","ShipAddress",
 	"ShipCity","ShipRegion","ShipPostalCode","ShipCountry")
 VALUES (11069,'TORTU',1,'5/4/1998','6/1/1998','5/6/1998',2,15.67,
-	'Tortuga Restaurante','Avda. Azteca 123','MÃ©xico D.F.',
+	'Tortuga Restaurante','Avda. Azteca 123','México D.F.',
 	NULL,'05033','Mexico');
 INSERT INTO "Orders"
 ("OrderID","CustomerID","EmployeeID","OrderDate","RequiredDate",
@@ -6330,7 +6330,7 @@ INSERT INTO "Orders"
 	"ShippedDate","ShipVia","Freight","ShipName","ShipAddress",
 	"ShipCity","ShipRegion","ShipPostalCode","ShipCountry")
 VALUES (11071,'LILAS',1,'5/5/1998','6/2/1998',NULL,1,0.93,
-	'LILA-Supermercado','Carrera 52 con Ave. BolÃ­var #65-98 Llano Largo','Barquisimeto',
+	'LILA-Supermercado','Carrera 52 con Ave. Bolívar #65-98 Llano Largo','Barquisimeto',
 	'Lara','3508','Venezuela');
 INSERT INTO "Orders"
 ("OrderID","CustomerID","EmployeeID","OrderDate","RequiredDate",
@@ -6344,21 +6344,21 @@ INSERT INTO "Orders"
 	"ShippedDate","ShipVia","Freight","ShipName","ShipAddress",
 	"ShipCity","ShipRegion","ShipPostalCode","ShipCountry")
 VALUES (11073,'PERIC',2,'5/5/1998','6/2/1998',NULL,2,24.95,
-	'Pericles Comidas clÃ¡sicas','Calle Dr. Jorge Cash 321','MÃ©xico D.F.',
+	'Pericles Comidas clásicas','Calle Dr. Jorge Cash 321','México D.F.',
 	NULL,'05033','Mexico');
 INSERT INTO "Orders"
 ("OrderID","CustomerID","EmployeeID","OrderDate","RequiredDate",
 	"ShippedDate","ShipVia","Freight","ShipName","ShipAddress",
 	"ShipCity","ShipRegion","ShipPostalCode","ShipCountry")
 VALUES (11074,'SIMOB',7,'5/6/1998','6/3/1998',NULL,2,18.44,
-	'Simons bistro','VinbÃ¦ltet 34','Kobenhavn',
+	'Simons bistro','Vinbæltet 34','Kobenhavn',
 	NULL,'1734','Denmark');
 INSERT INTO "Orders"
 ("OrderID","CustomerID","EmployeeID","OrderDate","RequiredDate",
 	"ShippedDate","ShipVia","Freight","ShipName","ShipAddress",
 	"ShipCity","ShipRegion","ShipPostalCode","ShipCountry")
 VALUES (11075,'RICSU',8,'5/6/1998','6/3/1998',NULL,2,6.19,
-	'Richter Supermarkt','Starenweg 5','GenÃ¨ve',
+	'Richter Supermarkt','Starenweg 5','Genève',
 	NULL,'1204','Switzerland');
 INSERT INTO "Orders"
 ("OrderID","CustomerID","EmployeeID","OrderDate","RequiredDate",
