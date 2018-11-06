@@ -213,7 +213,7 @@ CREATE INDEX "CompanyNameSuppliers" ON "Suppliers"("CompanyName");
 CREATE INDEX "PostalCodeSuppliers" ON "Suppliers"("PostalCode");
 
 CREATE TABLE "Orders" (
-	"OrderID" INTEGER PRIMARY KEY,
+	"OrderID" INT            IDENTITY (1, 1) NOT NULL,
 	"CustomerID" nchar (5) NULL ,
 	"EmployeeID" "int" NULL ,
 	"OrderDate" "datetime" NULL ,
@@ -227,6 +227,7 @@ CREATE TABLE "Orders" (
 	"ShipRegion" nvarchar (15) NULL ,
 	"ShipPostalCode" nvarchar (10) NULL ,
 	"ShipCountry" nvarchar (15) NULL ,
+    CONSTRAINT "PK_Orders" PRIMARY KEY CLUSTERED ("OrderID" ASC),
 	CONSTRAINT "FK_Orders_Customers" FOREIGN KEY 
 	(
 		"CustomerID"
@@ -563,6 +564,8 @@ INSERT INTO "Products"("ProductID","ProductName","SupplierID","CategoryID","Quan
 INSERT INTO "Products"("ProductID","ProductName","SupplierID","CategoryID","QuantityPerUnit","UnitPrice","UnitsInStock","UnitsOnOrder","ReorderLevel","Discontinued") VALUES(76,'Lakkalikööri',23,1,'500 ml',18,57,0,20,0);
 INSERT INTO "Products"("ProductID","ProductName","SupplierID","CategoryID","QuantityPerUnit","UnitPrice","UnitsInStock","UnitsOnOrder","ReorderLevel","Discontinued") VALUES(77,'Original Frankfurter grüne Soße',12,2,'12 boxes',13,32,0,15,0);
 
+SET IDENTITY_INSERT "Orders" ON;  
+GO  
 
 INSERT INTO "Orders"
 ("OrderID","CustomerID","EmployeeID","OrderDate","RequiredDate",
@@ -6374,6 +6377,9 @@ INSERT INTO "Orders"
 VALUES (11077,'RATTC',1,'5/6/1998','6/3/1998',NULL,2,8.53,
 	'Rattlesnake Canyon Grocery','2817 Milton Dr.','Albuquerque',
 	'NM','87110','USA');
+
+SET IDENTITY_INSERT "Orders" OFF;  
+GO  
 
 INSERT INTO "Order Details" VALUES(10248,11,14,12,0);
 INSERT INTO "Order Details" VALUES(10248,42,9.8,10,0);
