@@ -102,13 +102,16 @@ namespace MarketMvc.Controllers
             //order.ShippedDate = DateTime.Now.AddDays(5);// filled out in Admin section
             order.ShipVia = cartCheckout.ShipperID;
 
-            Customer customer = _NorthwindDAL.GetCustomer(cartCheckout.CustomerID);
-            order.ShipName = customer.ContactName;// cartCheckout.Name;
-            order.ShipAddress = customer.Address;// cartCheckout.Address;
-            order.ShipCity = customer.City;// cartCheckout.City;
-            order.ShipRegion = customer.Region;// cartCheckout.State;
-            order.ShipPostalCode = customer.PostalCode;// cartCheckout.PostalCode;
-            order.ShipCountry = customer.Country;
+            if (cartCheckout.CustomerID != null)
+            {
+                Customer customer = _NorthwindDAL.GetCustomer(cartCheckout.CustomerID);
+                order.ShipName = customer.ContactName;// cartCheckout.Name;
+                order.ShipAddress = customer.Address;// cartCheckout.Address;
+                order.ShipCity = customer.City;// cartCheckout.City;
+                order.ShipRegion = customer.Region;// cartCheckout.State;
+                order.ShipPostalCode = customer.PostalCode;// cartCheckout.PostalCode;
+                order.ShipCountry = customer.Country;
+            }
 
             int orderID = _NorthwindDAL.AddOrder(order).Value;
        

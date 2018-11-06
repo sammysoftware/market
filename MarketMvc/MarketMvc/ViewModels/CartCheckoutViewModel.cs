@@ -13,8 +13,8 @@ namespace MarketMvc.ViewModels
         public IEnumerable<Shipper> Shippers { get; set; }
 
         public string CustomerID { get; set; }
-        public int EmployeeID { get; set; }
-        public int ShipperID { get; set; }
+        public int? EmployeeID { get; set; }
+        public int? ShipperID { get; set; }
         public string Name { get; set; }
         public string Address { get; set; }
         public string City { get; set; }

@@ -117,11 +117,17 @@ namespace MarketMvc
             {
                 //create the roles and seed them to the database (AspNetRoles)
                 roleResult = await RoleManager.CreateAsync(new IdentityRole("Admin"));
+            }
 
+            else
+            { 
                 //Assign Admin role to me (AspNetUserRoles) 
                 ApplicationUser user = await UserManager.FindByEmailAsync("rching@sammysoftware.com");
-                var User = new ApplicationUser();
-                await UserManager.AddToRoleAsync(user, "Admin");
+                if (user != null)
+                {   //make me admin
+                    var User = new ApplicationUser();
+                    await UserManager.AddToRoleAsync(user, "Admin");
+                }
             }
         }
 
