@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Caching.Memory;  //IMemoryCache
 using MarketMvc.Controllers;
-using NorthwindEntitiesLib;
+using MarketMvc.Entities;
 
 namespace MarketMvc.DAL
 {

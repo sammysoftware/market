@@ -15,7 +15,6 @@
   <ItemGroup>
     <ProjectReference Include="..\MarketLogging\MarketLogging.csproj" />
     <ProjectReference Include="..\MarketMvc\MarketMvc.csproj" />
-    <ProjectReference Include="..\NorthwindEntitiesLib\NorthwindEntitiesLib.csproj" />
   </ItemGroup>
 
 </Project>

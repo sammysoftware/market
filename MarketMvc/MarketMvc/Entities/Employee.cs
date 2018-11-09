@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace NorthwindEntitiesLib
+namespace MarketMvc.Entities
 {
     public class Employee
     {

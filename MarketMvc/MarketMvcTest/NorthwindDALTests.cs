@@ -4,7 +4,7 @@ using MarketMvc.DAL;
 using MarketMvcTest.Stubs;
 using MarketMvcTest.Fakes;
 using MarketMvcTest.Mocks;
-using NorthwindEntitiesLib;
+using MarketMvc.Entities;
 
 namespace MarketMvcTest
 {

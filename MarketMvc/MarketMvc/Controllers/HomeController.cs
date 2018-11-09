@@ -10,7 +10,7 @@ using Microsoft.Extensions.Logging;
 using Microsoft.AspNetCore.Authorization;   //[Authorize]
 using MarketMvc.Models;
 using MarketMvc.DAL;
-using NorthwindEntitiesLib;
+using MarketMvc.Entities;
 
 namespace MarketMvc.Controllers
 {

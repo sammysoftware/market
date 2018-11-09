@@ -9,7 +9,7 @@ using Microsoft.Extensions.Caching.Memory;  //IMemoryCache
 using MarketMvc.DAL;
 using MarketMvc.Models;
 using MarketMvc.ViewModels;
-using NorthwindEntitiesLib;
+using MarketMvc.Entities;
 
 namespace MarketMvc.Controllers
 {

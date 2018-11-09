@@ -1,7 +1,7 @@
 ﻿using System;
 using Microsoft.EntityFrameworkCore;
 
-namespace NorthwindEntitiesLib
+namespace MarketMvc.Entities
 {
     public class NorthwindDbContext : DbContext
     {

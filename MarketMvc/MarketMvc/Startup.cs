@@ -12,7 +12,7 @@ using Microsoft.Extensions.DependencyInjection;
 using MarketMvc.Data;
 using MarketMvc.Models;
 using MarketMvc.Services;
-using NorthwindEntitiesLib;
+using MarketMvc.Entities;
 
 namespace MarketMvc
 {

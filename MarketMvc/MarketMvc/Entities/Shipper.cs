@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace NorthwindEntitiesLib
+namespace MarketMvc.Entities
 {
     public class Shipper
     {

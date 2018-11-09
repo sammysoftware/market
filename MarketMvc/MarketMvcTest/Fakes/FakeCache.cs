@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 using Microsoft.Extensions.Caching.Memory;  //IMemoryCache
-using NorthwindEntitiesLib;
+using MarketMvc.Entities;
 
 namespace MarketMvcTest.Fakes
 {
