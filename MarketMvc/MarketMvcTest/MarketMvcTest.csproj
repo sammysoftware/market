@@ -13,7 +13,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\MarketLogging\MarketLogging.csproj" />
     <ProjectReference Include="..\MarketMvc\MarketMvc.csproj" />
   </ItemGroup>
 

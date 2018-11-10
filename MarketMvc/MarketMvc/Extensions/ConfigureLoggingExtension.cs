@@ -4,7 +4,6 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Logging;
-using MarketLogging;
 
 namespace MarketMvc.Extensions
 {
@@ -22,12 +21,6 @@ namespace MarketMvc.Extensions
                     case "console":
                         {
                             loggingBuilder.AddConsole();
-                            break;
-                        }
-                    case "file":
-                        {   //ddMMyyHHmm should be yyyyMMddHHmm
-                            string filePath = System.IO.Path.Combine(System.IO.Directory.GetCurrentDirectory(), "Logs", $"MarketMvc_{FileLogger.GetCurrentTime().ToString("yyyyMMddHHmm")}.log");
-                            loggingBuilder.AddFile(filePath, (LogLevel)provider.LogLevel);
                             break;
                         }
 //                    case "azureappservices":
