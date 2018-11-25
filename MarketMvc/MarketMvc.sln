@@ -7,6 +7,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MarketMvc", "MarketMvc\Mark
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MarketMvcTest", "MarketMvcTest\MarketMvcTest.csproj", "{0F1D5946-7BE7-4915-AFE3-378AA8D65624}"
 EndProject
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{357762D9-D922-4921-88F7-8A53BD4D8EAD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{0F1D5946-7BE7-4915-AFE3-378AA8D65624}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0F1D5946-7BE7-4915-AFE3-378AA8D65624}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0F1D5946-7BE7-4915-AFE3-378AA8D65624}.Release|Any CPU.Build.0 = Release|Any CPU
+		{357762D9-D922-4921-88F7-8A53BD4D8EAD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{357762D9-D922-4921-88F7-8A53BD4D8EAD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{357762D9-D922-4921-88F7-8A53BD4D8EAD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{357762D9-D922-4921-88F7-8A53BD4D8EAD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

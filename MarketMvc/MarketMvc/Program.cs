@@ -25,6 +25,7 @@ namespace MarketMvc
                 {
                     logging.AddLoggingConfiguration(hostingcontext.Configuration);
                 })
+                //.UseIISIntegration() //only use this when hosted by Elastic Beanstalk
                 .Build();
     }
 }
